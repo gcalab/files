@@ -1,4 +1,4 @@
-# Supplimentary Notebooks for "The emergence of SARS-CoV-2 variants of concern in Australia by haplotype coalescence reveals a continental link to COVID-19 seasonality"
+# Supplimentary Notebooks for "The emergence of SARS-CoV-2 variants of concern in Australia by haplotype coalescence reveals a continental link to COVID-19 seasonality" Data Reproduction
 
 ## Setup and Use
 
