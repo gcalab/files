@@ -17,10 +17,10 @@ Sequence acknowledgements and additional information can be found at [https://gi
 ### Datasets
 
 The default data directory is `./data`, local to the project.
-To use a different data directory, specify the data directory in the `.env` file.
+To use a different data directory, specify the data directory in `.env` file.
+See `.env_template` for an example. This file may be copied and renamed to `.env`.
 
-Specify the GISAID sequence metadata version as the variable `METADATA_VERSION`) in a file named `.env`.
-See `.env_template` for an example.
+Specify the GISAID sequence metadata version as the variable `METADATA_VERSION`) in`.env`.
 
 The environment variable `METADATA_VERSION` is typically the GISAID download date,
 but may be any string that matches the metadata file
@@ -38,21 +38,21 @@ Create a virtualenv using your favorite python version manager.
 
 Then,
 
-    ```sh
-        pip install -r requirements.py
-    ```
+```sh
+    pip install -r requirements.py
+```
 
 within the main project directory,
 
-    ```sh
-        pip install -e .
-    ```
+```sh
+    pip install -e .
+```
 
 Then make the `covmut_seasonal/main.py` executable
 
-    ```sh
-        chmod +x ./covmut_seasonal/main.py`
-    ```
+```sh
+    chmod +x ./covmut_seasonal/main.py`
+```
 
 **NOTE**:
     Tar and LZMA (`*.xz`) must be installed on the system in order to extract the file.
@@ -91,7 +91,6 @@ Adapted from ["Data Science 'cookiecutter' Template"](https://drivendata.github.
 
 ## Process
 
-
 ### Automatic
 
 1. Set `run_latest.sh` as an executable.
@@ -113,9 +112,9 @@ If the metadata file is already decompressed and in `{DATA_DIR}/raw/` comment ou
 
 Note: Refer to help documentation for an overview of optional arguments.
 
-    ```sh
-        ./covmut_seasonal/main.py --help
-    ```
+```sh
+    ./covmut_seasonal/main.py --help
+```
 
 1. Manually download `metadata_tsv_{year}_{month}_{day}.tar.xz` from [GISAID](https://gisaid.org); store in `./{DATA_DIR}/external`
 
@@ -124,6 +123,7 @@ Note: Refer to help documentation for an overview of optional arguments.
     ```sh
     ./covmut_seasonal/main.py extract metadata
     ```
+    
     This step can be skipped if the extracted file already exists as `./{DATA_DIR}/raw/metadata_{METADATA_VERSION}.tsv`
 
 3. Transform Country Latitudes into climate zones.
@@ -131,7 +131,7 @@ Note: Refer to help documentation for an overview of optional arguments.
     ```sh
     ./covmut_seasonal/main.py transform geoclimate
     ```
-
+    
 4. Transform extracted metadata into usable format.
 
     ```sh
