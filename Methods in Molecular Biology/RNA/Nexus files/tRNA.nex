@@ -1,0 +1,34 @@
+#NEXUS
+
+[!Data from : Sun and Caetano-Anollés, Meth Mol Biol, 2025; STOAT @2005]
+
+begin data;
+dimensions  ntax=5 nchar=24;
+format symbols = "0~9 A~U";
+charlabels
+	F_RL0220 F_RL0501 F_RL1662 F_RL2842 F_RL4000 F_RS8601
+	Q_RL0220 Q_RL0501 Q_RL1662 Q_RL2842 Q_RL4000 Q_RS8601
+	P_RL0220I P_RL0501 P_RL1662 P_RL2842 P_RL4000 P_RS8601
+	S_RL0220 S_RL0501 S_RL1662 S_RL2842 S_RL4000 S_RS8601
+	;
+matrix
+
+[Taxon]	[Characters]
+
+acceptor   GFGGGG000000IHIIII444444D_arm      1B6165101111A9A1ABAAAAAAanticodon  EGGG05000001EIIIEE766677V_arm      GAH418030213KIKFIM7A7FA7T_arm      GG8G8G002020IIIIII666666
+;
+end;
+
+begin assumptions;
+    typeset *tRNA = ord: 1-24;
+	charset F = 1-6;
+	charset Q = 7-12;
+	charset P = 13-18;
+	charset S = 19-24;
+	ancstates *ancestor = M:1-6, 0:7-12, M:13-18, 0:19-24;
+				[0 for Q and S; M for F and P]
+end;
+
+
+
+
