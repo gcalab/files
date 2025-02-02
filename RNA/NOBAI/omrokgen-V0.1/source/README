@@ -1,0 +1,39 @@
+
+
+        *************************
+        *                       *
+        *       OMROKGEN        *
+        *                       *
+        *************************
+
+Dette er et program som omrokerer DNA-strenger utfra 
+gitte forutsetninger. Programmet er skrevet av 
+Vegeir Knudsen og foelgende kriterier gjelder:
+
+a) Programmet leser en DNA-streng av en lengde paa
+   under 500 baser fra en input fil. Resultatet fra 
+   programmet skrives til en output fil. Baade imput og
+   output fila kan ha vilkaarlige navn. Et eksempel paa
+   en input og en output fil er gitt i testdata kata-
+   logen.
+
+b) Programmet genererer vilkaarlige kombinasjoner av
+   rekkefoelgene til basene i strengen, uten at antallet 
+   av de forskjellige basene i strengen forandres. Altsaa,
+   hvis den innleste strengen inneholder 24 A'er saa
+   vil ogsaa alle de andre manipulerte strengene ogsaa
+   inneholde 24 A'er. Tilsvarende gjelder ogsaa for de 
+   andre basene. Antallet strenger som omrokeres bestemmer
+   brukeren etter at programmet har startet! (F.eks. 10,
+   20,....,200).
+
+c) For aa kjoere programmet vil kommandoen vaere:
+        
+        >omrokgen input output 3
+
+	Her er 3 antallet genererte strenger du oensker.
+
+08.11.1999.
+
+VK.
+

@@ -1,0 +1,389 @@
+<!-- Creator     : groff version 1.18.1 -->
+<!-- CreationDate: Wed Oct 17 09:44:01 2007 -->
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta name="Content-Style" content="text/css">
+<title>stoat</title>
+</head>
+<body>
+
+<h1 align=center>stoat</h1>
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#OPTIONS">OPTIONS</a><br>
+<a href="#ENVIRONMENT">ENVIRONMENT</a><br>
+<a href="#EXAMPLES">EXAMPLES</a><br>
+<a href="#REFERENCES">REFERENCES</a><br>
+<a href="#CITE">CITE</a><br>
+<a href="#VERSION">VERSION</a><br>
+<a href="#LICENSE">LICENSE</a><br>
+<a href="#AUTHORS">AUTHORS</a><br>
+
+<hr>
+<a name="NAME"></a>
+<h2>NAME</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>stoat &minus; calculate statistical values of secondary
+structures</p>
+</td>
+</table>
+<a name="SYNOPSIS"></a>
+<h2>SYNOPSIS</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b>stoat</b> &minus;i name_of_input_file [&minus;o
+prefix_name_of_output_file] [&minus;x
+number_of_character_states] [&minus;h] [&minus;v] [&minus;f
+&quot;RNAfold_arguments&quot;] [&minus;t] [&minus;r]</p>
+</td>
+</table>
+<a name="DESCRIPTION"></a>
+<h2>DESCRIPTION</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><i>stoat</i> calculates four statistical values from the
+secondary structure of folded RNA strings. The RNA strings
+are fed to the program through an input file in the FASTA
+format and the secondary structure of the various input
+sequences are obtained by interactions with the RNAfold
+program from the Vienna package. The four statistical values
+are the Shannon entropy, the Forbenius norm, the
+Base-pairing propensity and the mean stem length. The
+calculations are presented in two NEXUS formated files where
+each row in the matrix represents the statistical values of
+each input sequence.</p>
+<!-- INDENTATION -->
+<p><i>stoat</i> also translates the secondary structure
+(either provided by the user or obtained from RNAfold) from
+the bracket notation to the DCSE format. This translator
+only translate each sequence separately and does not do any
+type of alignment between the various sequences in the input
+file.</p>
+</td>
+</table>
+<a name="OPTIONS"></a>
+<h2>OPTIONS</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>The following options can be used with <i>stoat.</i> For
+a list of the RNAfold options, please see the RNAfold man
+page at
+<i>http://www.tbi.univie.ac.at/~ivo/RNA/RNAfold.html</i></p>
+</td>
+</table>
+<!-- TABS -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="4" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+<p>&minus;i</p>
+</td>
+<td width="5%"></td>
+<td width="77%">
+
+<p>The name of the FASTA formated input file. The input
+file typically contains more than one RNA sequence.</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+<p>&minus;o</p>
+</td>
+<td width="5%"></td>
+<td width="77%">
+
+<p>The prefix name of the output file. The output file
+names ends with &rsquo;_l.nex&rsquo;, &rsquo;_g.nex&rsquo;
+and &rsquo;.dcse&rsquo;. The &rsquo;_l.nex&rsquo; file gives
+the character states relative to the min and max values of
+that run where as the &rsquo;_g.nex&rsquo; gives the
+character states relative to 0 and 1.</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+<p>&minus;x</p>
+</td>
+<td width="5%"></td>
+<td width="77%">
+
+<p>Change the number of character states in the NEXUS
+files. Default is 31 and maximum is 64.</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+<p>&minus;h</p>
+</td>
+<td width="5%"></td>
+<td width="77%">
+
+<p>Prints help to standard out.</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+<p>&minus;v</p>
+</td>
+<td width="5%"></td>
+<td width="77%">
+
+<p>Gives verbose output to standard out.</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+<p>&minus;f</p>
+</td>
+<td width="5%"></td>
+<td width="77%">
+
+<p>Arguments to be used by RNAfold. These parameters have
+to be enclosed in &quot; &quot;. The default arguments used
+with RNAfold are &quot;-p -d2 -noLP&quot;.</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+<p>&minus;t</p>
+</td>
+<td width="5%"></td>
+<td width="77%">
+
+<p>Use the constrained input structure and not the
+RNAfolded secondary structure to generate the DCSE
+format.</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+<p>&minus;r</p>
+</td>
+<td width="5%"></td>
+<td width="77%">
+
+<p>Make a flipped character state matrix. Rows becomes
+columns and vice versa.</p>
+</td>
+</table>
+<a name="ENVIRONMENT"></a>
+<h2>ENVIRONMENT</h2>
+<!-- TABS -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="5" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="5%">
+
+<p>PATH</p>
+</td>
+<td width="13%"></td>
+<td width="44%">
+
+<p>RNAfold needs to bee in $PATH.</p>
+</td>
+<td width="24%">
+</td>
+</table>
+<a name="EXAMPLES"></a>
+<h2>EXAMPLES</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>The minimum number of arguments needed to run stoat:</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="20%"></td>
+<td width="79%">
+<p><b>stoat</b> &minus;i name_of_input_file</p>
+</td>
+</table>
+<a name="REFERENCES"></a>
+<h2>REFERENCES</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>The equations used to calculate the Shannon entropy, the
+Forbenius norm, the Base-pairing propensity and the mean
+stem length were found in the two following papers:</p>
+</td>
+</table>
+<!-- TABS -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="4" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+<p>[1]</p>
+</td>
+<td width="5%"></td>
+<td width="77%">
+
+<p>E. A. Schultes, P. T. Hrabrer and T. H. LaBean,
+Estimating the Contributions of Selection and
+Self-Organization in RNA Secondary structure, Journal of
+Molecular Evolution, Pages 76-83, 1999.</p>
+</td>
+<tr valign="top" align="left">
+<td width="11%"></td>
+<td width="4%">
+
+<p>[2]</p>
+</td>
+<td width="5%"></td>
+<td width="77%">
+
+<p>P. P. Gardner, B. R. Holland, V. Moulton, M. Hendy and
+D. Penny, Optimal Alphabets for an RNA World, The Royal
+Society of London B, Pages 1177-1182, 2003.</p>
+</td>
+</table>
+<a name="CITE"></a>
+<h2>CITE</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>Please cite in the following manner if you choose to use
+stoat:</p>
+<!-- INDENTATION -->
+<p>V. Knudsen and G.Caetano-Anolles, Some title of a paper
+published in some journal.</p>
+</td>
+</table>
+<a name="VERSION"></a>
+<h2>VERSION</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>This man page documents stoat version 0.1.</p>
+</td>
+</table>
+<a name="LICENSE"></a>
+<h2>LICENSE</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>Copyright 1999-2007 by Vegeir Knudsen. All rights
+reserved.</p>
+<!-- INDENTATION -->
+<p>Redistribution and use in source and binary forms, with
+or without modification, are permitted provided that the
+following conditions are met:</p>
+</td>
+</table>
+<!-- TABS -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="4" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="13%"></td>
+<td width="2%">
+
+<p>1.</p>
+</td>
+<td width="5%"></td>
+<td width="77%">
+
+<p>Redistributions of source code must retain the above
+copyright notice, this list of conditions and the following
+disclaimer.</p>
+</td>
+<tr valign="top" align="left">
+<td width="13%"></td>
+<td width="2%">
+
+<p>2.</p>
+</td>
+<td width="5%"></td>
+<td width="77%">
+
+<p>Redistributions in binary form must reproduce the above
+copyright notice, this list of conditions and the following
+disclaimer in the documentation and/or other materials
+provided with the distribution.</p>
+</td>
+</table>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p><b><small>DISCLAIMER:</small></b></p>
+<!-- INDENTATION -->
+<p>THIS SOFTWARE IS PROVIDED BY THE AUTHOR &lsquo;&lsquo;AS
+IS&rsquo;&rsquo; AND ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+</td>
+</table>
+<a name="AUTHORS"></a>
+<h2>AUTHORS</h2>
+<!-- INDENTATION -->
+<table width="100%" border=0 rules="none" frame="void"
+       cols="2" cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="10%"></td>
+<td width="89%">
+<p>Vegeir Knudsen and Gustavo Caetano-Anolles.</p>
+</td>
+</table>
+<hr>
+</body>
+</html>

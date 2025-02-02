@@ -1,0 +1,38 @@
+#NEXUS
+
+[!Data from : Sun and Caetano-Anollés, Meth Mol Biol, 2025; STOAT @2005]
+
+BEGIN DATA;
+DIMENSIONS  NTAX=6 NCHAR=20;
+FORMAT SYMBOLS = "0~9A~U" [INTERLEAVE];
+charLABELS  
+		1F 2Q 3P 4S     [S^{-1}]  [acceptor]
+		5F 6Q 7P 8S     [S^{-1}]  [D-arm]
+		9F 10Q 11P 12S  [S^{-1}]  [anticodon]
+		13F 14Q 15P 16S [S^{-1}]  [E-arm]
+		17F 18Q 19P 20S [S^{-1}]  [T-arm]
+    ;
+
+MATRIX
+       [acceptor] [D-arm][anticodon][E-arm][T-arm] 
+1RL0220V   G0I4		11AA	E0E7	G0K7	G0I6
+1RL0501A   F0H4		B09A	G0I6	A3IA	G0I6
+1RL1662B   G0I4		61AA	G0I6	H0K7	82I6
+1RL2842Ch  G0I4		11AA	G0I6	42FF	G0I6
+1RL4000    G0I4		61AA	00E7	11IA	82I6
+1RS8601    G0I4		51BA	51E7	83M7	G0I6
+    ;
+end;
+
+
+begin assumptions;
+    typeset *tRNA = ord: 1-20;
+	charset F=1F 5F 9F 13F 17F;
+	charset Q=2Q 6Q 10Q 14Q 18Q;
+	charset P=3P 7P 11P 15P 19P;
+	charset S=4S 8S 12S 16S 20S;
+   ancstates *ancestor = M:1 5 9 13 17, 0: 2 6 10 14 18, M: 3 7 11 15 19, 0:4 8 12 16 20;
+end;
+
+
+

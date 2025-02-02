@@ -1,0 +1,457 @@
+>0000000001
+AUGCCGACGGUCAUAGGACGGGGGAAACACCCGGACUCAUUCCGAACCCGGAAGUUAAGCCCCGUUCCGUCCCGCACAGUACUGUGUUCCGAGAGGGCACGGGAACUGCGGGAACCGUCGGCUU
+..(((((((((....((((((((..(((..((((..((.....))..))))..)))...))))))))..(((((((.....((((((.((....))))))))....)))))))))))))))).. (-64.70)
+..(((((((((....((((((((..(((..((((..((.....))..))))..)))...)))))}))}.(((((({..{{.(((((,,((....))))))))..}})))))))))))))))).. [-67.89]
+ frequency of mfe structure in ensemble 0.0337322
+>0000000002
+UGCCCGACCCGGCCAUAGUGGCCGGGCAACACCCGGUCUCGUUUCGAACCCGGAAGUUAAGCCGGCCACGUCAGAACGGCCGUGAGGUCCGAGAGGCCUCGCAGCCGUUCUGAGCUGGGAUCGGGCACC
+(((((((((((((....((((((((..(((..((((..(((...)))..))))..)))...)))))))).((((((((((.((((((.((....)))))))).)))))))))))))))).))))))).. (-86.80)
+{((((((((((((....((((((((,{(((..((((..(({...}))..))))..)))..})))))))).((((((((((.((((((.((....)))))))).)))))))))))))))).))))))}.. [-89.19]
+ frequency of mfe structure in ensemble 0.145249
+>0000000003
+AGUGGUGGCCAUAUCGGCGGGGUUCCUCCCCGUACCCAUCCUGAACACGGAAGAUAAGCCCGCCAGCGUCCGGCAAGUACUGGAGUGCGCGAGCCUCUGGGAAAUCCGGUUCGCCGCCACYY
+.((((((((......((((((.((.....((((.............)))).....)).)))))).....((((......((((((.((....)))))))).....))))...)))))))).. (-50.82)
+.((((((((......((((((.((..{,.((((.............))))..},.}).))))))...{.((((......(,,(((.((....))))),,).....))))..})))))))).. [-53.00]
+ frequency of mfe structure in ensemble 0.0290578
+>0000000004
+UUAGGCGGCCACAGCGGUGGGGUUGCCUCCCGUACCCAUCCCGAACACGGAAGAUAAGCCCACCAGCGUUCCGGGGAGUACUGGAGUGCGCGAGCCUCUGGGAAACGCGGUUCGCCGCCACC
+...((((((....((((((((.(((.((.((((.............)))).)).))).)))))).))...(((.......((((((.((....))))))))......)))...))))))... (-51.14)
+...((((((....((((((((.(({.((.((((.............)))).)).})).)))))).))(..(((.......(,,(((.((....))))),,)......)))..)))))))... [-54.19]
+ frequency of mfe structure in ensemble 0.00713091
+>0000000005
+UUAGGCGGCCACAGCGGUGGGGUUGCCUCCCGUACCCAUCCCGAACACGGAAGAUAAGCCCACCAGCGUUCCAGGGAGUACUGGAGUGCGCGAGCCUCUGGGAAAUCCGGUUCGCCGCCACC
+...((((((....((((((((.(((.((.((((.............)))).)).))).)))))).)).......(((...((((((.((....))))))))....))).....))))))... (-53.12)
+...((((((....((((((((.(({.((.((((.............)))).)).})).)))))).(({{(((((......)))))}}))))(((((...,({....)))))))))))))... [-58.67]
+ frequency of mfe structure in ensemble 0.000123183
+>0000000006
+UUAGGCGGCCACAGCGGUGGGGUUGCCUCCCGUACCCAUCCCGAACACGGAAGAUAAGCCCACCAGCGUUCCGGGGAGUACUGGAGUGCGCGAGCCUCUGGGAAACCCGGUUCGCCGCCACC
+...((((((....((((((((.(((.((.((((.............)))).)).))).)))))).))...(((((.....((((((.((....))))))))....)))))...))))))... (-59.22)
+...((((((....((((((((.(({.((.((((.............)))).)).})).)))))).||(..(((((.....(||(((.((....))))).|)....)))))..)))))))... [-62.46]
+ frequency of mfe structure in ensemble 0.00520003
+>0000000007
+GUAGCGGCCACAGCGGUGGGGUUCCUCCCGUACCCAUCCCGAACACGGAAGAUAAGCCCACCAGCGUUCCGGGGAGUACUGGAGUGCGCGACCCUCUGGGAAACCGGGUUCGCCGCUACYY
+((((((((....((((((((.((.((.((((.............)))).))..)).)))))).))..(((((......((((((.........))))))....)))))...)))))))).. (-46.52)
+((((((((..,.((((((((.((.((.((((.............)))).))..)).)))))).)),,{(((({.....(,,{{|,,,......))),}),,..}},}),.,)))))))).. [-49.01]
+ frequency of mfe structure in ensemble 0.0175633
+>0000000008
+UUAAGGCGGCCAUAGCGGUGGGGUUACUCCCGUACCCAUCCCGAACACGGAAGAUAAGCCCGCCUGCGUUCCGGUCAGUACUGGAGUGCGAGCCUCUGGGAAAUCCGGUUCGCCGCCUACU
+...(((((((....((((((((.(((((.((((.............)))).)).))).)))))).))...((((......(((((((....)).))))).....))))...)))))))... (-47.32)
+...(((((((....((((((((.(((((.((((.............)))).)).))).)))))).))(..((((......(,,(((.......))),,).....))))..))))))))... [-51.49]
+ frequency of mfe structure in ensemble 0.00115395
+>0000000009
+UUAAGGCGGCCAUAGCGGUGGGGUUACUCCCGUACCCAUCCCGAACACGGAAGAUAAGCCCGCCUGCGUUCCGGUCAGUACUGGAGUGCGCGAGCCUCUGGGAAAUCCGGUUCGCCGCCUACU
+...(((((((....((((((((.(((((.((((.............)))).)).))).)))))).))...((((......((((((.((....)))))))).....))))...)))))))... (-55.42)
+...(((((((....((((((((.(((((.((((.............)))).)).))).)))))).))(..((((......(,,(((.((....))))).,).....))))..))))))))... [-58.31]
+ frequency of mfe structure in ensemble 0.00919891
+>0000000010
+UUAAGGCGGCCAUAGCGGUGGGGUUACUCCCGUACCCACCCGAACACGGAAGAUAAGCCCGCCUGCGUUCCGGUCAGUACUGGAGUGCGCGAGCCUCUGGGAAAUCCGGUUCGCCGCCUACU
+...(((((((....((((((((.(((((.((((............)))).)).))).)))))).))...((((......((((((.((....)))))))).....))))...)))))))... (-55.50)
+...(((((((....((((((((.(((((.((((............)))).)).))).)))))).))(..((((......(,,(((.((....))))).,).....))))..))))))))... [-58.41]
+ frequency of mfe structure in ensemble 0.00896281
+>0000000011
+UUAAGGCGGCCAUAGCGGUGGGGUUACUCCCGUACCCAUCCCGAACACGGAAGAUAAGCCCGCCUGCGUUCCGGUCAGUACUGGAGUGCGCGAGCCUCUGGGAAAUCCGGUUCGCCGCCUACU
+...(((((((....((((((((.(((((.((((.............)))).)).))).)))))).))...((((......((((((.((....)))))))).....))))...)))))))... (-55.42)
+...(((((((....((((((((.(((((.((((.............)))).)).))).)))))).))(..((((......(,,(((.((....))))).,).....))))..))))))))... [-58.31]
+ frequency of mfe structure in ensemble 0.00919891
+>0000000012
+UUGGCGACCAUAGCGGCGAGUGACCUCCCGUACCCAUCCCGAACACGGAAGAUAAGCUCGCCUGCGUUUCGGUCAGUACUGGAUUGGGCGACCCUCUGGGAAAUCUGAUUCGCCGCCACC
+.(((((........(((((((...((.((((.............)))).))....))))))).(((..((((......(((((..((....)).))))).....))))..)))))))).. (-40.92)
+.(((((,,,...{{(((((((...((.((((.............)))).))....))))))).||{..{{||,,....{,{((..((,...|},}}.,),....)))),,)))))))}.. [-43.88]
+ frequency of mfe structure in ensemble 0.0489972
+>0000000013
+UUAAGGCGGCCACAGCGGCGGGGCGACUCCCGUACCCAUCCCGAACACGGCAGAUAAGCCCGCCAGCGUUCCAGCGAGUACUGGAGUGUGCGAACCUCUGGGAAAACUGCCUCGCAAGAGGGGCC
+....(((..((...(((((((.((..((.((((.............)))).))....))))))).))......(((((..((((((.((....)))))))).........)))))....)).))) (-38.62)
+.......((((,{,{{((((((((..((.((((.............)))).))....))))))).||.{(((((......)))))}})).....((((((.((........)).),})))))))) [-46.15]
+ frequency of mfe structure in ensemble 4.92983e-06
+>0000000014
+UUAAGGCGGCCACAGCGGCGGGGCGACUCCCGUACCCAUCCCGAACACGGCAGAUAAGCCCGCCAGCGUUCCAGCGAGUACUGGAGUGUGCGAACCUCUGGGAAAACUGCCUCGCAAGAGGGGCC
+....(((..((...(((((((.((..((.((((.............)))).))....))))))).))......(((((..((((((.((....)))))))).........)))))....)).))) (-38.62)
+.......((((,{,{{((((((((..((.((((.............)))).))....))))))).||.{(((((......)))))}})).....((((((.((........)).),})))))))) [-46.15]
+ frequency of mfe structure in ensemble 4.92983e-06
+>0000000015
+CGGCGGCCAGAGCGGUGAGGUUCCACCCGUACCCAUCCCGAACACGGAAGUUAAGCUCGCCUGCGUUCUGGUCAGUACUGGAGUGAGCGAUCCUCUGGGAAAUCCAGUUCGCCGCCUU
+.((((((....((((((((.((....((((.............)))).....)).)))))).))...((((......((((((.((....)))))))).....))))...)))))).. (-41.82)
+.((((((....((((((((.((...,((((.............))))..,..)).)))))).))(..((((......(,,(((.((....))))),,).....))))..))))))).. [-45.16]
+ frequency of mfe structure in ensemble 0.00443082
+>0000000016
+UUAGGGCGGCCAGAGCGGUGAGGUUCCACCCGUACCCAUCCCGAACACGGAAGUUAAGCUCGCCUGCGUUCUGGUCAGUACUGGAGUGAGCGAUCCUCUGGGAAAUCCAGUUCGCCGCCCCU
+...(((((((....((((((((.((....((((.............)))).....)).)))))).))...((((......((((((.((....)))))))).....))))...))))))).. (-44.62)
+...(((((((....((((((((.((...,((((.............))))..,..)).)))))).))(..((((......(,,(((.((....))))),,).....))))..)))))))).. [-47.91]
+ frequency of mfe structure in ensemble 0.00481297
+>0000000017
+UUAAGGCGGCCAGAGCGGUGAGGUUCCACCCGUACCCAUCCCGAACACGGAAGUUAAGCUCACCUGCGUUCUGGUCAGUACUGGAGUGAGCGAUCCUCUGGGAAAUCCAGUUCGCCGCCCCUAUU
+....((((((....((((((((.((....((((.............)))).....)).)))))).))...((((......((((((.((....)))))))).....))))...))))))...... (-41.72)
+....((((((....((((((((.((...,((((.............)))).....)).)))))).))(..((((......(,,(((.((....))))),,).....))))..)))))))...... [-45.04]
+ frequency of mfe structure in ensemble 0.00461081
+>0000000018
+UUAAGGCGGCCAGAGCGGUGAGGUUCCACCCGUACCCAUCCCGAACACGGAAGUUAAGCUCACCUGCGUUCUGGUCAGUACUGGAGUGAGCGAUCCUCUGGGAAAUCCAGUUCGCCGCCCCUAUU
+....((((((....((((((((.((....((((.............)))).....)).)))))).))...((((......((((((.((....)))))))).....))))...))))))...... (-41.72)
+....((((((....((((((((.((...,((((.............)))).....)).)))))).))(..((((......(,,(((.((....))))),,).....))))..)))))))...... [-45.04]
+ frequency of mfe structure in ensemble 0.00461081
+>0000000019
+UUAAGGCGGCCAGAGCGGUGAGGUUCCACCCGUACCCAUCCCGAACACGGAAGUUAAGCUCACCUGCGUUCUGGUCAGUACUGGAGUGAGCGAUCCUCUGGGAAAUCCAGUUCGCCGCCCCU
+....((((((....((((((((.((....((((.............)))).....)).)))))).))...((((......((((((.((....)))))))).....))))...))))))... (-41.72)
+....((((((....((((((((.((....((((.............)))).....)).)))))).))(..((((......(,,(((.((....))))),,).....))))..)))))))... [-45.00]
+ frequency of mfe structure in ensemble 0.00491308
+>0000000020
+GUAGGCGGCCAAAGCGGCAGGGAAAGACCCGUACCCAUUCCGAACACGGAAGUGAAGCCUGCCAGCGUACCAGCUAGUACUGGAGUGGGAGACCCUCUGGGAGCGCUGGUUCGCCGCCUACUC
+(((((((((....((((((((.......((((.............))))........)))))).))..((((((.....((((((.((....))))))))....))))))..))))))))).. (-57.28)
+(((((((((....((((((((.......((({.............})))..,,....)))))).))(.((((((..,,.(,,(((.((....))))),,)..,,)))))).)))))))))).. [-60.04]
+ frequency of mfe structure in ensemble 0.0114305
+>0000000021
+XUAGGCGGCCGUAGCGGCGGGUGUCCUCCCGUACCCAUCCCGAACACGGAAGAUAAGCUCGCCUGCGUCCCGGCAAGUACUGGAGUGGGCGACCCUCUGGGAACGUCGAUUCGCCGCCUX
+..(((((((....(((((((((...((.((((.............)))).))....))))))).))....((((.....((((((.((....))))))))....))))....))))))). (-49.52)
+..(((((((,(...(((((((......)))((.((({..(((....)))..,,.....(((((,{(...((((......)))).),})))))...,,)))).))))))...}))))))). [-54.50]
+ frequency of mfe structure in ensemble 0.000310445
+>0000000022
+GAAGGCGGCCAGAGCGGUAGGGAAACACCCGUACCCAUUCCGAACACGGAAGUUAAGCCUCAGCGUAUCGUGAAGUACUGGAGUGAGCGAUCCUCUGGGAACCACGAGUCGCCGCCUUCCC
+(((((((((....((...(((..(((..((((.............))))..)))...)))..))...(((((.....((((((.((....))))))))....)))))...))))))))).. (-41.42)
+(((((((((....((...,(({.(((..((((.............))))..)))...)))..))|..(((((.....(,,(((.((....))))),,)....)))))..,))))))))).. [-43.79]
+ frequency of mfe structure in ensemble 0.0215221
+>0000000023
+GAAGGCGGCCAGAGCGGUGGGGAAACACCCGUACCCAUUCCGAACACGGAAGUUAAGCCCACCAGCGUACCGUGAAGUACUGGAGUGAGCGAUCCUCUGGGAACCACGAGUCGCCGCCUGCC
+..(((((((....((((((((..(((..((((.............))))..)))...)))))).))....((((.....((((((.((....))))))))....))))....)))))))... (-45.52)
+..(((((((....((((((((..(((..((((.............))))..)))...)))))).)){.((((((.....(,,(((.((....))))),,)....)))).))})))))))... [-48.23]
+ frequency of mfe structure in ensemble 0.0124055
+>0000000024
+GUAGGCGGCCAGAGCGGUAGGGAAACACCCGUACCCAUUCCGAACACGGAAGUUAAGCCUACCAGCGUAUCGUGAAGUACUGGAGUGAGCGAUCCUCAGGGAACCACGAGUCGCCGCCUACC
+(((((((((....((((((((..(((..((((.............))))..)))...)))))).))...(((((.....((.(((.((....))))).))....)))))...))))))))). (-46.02)
+(((((((((....((((((((..(((..((((.............))))..)))...)))))).)),..(((((.....((.(((.((....))))),)}....)))))..,))))))))). [-47.83]
+ frequency of mfe structure in ensemble 0.0532567
+>0000000025
+GUAGGCGGCCAGAGCGGUAGGGAAACACCCGUACCCAUUCCGAACACGGAAGUUAAGCCUACCAGCGUAUCGUGAAGUACUGGAGUGAGCGAUCCUCUGGGAACCGCGGUUCGCCGCCUGCC
+(((((((((....((((((((..(((..((((.............))))..)))...)))))).))..((((((.....((((((.((....))))))))....))))))..))))))))). (-48.22)
+(((((((((....((((((((..(((..((((.............))))..)))...)))))).)){.((((((.....(,,(((.((....))))),,)....)))))).)))))))))). [-50.86]
+ frequency of mfe structure in ensemble 0.0137792
+
+>0000000026
+UCGCGGCCAGGGCGGAGGGGAAACACCCGUACCCAUUCCGAACACGGAAGUGAAGCCCUCCAGCGAACCAGCUAGUACUAGAGUGGGAGACCCUCUGGGAGCGCUGGUUCGCCGCCACC
+....(((......((((((...((..((((.............))))..))....)))))).((((((((((.....((((((.((....))))))))....)))))))))).)))... (-55.02)
+..(((((....((((((((...,({{((((.............))))..))}...)))))).}}((((((((..,,.((((((.((....))))))))..,,))))))))))))).... [-58.62]
+ frequency of mfe structure in ensemble 0.00653229
+>0000000027
+GGCAGCGGCCAUAGCGGUGGGGCGACACCCGUACCCAUUCCGAACACGGAAGUUAAGCCCACCAGCGUACCGGGAAGUACUGGAGUGAGCGAUCCUCUGGGAAGCGGGGUUCGCCGCCUGCCC
+(((((((((....((((((((..(((..((((.............))))..)))...)))))).))...(((.......((((((.((....))))))))....))).....)))).))))). (-46.12)
+(((((((((....(((((((({((((..((((.............})))..))}..})))))).)),..(({.......{||(((.({....))))),,)...,)}}},,.,))))}})))). [-49.24]
+ frequency of mfe structure in ensemble 0.00631011
+>0000000028
+GUAGGCGGCCAGAGCGGUAGGGAAACACCCGUACCCAUUCCGAACACGGAAGUUAAGCCUACCAGCGUAUCGUGAAGUACUGGAGUGAGCGAUCCUCAGGGAACCACGAGUCGCCGCCUACC
+(((((((((....((((((((..(((..((((.............))))..)))...)))))).))...(((((.....((.(((.((....))))).))....)))))...))))))))). (-46.02)
+(((((((((....((((((((..(((..((((.............))))..)))...)))))).)),..(((((.....((.(((.((....))))),)}....)))))..,))))))))). [-47.83]
+ frequency of mfe structure in ensemble 0.0530655
+>0000000029
+GAAGGCGGCCAGAGCGGUGGGGAAACACCCGUACCCAUUCCGAACACGGAAGUUAAGCCCACCAGCGUACCGUGAAGUACUGGAGUGAGCGAUCCUCUGGGAACCACGAGUCGCCGCCUGCC
+..(((((((....((((((((..(((..((((.............))))..)))...)))))).))....((((.....((((((.((....))))))))....))))....)))))))... (-45.52)
+..(((((((....((((((((..(((..((((.............))))..)))...)))))).)){.((((((.....(,,(((.((....))))),,)....)))).))})))))))... [-48.23]
+ frequency of mfe structure in ensemble 0.0124055
+>0000000030
+GUAGGCGGCCAGAGCGGUAGGGAAACACCCGUACCCAUUCCGAACACGGAAGUUAAGCCUACCAGCGUAUCGUGAAGUACUGGAGUGAGCGAUCCUCUGGGAACCACGAGUCGCCGCCUACY
+(((((((((....((((((((..(((..(((...............)))..)))...)))))).))...(((((.....((((((.((....))))))))....)))))...))))))))). (-47.36)
+(((((((((....((((((((..(((..(((...............)))..)))...)))))).)),..(((((.....(,,(((.((....))))),,)....)))))..,))))))))). [-48.89]
+ frequency of mfe structure in ensemble 0.0829276
+>0000000031
+XUGGCGGCUAUAGCGGCGGGGAAACACCCGUACUCAUCCCGAACACGGACGUUAAGCCCGCCUGCGUUUCGGCGAGUACUGGAGUGCGCGAGCCUCUGGGAGAGCUGAUUCGCCGUCACU
+.(((((((....((((((((..(((..((((..((.....))..))))..)))...)))))).))...(((((.....((((((.((....))))))))....)))))...))))))).. (-53.80)
+.{((((((....((((((((..(((..((((..((.....))..))))..)))...)))))).))(..(((((.....(,,(((.((....))))),,)....)))))..)))))))}.. [-56.68]
+ frequency of mfe structure in ensemble 0.0093992
+>0000000032
+AGGUUGGCGGCCAUAGCGGAGGGGCCAUACCUGGUCUCGUUUCGAUCCCAGAAGUGAAGUCCUCCUGCGUUUUGUUGUUGUACUGUGGACGAGAGUCUAUGGGAAGCUCAUAACGCUGCCGGCCUC
+(((((((((((....((((..(((((((..((((..(((...)))..))))..)))..))))..))))........(((...((((((((....))))))))..))).......))))))))))). (-55.10)
+{((((((((((....((((.,(((({{(..((((..(({...}))..))))..)))..)))),.))))(((.((..(((...({{(((((....)))))}})..))).)).)))))))))))))}. [-60.25]
+ frequency of mfe structure in ensemble 0.000234292
+>0000000033
+UAGGUUUGGCGGUCAUAGCGAUGGGGUUACACCUGGUCUCGUUUCGAUCCCAGAAGUUAAGUCUUUUCGCGUUUUGUUUGUGUACUAUGGGUUCCGGUCUAUGGGAAUUUCAUUUAGCUGCCAGCUUUUU
+.(((((.((((((....((((.(((.((((..((((..(((...)))..))))..)).)).)))..))))..............(((((((......)))))))............)))))))))))... (-34.40)
+.{(({{(((((((....((((.{((.{(((..((((..(({...}))..))))..)},}).)))..)))).....,........{{((((({{{{..,,,,,})}}}},.}}....))))))))))}... [-38.71]
+ frequency of mfe structure in ensemble 0.000911902
+>0000000034
+UGGUACGGCGGUCAUAGCGGGGGGGCCACACCCGAACCCAUCCCGAACUCGGAAGUUAAGCCCCCCAGCGAUGCCCCGAGUACUGCCAUCUGGCGGGAAAGGGGCGACGCCGCCGGCCAC
+((((.(((((((....((.(((((((.((..((((.............))))..))...))))))).))..((((((.....(((((....)))))....))))))..))))))))))). (-63.52)
+{(((.(((((((....((.(((((((.{(..((((.............))))..))...))))))).)),.((((((.....(((((....)))))....)))))).}))))))))))}. [-65.13]
+ frequency of mfe structure in ensemble 0.073219
+>0000000035
+UGGUACGGCGGUCAUAGCGGGGGGGCCACACCCGAACCCAUCCCGAACUCGGAAGUUAAGCCCCCCAGCGAUGCCCCGAGUACUGCCAUCUGGCGGGAAAGGGGCGACACCGCCGGCCAC
+((((.(((((((....((.(((((((.((..((((.............))))..))...))))))).))..((((((.....(((((....)))))....))))))..))))))))))). (-63.22)
+{(((.(((((((....((.(((((((.{(..((((.............))))..))...))))))).))..{(((((.....(((((....)))))....)))))}..))))))))))}. [-64.49]
+ frequency of mfe structure in ensemble 0.126947
+>0000000036
+AGCUAGUGGCCAUAGUGGCAGGGACCCUCCUGUUCACCUUCCGAACACAGAAGAUAAGCCUGCCCACGUUGCUUACUGUACUGAGGUACAGAGUCCUCGGGAAAUCUGCGUCGCUGCUAGCGGN
+.(((((..((....((((((((....((.((((.............)))).)).....)))).))))...((........((((((........)))))).......))...))..)))))... (-40.18)
+.(((((,,((....((((((((....((.((((.............)))).)).....))))))})){.{((........((((((........)))))).......))).,)),,)))))... [-42.81]
+ frequency of mfe structure in ensemble 0.0140999
+>0000000037
+CAUAACGGUCAUAGCGGAGGAGUUACAUCCGAUCCCAUCCCGAUCUCGGAAAUUAAGCCCUCCUGCGAUUCAUUAAGUACUGCCAUCUGGUGGGAACAAUGUGACGCUGUUAGUC
+..(((((((....(((((((.(((...(((((((.......))..))))).....)))))))).))...((((...((.(((((....)))))..))...)))).)))))))... (-31.30)
+..((((((({{{{(((((((.(((...((((({{.......}}..})))).....)))))))).))....,,,...({.(,,((....)),,)..})..})))).}))))))... [-34.62]
+ frequency of mfe structure in ensemble 0.00747762
+>0000000038
+UGAUACGGCGGUCAUAGCGGGGGUGUAACAUCCGAUCCCAUCCCGAUCUCGGAAAUUAAGCCCUCCAGCGAUUCCUUAAGUACUGCUAUCUAGUGGGAACAAGGUGACGCUGCCGAUCAC
+((((.(((((((....((((((((.(((..(((((((.......))..)))))..))).)))).)).))....((((.....(((((....)))))....))))....))))))))))). (-38.30)
+{(((.(((({{{....{{((((({.(((..((((({{.......}}..}))))..))).}))),)}.||{...((((..,,.(,,((....)),})..,,)))).,.}))))))))))}. [-42.44]
+ frequency of mfe structure in ensemble 0.00120399
+>0000000039
+UGACAUAACGGUCAAAGCGGAGGUGUAACAUCCGAUCCCAUCCCGAUCUCGGAAAUUAAGCCCUCCAGCGAUUCUUUAAGUACUGCUAUCUAGUGGGAACAAAGUGACGCCGUUAGUCAC
+((((.(((((((....(((((((..(((..(((((((.......))..)))))..)))...))))).))..........((.(((((....)))))..))........))))))))))). (-33.40)
+{(((.(((((((....(((((((..(((..((((({{.......}}..}))))..))).,,))))).))....{,,,..{{.(,,((....)),,)..,,,,}},,..))))))))))}. [-37.21]
+ frequency of mfe structure in ensemble 0.00208081
+>0000000040
+UGACAUAACGGUCAUAGCGGAGGUGUAACAUCCGAUCCCAUUCCGAUCUCGGAAAUUAAGCCCUCCAGCGAUUUCUUAAGUACUGCCAUACGGUGGGAACAAGAUGACGCUGUUAGUCAC
+((((.(((((((....(((((((..(((..(((((((.......))..)))))..)))...))))).))....((((.....(((((....)))))....))))....))))))))))). (-34.30)
+{(((.((((((({,..(((((((..(((..((((({{.......}}..}))))..))).,,))))).))....{(({..,,.(,,((....)),,)..,,}))),},,})))))))))}. [-38.18]
+ frequency of mfe structure in ensemble 0.00185813
+>0000000041
+UGAUACGGCGGUCAUAGCGGAGGUGUCCCAUCCGAUCCCAUUCCGAUCUCGGAAAUUAAGCCCUCCAGCGAUUUCUUAAGUACUGCCAUAUGGUGGGAACAAGAUGACGCUGCCGAUCAC
+((((.(((((((....(((((((.((....(((((.............)))))......))))))).))....((((..((...(((....)))....))))))....))))))))))). (-33.22)
+{(((.((((((({{,.(((((((.((....(((((.............)))))......))))))).))....,{{,.......(((....))).....,,}})}},,})))))))))}. [-36.34]
+ frequency of mfe structure in ensemble 0.00635928
+>0000000042
+NUUAGCGGCCAUGGCGGCAGGGUUAACUCCUGUACCCAUCCCGAACACAGAAGAUAAGCCUGCCAGCGUUGUAUACGGUACUAAAGUGCGAGAGCCUUUGGGAACUAUACUCCGCUGCUGAUCAAU
+.((((((((....((((((((.(((.((.((((.............)))).)).))).)))))).))...(((((.....((((((.((....))))))))....)))))...))))))))..... (-45.32)
+.(((((,((....||((((((.(((.((.((((.............)))).)).))).)))))),||(..(((({.,{{.((((((.((....))))))))..}})))))..)))))))))..... [-47.93]
+ frequency of mfe structure in ensemble 0.0144692
+>0000000043
+NNUUGGCGGCCAUGGCGGCGGGGUAACUCCUGUACCCAUCCCGAACACAGCAGAUAAACCCGCCCGCGUUCCGUACGGUACUAAAGUGCGCGAGCCUUUGGGAACUGCGGAUAGCUGCCAGCUCC
+..((((((((....((((((((....((.((((.............)))).)).....)))).))))..(((((..(((.((((((.((....))))))))..))))))))..)))))))).... (-49.82)
+..,(((((((....((((((((....((.((((.............)))).)).....))))))}))..(((((,.{((.((((((.((....))))))))..))))))))..))))))),.... [-52.46]
+ frequency of mfe structure in ensemble 0.013709
+>0000000044
+GGUGGCGGCCAUAGCGGCGGGGCAAUUCCUGUACCCAUCCCGAACACAGAAGAUAAGCCCGCCUGCGUUCUAUACUGUACUAAAGUAUGAGAGUCUUUGGGAAAUAUGGAACGCUGCCACCAAC
+((((((.........(((((.((...((((((.............))))..))...))))))).((((((((((.....((((((.((....))))))))....)))))))))).))))))... (-47.62)
+(((((((((....(((((((({(..,({((((.............))))..)}...))))))).))((((((((.....((((((.((....))))))))....)))))))))))))))))... [-52.97]
+ frequency of mfe structure in ensemble 0.000170991
+>0000000045
+GGAGUUUGGCGGCCAUAGCGGCGGGGCAAUUCCUGUACCCAUCCCGAACACAGAAGAUAAGCCCGCCUGCGUUCUAUACUGUACUAAAGUAUGAGAGUCUUUGGGAAAUAUGGAACGCUGCCAUCUCC
+((((..((((.........(((((.((...((((((.............))))..))...))))))).((((((((((.....((((((.((....))))))))....)))))))))).)))).)))) (-46.22)
+((((..(((((((....(((((((({(..,({((((.............))))..)}...))))))).))((((((((.....((((((.((....))))))))....))))))))))))))).)))) [-51.62]
+ frequency of mfe structure in ensemble 0.000157025
+>0000000046
+GUGGCGGCGGCCACAGCGGCCGGGGCCACACCCGGGCCACAUCUCGAACCCGGAAGUUAAGCCCGGCCGCGUCCCGGGUGGUACUGCGCUCCGAGAGGGCGCGGGAAGCCCGGGAUGCCGCCGCCGUCCCC
+..(((((((((....(((((((((...((..(((((............)))))..))....))))))))).((((((((....((((((.((....))))))))...)))))))).)))))))))...... (-87.40)
+.{(((((((((....(((((((((,{.{(..(((((............)))))..))...))))))))))(((((((((....((((((.((....))))))))...))))))))))))))))))}..... [-90.87]
+ frequency of mfe structure in ensemble 0.00495942
+>0000000047
+AGUUUGGCGGCCAUAGCGGUAGGGCAACUCCUGUACCCAUCCCGAACACAGCAGAUAAGCCUGCCCGCGUUCCUUACUGUACUGAAGUGUGCGAGCCUUCGGGAACUCUGGAUCGCUGCCAAGCUCACC
+(((((((((((....((((..((((..((.((((.............)))).))....))))..))))..(((.....((.((((((.((....))))))))..))...)))..))))))))))).... (-45.32)
+{((((((((((....((((..((((..{{.((({.............,}}),})....)))),.))))(.(((.....((((......))))(({((....))..))).))).}))))))))))}.... [-49.28]
+ frequency of mfe structure in ensemble 0.00161461
+>0000000048
+AGUUUGGCGGCCAUAGCGGCAGGGUAACUCCUGUACCCAUCCCGAACACAGCAGAUAAGCCUGCCCCGCGUUCCUUACUGUACUGAAGUGUGCGAGCCUUCGGGAACUCUGGAUCGCUGCCAAAUUCACC
+(((((((((((....((((((((.((.((.((((.............)))).)).))..))))))..))..(((.....((.((((((.((....))))))))..))...)))..))))))))))).... (-42.42)
+{((((((((((....((((((((,,,.,|}||||.............,,,|{||.,,..,)))),,}))(.(((.....{,.((((((.((....))))))))..}}...))).}))))))))))}.... [-45.47]
+ frequency of mfe structure in ensemble 0.00709845
+>0000000049
+NNUUGGCGGUCAUGACGGCAGGGUAACUCCUGUACCCAUUCCGAACACAGCAGAUAAGCCUGCCCGUGUUCCUUACUGUACUGAAGUGUGCGAGCCUUCGGGAACUCUGGAUCGCUGCCAACUUC
+..((((((((((((..((((((.((.((.((((.............)))).)).))..)))))))))).(((.....((.((((((.((....))))))))..))...)))..)))))))).... (-37.72)
+..{(((((((,,,,,,((((((.((.((.((((.............)))).)).))..)))))))))|.(((.....{{.((((((.((....))))))))..}}...))).,)))))))}.... [-40.06]
+ frequency of mfe structure in ensemble 0.0430673
+
+>0000000050
+GGAGUUUGGCGCCAUAGCGGCAGUGUAACUCCUGUACCCAUCCCGAACACAGUAGAUAAGCCUGCCCGCGUUCCUUACUGUACUGAAGUGUGCGAGCCUUCGGGAACUCUGGAUCGCUGCCAUACUCACC
+.((((.((((........(((((.((..((.((((.............)))).))....))))))).(((.(((.....((.((((((.((....))))))))..))...))).))).)))).))))... (-40.32)
+.((((.((((({....}}(((((.{(,.((.((((.............}))).)).,,.}}))))).(((.(((.....((((......))))(({((....))..)}).))).))).)))).))))... [-44.67]
+ frequency of mfe structure in ensemble 0.00139315
+>0000000051
+AGUUUGGCGGCCAUAGCGGCAGGGCAACUCCUGUACCCAUCCCGAACACAGAAGAUAAGCCUGCCCGCGUUCCUUACUGUACUGAAGUGUGCGAGCCUUCGGGAACUCUGGAUCGCUGCCAAGCUCAC
+(((((((((((....((((((((....((.((((.............)))).)).....)))).))))..(((.....((.((((((.((....))))))))..))...)))..)))))))))))... (-44.62)
+{((((((((((....((((((((,{..((.((((.............)))).))....}))))}))))(.(((.....((((......))))(((((....))..))).))).}))))))))))}... [-49.43]
+ frequency of mfe structure in ensemble 0.000405605
+>0000000052
+AGUUUGGCGGCCAUAGCGGCAGGGCAACUCCUGUACCCAUCCCGAACACAGAAGAUAAGCCUGCCCGCGUUCCUUACUGUACUGAAGUGUGCGAGCCUUCGGGAACUCUGGAUCGCUGCCAAGCUCACC
+(((((((((((....((((((((....((.((((.............)))).)).....)))).))))..(((.....((.((((((.((....))))))))..))...)))..))))))))))).... (-44.62)
+{((((((((((....((((((((,{..((.((((.............)))).))....}))))}))))(.(((.....((((......))))(((((....))..))).))).}))))))))))}.... [-49.43]
+ frequency of mfe structure in ensemble 0.000405595
+>0000000053
+GAUCUGGCAGCCAUAGCGGCAGGUGUAAUCCUGUACCCAUCCCGAACACAGUAGAUAAGCCUGCCCGCGUUCCUUGCCUGUACUGAAGUGUGCGAGCUUCGGGAACUCUGGAUCGUGCCAUAUCAGU
+(((.(((((.(((..(((((((((...(((((((.............))))..)))..))))).))))((((((.((.(((((......))))).))...))))))..)))....))))).)))... (-44.82)
+(((.(((((.(((..(((((((((...(((((((.............))))..)))..)))))))}))((((((.((.{((((......))))}.))...))))))..)))....))))).)))... [-48.71]
+ frequency of mfe structure in ensemble 0.046516
+>0000000054
+UCAAUAGCGGCCACAGCAGGUGUGUCACACCCGUUCCCAUUCCGAACACGGAAGUUAAGACACCUCACGUGGAUGACGGUACUGAGGUACGCGAGUCCUCGGGAAAUCAUCCUCGCUGCUAUUGUU
+.((((((((((......((((((...((..((((.............))))..))....)))))).....((((((.....((((((.((....))))))))....))))))..)))))))))).. (-46.22)
+.((((((((((......,(({(({{{((..((((.............))))..))...}))))}},..(.((((((.....((((((.((....))))))))....)))))).))))))))))).. [-48.74]
+ frequency of mfe structure in ensemble 0.0168244
+>0000000055
+GGUUUUGGCGGUCAUGGCGUGGGGGUUAUACCUGAUCUCGUUUCGAUCUCAGUAGUUAAGUCCUGCUGCGUUGUGGGUGUGUACUGCGGUGUUUUGCUGUGGGAAGCCCAUUUCACUGCCAGCCAUUCA
+(((..(((((((....((((((((.(((...((((..(((...)))..))))....))).)))))).))...((((((.....(((((((.....)))))))...))))))...))))))))))..... (-45.70)
+(((..(((((((.,..((({{(((.(((,,,((((..(({...}))..))))..,.})).)))}.).)),,.{|((((.....(,,((((.....)))),,)...))))},...))))))))))..... [-48.68]
+ frequency of mfe structure in ensemble 0.00799211
+>0000000056
+GUUUUGGCGGUCAUGGCGUGGGGGUUUAUACCUGAUCUCGUUUCGAUCUCAGUAGUUAAGUCCUGCUGCGUUGUGGGUGUGUACUGCGGUUUUUUGCUGUGGGAAGCCCACUUCACUGCCAGACCACCC
+.....((.((((.(((((((.((..(((...((((..(((...)))..))))....)))..)).........((((((.....(((((((.....)))))))...))))))..))).)))))))).)). (-47.10)
+.....((.((((.((((((((((,((,{{{{{(((,,{{,...,)),,}}})|||,.}).,))}}),,....((((((.....(,,((((.....)))),,)...))))))..,)).)))))))).)). [-51.60]
+ frequency of mfe structure in ensemble 0.000678249
+>0000000057
+GGUUUUGGCGGUCAUGGCGUGGGGGUUUAUACCUGAUCUCGUUUCGAUCUCAGUAGUUAAGUCCUGCUGCGUUGUGGGUGUGUACUGCGGUUUUUUGCUGUGGGAAGCCCACUUCACUGCCAGACCA
+(((((.((((((....((((((((.((.((..((((..(((...)))..))))..)).)).)))))).))...((((((.....(((((((.....)))))))...))))))...))))))))))). (-49.10)
+((((((((((((...,(((,,(((.{({({,.((((..(({...}))..)))),.,.,)).,))}.).))}},((((((.....(,,((((.....)))),,)...))))))...))))))))))). [-53.10]
+ frequency of mfe structure in ensemble 0.00152474
+>0000000058
+GUUGGCGGUCAUGGCGUGGGGUUUAUACCUGAUCUCGUUUCGAUCUCAGUAGUUAAGUCCUGCUGCGUUGUGGGUGUGUACUGCGGUUUUUUGCUGUGGGAAGCCCACUUCACUGCCAGACAA
+.((((((((....(((((((..(((...((((..(((...)))..))))....)))..))))).))...((((((.....(((((((.....)))))))...))))))...)))))))).... (-45.60)
+{((((((((....((({{((..(((,,.((((..(({...}))..))))....)))..)),,).))...((((((.....(,,((((.....)))),,)...))))))...)))))))},}.. [-48.66]
+ frequency of mfe structure in ensemble 0.00702124
+>0000000059
+GUUGGCGGUCAUGGCGUGGGGUUAAUACCUGAUCUCGUUUCGAUCUCAGUAGUUAAGUCCUGCUGCGUUGUGGGUGUGUACUGCGGUUUUUUGCUGUGGGAAGCCCACUUCACUGCCAGCACCC
+(((((((((...((((.(((.(((((..((((..(((...)))..))))..))))).))))))).....((((((.....(((((((.....)))))))...))))))...))))))))).... (-50.20)
+(((((((((...{(((.(((,(((((..((((..(({...}))..))))..))))).)))))),},...((((((.....(,,((((.....)))),,)...))))))...))))))))).... [-52.10]
+ frequency of mfe structure in ensemble 0.0455074
+>0000000060
+GGGGCAUGGCGGUCAUGGCGCAGGGGUUAUACCUGAUCUCGUUUCGAUCUCAGUAGUUAAGUCCUGCUGCGUUGUGGGUGUGUACUGCGGUUUUUUGCUGUGGGAAGCCCACUUCACUGCCAGCCACU
+..(((.(((((((....((((((((.(((...((((..(((...)))..))))....))).)))))).))...((((((.....(((((((.....)))))))...))))))...))))))))))... (-54.30)
+..(((.(((((({....((((((((.(((...{(((..((,...,))..))))....})).)))))).))...((((((.....(,,((((.....)))),,)...))))))...)))))))))).,. [-56.54]
+ frequency of mfe structure in ensemble 0.0263448
+>0000000061
+GGGUUUUGGCGGUCAUGGCGUGGGGGUUUAUACCUGAUCUCGUUUCGAUCUCAGUAGUUAAGUCCUGCUGCGUUGUGGGUGUGUACUGCGGUUUUUUGCUGUGGGAAGCCCACUUCACUGCCAGACCACCC
+(((((((((((((....((((((((.((.((..((((..(((...)))..))))..)).)).)))))).))...((((((.....(((((((.....)))))))...))))))...)))))))))..)))) (-50.70)
+(((((((((((((...,(((,,(((.{({({,,((((..(({...}))..)))),.,.,)).,))}.).))}},((((((.....(,,((((.....)))),,)...))))))...)))))))))..)))) [-54.12]
+ frequency of mfe structure in ensemble 0.00390892
+>0000000062
+UGAUAUAACGGUCAUAGCGGAGGAGCCACAUCCGAUCCCGUCCCGAUCUCGGAAAUUAAGCCCUCCAGCGAUACCCUAAGUACUGCCAUUUGGUGGGAACAGGGUGACGCUGUUGAUCAC
+.........(((((....(((((.((....(((((...((...))...)))))......))))))).(((.((((((.....(((((....)))))....)))))).)))...))))).. (-40.50)
+.........(((({..{{(((((.((....(((((...,,...,)...)))))......))))))){(((.((((((..,,.(,,((....)),,)..,,)))))).)))))}))))).. [-44.80]
+ frequency of mfe structure in ensemble 0.00129723
+>0000000063
+GGUACGGCGACCAUAGCGGGGGGGCCACACCUGAACCCGUUCCGAUCUCAGAAGUUAAGCCCCCCUGCGUUGGAGGUGGUACUGCAACGUUAGUUGCGGGAAGCCUCCAACGUCGCCGGCCCA
+((..(((((((....((((((((((.((..((((...((...))...))))..))...))))))))))(((((((((....(((((((....)))))))...))))))))))))))))..)). (-69.70)
+((..(((((((....((((((((((.((..((((...(,...,)...))))..))...))))))))))(((((((((....(((((((....)))))))...))))))))))))))))..)). [-74.54]
+ frequency of mfe structure in ensemble 0.254664
+>0000000064
+GUUUCGUGGGAGGGCCAUAGCGGCCCGGGAACCACCCGUACCCAUCUCGAACACGGAAGUUAAGCCGGGCCGCGUCCCGAGUGGUACUGCCCCGCGAAGGGGUGGGAAGCUCGGGAUGCCC
+...........((((....(((((((((.(((...((((.............))))..)))...))))))))).((((((((....(((((((.....)))))))...)))))))).)))) (-61.12)
+{,{{.{{{{{.(((({...,,|||||(({.....}}},..)))},...}}},,|||..},....)))||},||(((((((((....(,,((((.....)))),,)...)))))))))))}} [-64.69]
+ frequency of mfe structure in ensemble 0.00420596
+>0000000065
+UUAAGGCGGCCAUCGCGGCGGGGUUCCUCCCGUACCCAUCCCGAACACGGAAGAUAAGCCUGCCUGCGUAUUGGUGAGUACUGGAGUGGGAGACCCUCUGGGAGAGCCGAUUCGCCGCCCCUACU
+....((((((...(((((((((.((.((.((((.............)))).))..)).)))))).))).((((((.....((((((.((....))))))))....))))))..))))))...... (-52.02)
+....((((((...{((((((((.((.((.((((.............}))).))..}).)))))).))|.{(((((.....(,,(((.((....))))),,)....)))))).,))))))...... [-54.19]
+ frequency of mfe structure in ensemble 0.0410204
+>0000000066
+UUACGGCGGCCACAGCGGCGAGGUACCUCCCGUACCCAUCCCGAACACGGAAGAUAAGCUCGCCUGCGUUUCGGUCAGUACUGGAGUGGGCGACCCUCUGGGAACCCCGAUUCGCCGCCACCACUC
+....((((((....((((((((.((.((.((((.............)))).)).))..)))))).))...((((......((((((.((....)))))))).....))))...))))))....... (-48.72)
+....((((((....((((((((((((.....))))}..,,(((....)))..,,,...,))))).))(..((((...,,.(,,(((.((....))))),,)..,,.))))..)))))))....... [-53.02]
+ frequency of mfe structure in ensemble 0.000933783
+>0000000067
+UAAGGCGGCCAUAGCGGCGGGGUUCCUCCCGUACCCAUCCCGAACACGGAAGAUAAGCCCGCCUGCGUAUUGGUGAGUACUGGAGUGGGAGACCCUCUGGGAGAGCUGAUUCGCUGCUUUA
+(((((((((....((((((((.((.((.((((.............)))).))..)).)))))).))..((..((.....((((((.((....))))))))....))..))..))))))))) (-48.62)
+,{{{{{{{{....{{{{{{{{.{,.,{.{{{,.............,}}}.,}..,}.}}}}}}.}},.,{..{{.....{..{{{.{{....}}}}}..}....}}..},.,}}}}}}}}, [-51.98]
+ frequency of mfe structure in ensemble 0.00428049
+>0000000068
+AAGGCGGCCAUAGCGGCGGGGUCCCUCCCGUACCCAUCCCGAACACGGAAGAUAAGCCCGCCUGCGUAUUGGUGAGUACUGGAGUGGGAGACCCUCUGGGAGAGCCGAUUCGCCGCCUU
+((((((((....((((((((....((.((((.............)))).)).....)))))).))..((((((.....((((((.((....))))))))....))))))..)))))))) (-52.92)
+,{{{{{{{....,{{{{{{,....,,.{{{,..............}}}..,.....,,,,,,.}},.,{{{{{.....{..{{{.{{....}}}}}..}....}}}},,..}}}}}}}, [-56.30]
+ frequency of mfe structure in ensemble 0.00414384
+>0000000069
+AAGGCGGCCAUAGCGGCGGGGUCCCUCCCGUACCCAUCCCGAACACGGAAGAUAAGCCCGCCUGCGUAUUGGUGAGUACUGGAGUGGGAGACCCUCUGGGAGAGCUGAUUCGCCGCCUU
+((((((((....((((((((....((.((((.............)))).)).....)))))).))..((..((.....((((((.((....))))))))....))..))..)))))))) (-50.42)
+,{{{{{{{....,{{{{{{,....,,.{{{,..............}}}..,.....,,,,,,.,,..,,..||.....{..{{{.{{....}}}}}..}....}}..,,..}}}}}}}, [-54.14]
+ frequency of mfe structure in ensemble 0.00239168
+>0000000070
+GCCCCUAACCCGGCCAUAGGCGCCGGUGAUACGCCCGGUCUCAUCAGAACCCGGAAGCUAAGGCCGGCGCCGCGCUCGGGAGUACUGGGCUCCGCGAGGGCCCGGGAAACCGGCGUGCUGGGAGGGGGCUU
+((((((..((((((....(((((((((..((.((((((..((....))..))))..))))..))))))))).(((.(((.....((((((.((....))))))))....)))))).)))))).)))))).. (-80.00)
+((((((..((((((....(((((((((..((.((((((..((....))..))))..))))..)))))))))((((.(((.....((((((.((....))))))))....))))))))))))).)))))).. [-82.89]
+ frequency of mfe structure in ensemble 0.012681
+>0000000071
+GGCACGGCGGCCAUAGCGGGGGGGCCACACCCGGUCUCAUUUCGAACCCGGAAGUUAAGCCCCCCAGCGAUCCCGGUUGUACUGCCCUCCGAGAGGGGGCGGGAAGCCGGGGACGCCG
+....(((((......((.(((((((.((..((((..((.....))..))))..))...))))))).))..((((((((...((((((.((....))))))))..)))))))).))))) (-69.40)
+....(((((......((.(((((((.((..((((..((.....))..))))..))...))))))).))..{(((((((...((((((.((....))))))))..)))))))).))))) [-70.69]
+ frequency of mfe structure in ensemble 0.275913
+>0000000072
+CGGCGGCCAUAGCGGGGGGCCACACCCGGUCUCAUUUCGAACCCGGAAGUUAAGCCCCCCAGCGAUCCCGGUUGUACUGCCCUCCGAGAGGGGGCGGGAAGCCGGGGACGCCGCCGGCCACU
+(((((((....(((((((((.((..((((..((.....))..))))..))...))))))).))..((((((((...((((((.((....))))))))..))))))))..)))))))...... (-75.70)
+(((((((....(((((((((.((..((((..((.....))..))))..))...))))))).))(.{(((((((...((((((.((....))))))))..)))))))}.))))))))...... [-76.99]
+ frequency of mfe structure in ensemble 0.122511
+>0000000073
+CGGCGGCCAUAGCGGGGGGGCCACACCCGGUCUCAUUUCGAACCCGGAAGUUAAGCCCCCCAGCGAUCCCGGUUGUACUGCCCUCCGAGAGGGGGCGGGAAGCCGGGGACGCCGCCGGCCACUAUC
+(((((((....((.(((((((.((..((((..((.....))..))))..))...))))))).))..((((((((...((((((.((....))))))))..))))))))..)))))))......... (-76.70)
+(((((((....((.(((((((.((..((((..((.....))..))))..))...))))))).))(.{(((((((...((((((.((....))))))))..)))))))}.))))))))......... [-78.00]
+ frequency of mfe structure in ensemble 0.1205
+>0000000074
+ACGGCGGCCAUAGCGGGGGGGUUACACCCGGUCUCAUUUCGAACCCGGAAGUUAAGCCCCCCAGCGAUCCCGGUUGUACUGCCCUCCGAGAGGGGGCGGGAAGCCGGGGACGCCGCCGGCCA
+.(((((((....((.((((((((((..((((..((.....))..))))..))..)))))))).))..((((((((...((((((.((....))))))))..))))))))..))))))).... (-76.50)
+.(((((((....((.((((((((((..((((..((.....))..))))..))..)))))))).))(.{(((((((...((((((.((....))))))))..)))))))}.)))))))).... [-78.18]
+ frequency of mfe structure in ensemble 0.0656144
+>0000000075
+ACGGCGGCCAUAGCGGGGGGGUUACACCCGGUCUCAUUUCGAACCCGGAAGUUAAGCCCCCCAGCGAUCCCGGUUGUACUGCCCUCCGAGAGGGGGCGGGAAGCCGGGGACGCCGCCGGCCA
+.(((((((....((.((((((((((..((((..((.....))..))))..))..)))))))).))..((((((((...((((((.((....))))))))..))))))))..))))))).... (-76.50)
+.(((((((....((.((((((((((..((((..((.....))..))))..))..)))))))).))(.{(((((((...((((((.((....))))))))..)))))))}.)))))))).... [-78.18]
+ frequency of mfe structure in ensemble 0.0656144
+>0000000076
+GGUACGGCGGUCAUAGCGGGGGGGCCACACCCGGUCUCAUUUCGAACCCGGAAGUUAAGCCCCCCAGCGAUCCCGGCUGUACUGCCCUCCGAGAGGGGGCGGGAACCGGGGACGCCGCCGGCCA
+(((.(((((((....((.(((((((.((..((((..((.....))..))))..))...))))))).))..((((((.....((((((.((....))))))))...))))))..)))))))))). (-74.00)
+(((.(((((((....((.(((((((.((..((((..((.....))..))))..))...))))))).))(.{(((((.....((((((.((....))))))))...)))))}.))))))))))). [-75.25]
+ frequency of mfe structure in ensemble 0.1311
+>0000000077
+UGGCCCGACCCGGCCAUAGCGGCCGGGCAACACCCGGACUCAUGUCGAACCCGGAAGUUAAGCCGGCCGCGUUGGGGGAUGCUGUGGGGUCCGCGAGGCCCCGCAGCGCCCCCAAGCCGGGAUCGGGCCG
+.(((((((((((((....((((((((..(((..((((..((.....))..))))..)))...))))))))..((((((.((((((((((.((....)))))))))))))))))).)))))).))))))). (-97.40)
+.(((((((((((((....(((((({{.,{((..((((..((.....))..))))..))}..,)))))))).{((((((.((((((((((.((....))))))))))))))))))})))))).))))))). [-99.59]
+ frequency of mfe structure in ensemble 0.0397726
+>0000000078
+GCCCACCCGGUCAUAGUGAGCGGGUAACACCCGGACUCGUUUCGAACCCGGAAGUUAAGCCGCUCACGUCAGAGGGGCCGUGGGAUCCGAGAGGGCCCGCAGCCUCUCUGAGCUGGGAUGGGCGUU
+(((((((((((....((((((((.((((..((((..(((...)))..))))..))))..)))))))).((((((((((.(((((.(((....)))))))).)))))))))))))))).)))))... (-80.80)
+(((((((((((....((((((((.((((..((((..(({...}))..))))..))))..)))))))).((((((((((.(((((.(((....)))))))).)))))))))))))))).)))))... [-82.52]
+ frequency of mfe structure in ensemble 0.502657
+>0000000079
+GCCCACCCGGUCAYAGUGAGCGGGCAACACCCGGACUCAUUUCGAACCCGGAAGUUAAGCCGCUCACGUUAGUGGGGCCGUGGAUACCGUGAGGAUCCGCAGCCCCACUAAGCUGGGAUGGGUUUU
+(((((((((((....((((((((..(((..((((..((.....))..))))..)))...))))))))..(((((((((.((((((.((....)))))))).))))))))).)))))).)))))... (-74.50)
+(((((((((((....((((((((,{(((..((((..((.....))..))))..)))..})))))))).((((((((((.((((((.((....)))))))).)))))))))))))))).)))))... [-76.56]
+ frequency of mfe structure in ensemble 0.0577626
+>0000000080
+GCCCACCCGGUCACAGUGAGCGGGCAACACCCGGACUCAUUUCGAACCCGGAAGUUAAGCCGCUCACGUUAGUGGGGCCGUGGAUACCGUGAGGAUCCGCAGCCCCACUAAGCUGGGAUGGGUUUU
+(((((((((((....((((((((..(((..((((..((.....))..))))..)))...))))))))..(((((((((.((((((.((....)))))))).))))))))).)))))).)))))... (-74.50)
+(((((((((((....((((((((,{(((..((((..((.....))..))))..)))..})))))))).((((((((((.((((((.((....)))))))).)))))))))))))))).)))))... [-76.59]
+ frequency of mfe structure in ensemble 0.0546289
+>0000000081
+GCCCACCCGGCCACAGUGAGCGGGCAACACCCGGACUCAUUUCGAACCCGGAAGUUAAGCCGCUCACGUUGGUGGGGCCGUGGAUACCGUGAGGAUCCGCAGCCCCACUAAGCUGGGAUGGGCUUU
+(((((((((((....((((((((..(((..((((..((.....))..))))..)))...))))))))..(((((((((.((((((.((....)))))))).))))))))).)))))).)))))... (-78.80)
+(((((((((((....((((((((,{(((..((((..((.....))..))))..)))..})))))))).((((((((((.((((((.((....)))))))).)))))))))))))))).)))))... [-80.69]
+ frequency of mfe structure in ensemble 0.0646886
+>0000000082
+GCCCCUAACCCGGCAAUAGGCGCCGGUGCUACGCCCGGUCUCUUCAGAACCCGGAAGCUAAGGCCGGCGCCGCGGACGGGAGUACUGGGGUCCGCGAGGCCCCGGGAAACCGCCGUGCUGGGAGGGGGCUU
+((((((..(((((((...(((((((((..((.((((((..((....))..))))..))))..))))))))).(((.(((.....((((((.((....))))))))....))))))))))))).)))))).. (-81.30)
+((((((..((((((....(((((((((.,(,.((((((..((....))..))))..)),,..)))))))))((((.(((.....((((((.((....))))))))....))))))))))))).)))))).. [-84.43]
+ frequency of mfe structure in ensemble 0.0315901
+>0000000083
+GCCCACUCGGCCAUAGUGGGCGGGUAACACCCGGACUCGUCUCGAACCCGGAAGUUAAGCCGCCCACGUUAGAAGGGCCGUGGGAUCCGCGAGGACCCGCAGCCCUUCUAAGCCGAGAUGGGCUUC
+(((((((((((....((((((((.((((..((((..(((...)))..))))..))))..))))))))..(((((((((.(((((.(((....)))))))).))))))))).)))))).)))))... (-84.10)
+(((((((((((....((((((((.((((..((((..(({...}))..))))..))))..)))))))).((((((((((.(((((.(((....)))))))).)))))))))))))))).)))))... [-85.68]
+ frequency of mfe structure in ensemble 0.106266
+>0000000084
+CCACCCGGCGAUAGUGAGCGGGCAACACCCGGACUCAUCUCGAACCCGGAAGUAAAGUCCCCUACGUUGGUAAGGCAGUGGGAUCCGCAAGGGCCUGCAGCCUUGCCAAGCUGGGAUGGACAUU
+(((((((((....((.((.((((.((..((((..((.....))..))))..))...)))).))))..(((((((((.(((((.(((....)))))))).))))))))).)))))).)))..... (-58.00)
+(((((((((....((,{(.((((.{{..((((..((.....))..))))..))...)))).)))).((((((((((.(,,((.(((....))))),,).)))))))))))))))).)))..... [-60.75]
+ frequency of mfe structure in ensemble 0.0158606
+>0000000085
+GGUACGGCGGUCAUAGCGGCGGGGUCACACCCGGUCUCGUUUCGACCCCGGAAGUUAAGCCCGCCAGCGAUCCCGGUUGUACUGCCCUCCGGGAGGGGGCGGGAACCGGGGACGCCGCCGGCCAC
+(((.(((((((....((((((((...((..((((..(((...)))..))))..))....)))))).))..((((((((...((((((.((....)))))))).))))))))..)))))))))).. (-72.20)
+(((.(((((((....((((((((...((..((((..(({...}))..))))..))....)))))).))(.{(((((((...((((((.((....)))))))).)))))))}.))))))))))).. [-73.98]
+ frequency of mfe structure in ensemble 0.0558487
+>0000000086
+GGUACGGCGGUCAUAGCGGCGGGGUCACACCCGGUCUCGUUUCGACCCCGGAAGUUAAGCCCGCCAGCGAUCCCGGUUGUACUGCCCUCCGGGAGGGGGCGGGAAGCCGGGGACGCCGCCGGCCACU
+(((.(((((((....((((((((...((..((((..(((...)))..))))..))....)))))).))..((((((((...((((((.((....))))))))..))))))))..))))))))))... (-73.70)
+(((.(((((((....((((((((...((..((((..(({...}))..))))..))....)))))).))(.{(((((((...((((((.((....))))))))..)))))))}.)))))))))))... [-75.42]
+ frequency of mfe structure in ensemble 0.0616802
+>0000000087
+GGCACGGCGGCCAUAGCGGCGGGGCCACACCCGGUCUCGUUUCGACCCCGGAAGUUAAGCCCGCCAGCGUUCCCGGGUGUACUGCCCUCCGAGAGGGGGCGGGAAACCGGGAACGCCGCCGGCCAC
+(((.(((((((......((((((...((..((((..(((...)))..))))..))....))))))...((((((((.....((((((.((....))))))))....)))))))))))))))))).. (-77.50)
+(((.(((((((....(((((((({(.((..((((..(({...}))..))))..))...))))))).))((((((((.....((((((.((....))))))))....)))))))))))))))))).. [-82.82]
+ frequency of mfe structure in ensemble 0.00453962
+>0000000088
+GGUACGGCGGCCAUAGCGGCGGGGCCACACCCGGUCUCGUUUCGACCCCGGAAGUUAAGCCCGCCAGCGUUCCCGGGUGUACUGCCCUCCGAGAGGGGGCGGGAAACCGGGAACGCCGCCGGCCAC
+(((.(((((((......((((((...((..((((..(((...)))..))))..))....))))))...((((((((.....((((((.((....))))))))....)))))))))))))))))).. (-74.80)
+(((.(((((((....(((((((({(.((..((((..(({...}))..))))..))...))))))).))((((((((.....((((((.((....))))))))....)))))))))))))))))).. [-80.13]
+ frequency of mfe structure in ensemble 0.00450865
+>0000000089
+GGCAACGGUCAUAGCAGCAGGGAAACACCAGAUCCCAUUCCGAACUCGACGGUUAAGCCUGCUGCGUAUUGCGUUGUACUGUAUGCCGCGAGGGUACGGGAAGCGCAAUAUGCUGUUACCACU
+((.((((((....((((((((.....(((.((.............))...)))....)))))))).(((((((((...((((((.((....))))))))..))))))))).)))))).))... (-46.72)
+((.((((({....((((((((.....{((.({.............})...)))....))))))))((((((((((...((((((.((....))))))))..)))))))))))))))).))... [-49.89]
+ frequency of mfe structure in ensemble 0.0111308
+>0000000090
+GGCAACGGUCAUAGCAAUAGGGAAACACCAGAUCCCAUUCCGAACUCGACGGUUAAGCCUGUUGCGUAUUACGUUGUACUGUAUUCCGCGAGGGUACGGGAAGCGUAGUAUGCUGUUGCCAUU
+(((((((((....((((((((.....(((.((.............))...)))....)))))))).(((((((((...((((((.((....))))))))..))))))))).)))))))))... (-47.02)
+(((((((((....((((((((.....{((.({.............})...)))....))))))))((((((((((...((((({{((....))))))))..)))))))))))))))))))... [-50.57]
+ frequency of mfe structure in ensemble 0.00602299
+>0000000091
+GAUGGGUGCACGGUCAUAGCGGUGGAGUUUACCCGGUCUCAUCCCGAACCCGGAAGUCAAGCCCUCCUGCGUCUGUCCCAAUACUGUGGUACGAGAGUCCACGGGAACGGCGGUCACUGUGC
+.......(((((((....((((.((.((((((((((..((.....))..))))..)).)))))).)).))..(((((......((((((.((....))))))))....)))))..))))))) (-42.80)
+.......(((((((....((((.((.((((((((((..((.....))..))))..)).)))))).)).))..(((((......((((((.((....))))))))....)))))..))))))) [-43.20]
+ frequency of mfe structure in ensemble 0.525024

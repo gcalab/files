@@ -1,0 +1,64 @@
+.TH omrokgen 1  "October 10, 2007" "version 0.1" "USER COMMANDS"
+.SH NAME
+omrokgen \- randomly change the positions of the nucleotides in a DNA sequence 
+.SH SYNOPSIS
+.B omrokgen 
+name_of_input_file  name_of_output_file number_of_generated_strings
+.SH DESCRIPTION
+.I omrokgen 
+reads an input sequence (DNA) and generates a user specified number of
+new sequences where the positions of the nucleotides are randomly
+changed. The number of the various nucleotide types in the generated
+sequences do not vary from the original sequence. The input file
+should only contain one input sequence. This input sequence can
+further only contain A, C, G, T in upper case.
+.PP
+The output from 
+.I omrokgen
+to standard out is in Norwegian.
+.SH
+EXAMPLE
+To generate ten new sequences from the sequence in the input file 'infile' and write them to the output file 'outfile', just type:
+.IP 
+.B omrokgen
+infile outfile 10
+.SH CITE
+Please cite in the following manner if you choose to use omrokgen:
+.PP
+V. Knudsen and G.Caetano-Anolles, Some title of a paper published in
+some journal.
+.SH VERSION
+This man page documents omrokgen version 0.1. 
+.SH LICENSE
+Copyright 1999-2007 by Vegeir Knudsen. All rights reserved.
+.PP
+Redistribution and use in source and binary forms, with or without 
+modification, are permitted provided that the following conditions
+are met:
+.IP 1.  
+Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.
+.IP 2.
+Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.
+.PP
+.SB DISCLAIMER:
+.PP
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+.SH AUTHORS
+Vegeir Knudsen and Gustavo Caetano-Anolles.
+
+
+
