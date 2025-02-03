@@ -1,6 +1,8 @@
-# Supplimentary Notebooks for "The emergence of SARS-CoV-2 variants of concern in Australia by haplotype coalescence reveals a continental link to COVID-19 seasonality" Data Reproduction
+# Supplementary Notebooks
 
-## Setup and Use
+## The emergence of SARS-CoV-2 variants of concern in Australia by haplotype coalescence reveals a continental link to COVID-19 seasonality – Data Reproduction
+
+### Setup and Use
 
 Below generally assumes knowledge of [Python (3.5+)](https://python.org) and [Jupyter](https://jupyter.org).\
 Knowledge of [Pandas](https://pandas.pydata.org) and [MatPlotLib](https://matplotlib.org) will help in understanding the scripts, but is not necessary.
