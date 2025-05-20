@@ -1,0 +1,41 @@
+#NEXUS 
+
+Begin trees;  [Treefile saved Saturday, January 4, 2025 at 7:27:01 PM Mountain Standard Time]
+[!
+>Data file = input(batch).nxs
+>Heuristic search settings:
+>  Optimality criterion = parsimony
+>    Character-status summary:
+>      381 characters are excluded
+>      Of the remaining 215 included characters:
+>        All characters are of type 'ord' (Wagner)
+>        All characters have equal weight
+>        All characters are parsimony-informative
+>  Starting tree(s) obtained via stepwise addition
+>    Addition sequence: random
+>    Number of replicates = 100
+>    Starting seed = generated automatically
+>    Number of trees held at each step = 1
+>  Branch-swapping algorithm: tree-bisection-reconnection (TBR) with reconnection limit = 8
+>    Steepest descent option not in effect
+>    No more than 1 tree of score (length) greater than or equal to 2 will be saved in each replicate
+>  Initial 'Maxtrees' setting = 100 (will be auto-increased by 100)
+>  Branches collapsed (creating polytomies) if maximum branch length is zero
+>  'MulTrees' option in effect
+>  No topological constraints in effect
+>  Trees are unrooted
+>
+>Heuristic search completed
+>  Total number of rearrangements tried = 2
+>  Score of best tree(s) found = 924
+>  Number of trees retained = 1
+>  Time used = 0.00 sec (CPU time = 0.00 sec)
+]
+	Translate
+		1 NC_014649_mimivirus,
+		2 NC_016072_Megavirus_chiliensis,
+		3 NC_020104_moumovirus,
+		4 NC_075034_Powai_lake_megavirus_isolate1
+		;
+tree 'PAUP_1' = [&R] (((1:210,3:195):146,2:60):288,4:25):621;
+End;
