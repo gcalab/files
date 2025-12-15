@@ -27,12 +27,17 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 
 ## 3.3) Mutant Structure Comparison:
 <ins>Using UCSF Chimera:</ins>
-
+1) After opening your desired PDB/CIF files in the same Chimera session. Select the *'Tools'* option from the top navigation bar.
 <img src="img/chimera1.png" alt="Close up of upper navigation bar of the tool UCSF Chimera">
+2) The *'Tools'* drop down menu will open and then select *'Structure Comparison'* -> *'Match Maker'*
 <img src="img/chimera2.png" alt="Navigate to 'Tools' -> 'Structure Comparison' -> 'Match Maker'">
+3) A new window will open where you will choose which structure is your reference and which one will be matched to the reference. Enable *Show pairwise alignments(s)* but keep everything else at default settings.
 <img src="img/chimera3.png" alt="Opened view of the Match Maker window with everything set to default but enabling pairwise alignments after selecting the reference and to match structure">
+4) After that you can additionally run *Match Align* also found in *'Tools'* -> *'Structure Comparison'*. This will show a Multiple Structure Alignment which is useful to visually see the structural deviations along the length of the protein sequence and can be a quick way to find out regions of interest.
 <img src="img/chimera4.png" alt="Tool bar naviagted to the Match Align option ('Tools' -> 'Structure Comparison' -> 'Match Align')">
+5) From the Pairwise Alignment option in *Match Maker* a MultiAlignViewer window will open, where you will see a *'Headers'* option in the top navigation bar. Clicking this will reveal a drop down and you can select *'RMSD:backbone'* to only retain the RMSD values of the backbone atoms (or you can chnage this according to your needs). After this you can save the RMSD headers to a text file by clicking the *'Save...'* option from the *'Headers'* dropdown list.
 <img src="img/chimera5.png" alt="Opened view of the MultiAlignViewer, the navigation bar is in close view with the Headers dropdown open and the option RMSD:backbone is selected">
+6) A new window will open which will prompt you to type out the name and path for the RMSD header file.
 <img src="img/chimera6.png" alt="Window open after selecting to save RMSD headers giving option of file name and location">
 
 
