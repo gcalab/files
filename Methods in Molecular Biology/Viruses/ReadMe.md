@@ -79,6 +79,7 @@ USalign -se -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdb
 
 > -se: Do not perform superposition. Useful for extracting alignment from superposed structure pairs
 
+Example of how you can visualize the results from US-align as a heatmap for both with and without superposition (for any number of proteins you wish to analyze): <img src="img/usalign.png" alt="2 heatmaps with labels a and b, with a being for no superposition and b being superimposed US-align results">
 
 ## 3.4) Mapping Intrinsic Disorder and Binding Capability:
 #### <ins>Using IUPred for analyzing intrinsic disorder and binding capability:</ins>
