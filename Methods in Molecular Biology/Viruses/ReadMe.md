@@ -37,10 +37,10 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 <ins>You can visualize the RMSD Headers for each of your protein structures as a heatmap:</ins> <img src="img/post_chimera1.png" alt="Heatmap depicting RMSD differences along the length of the Spike protein during the COVID-19 pandemic">
 
 
-<ins>Gather information of regions cross an RMSD threshold of your choice and slice them out into smaller PDB files like this:</ins> <img src="img/post_chimera2.png" alt="Sliced out regions of the Spike protein and its variants">
+<ins>Gather information of regions cross an RMSD threshold of your choice and slice them out into smaller PDB files like this:</ins> <img src="img/post_chimera3.png" alt="Sliced out regions of the Spike protein and its variants">
 
 
-<ins>These regions can then be analyzed separately using US-align:</ins> <img src="img/post_chimera3.png" alt="Spike protein with labelled regions of interest">
+<ins>These regions can then be analyzed separately using US-align:</ins> <img src="img/post_chimera2.png" alt="Spike protein with labelled regions of interest">
 
 ### <ins>Using BioPDB to slice out regions along a protein:</ins>
 
