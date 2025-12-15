@@ -86,7 +86,7 @@ USalign -se -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdb
 
 > -se: Do not perform superposition. Useful for extracting alignment from superposed structure pairs
 
-Example of how you can visualize the results from US-align as a heatmap for both with and without superposition (for any number of proteins you wish to analyze): <img src="img/usalign.png" alt="2 heatmaps with labels a and b, with a being for no superposition and b being superimposed US-align results" style="width:50%; height:auto;">
+Example of how you can visualize the results from US-align as a heatmap for both with and without superposition (for any number of proteins you wish to analyze): <img src="img/usalign.png" alt="2 heatmaps with labels a and b, with a being for no superposition and b being superimposed US-align results">
 
 ## 3.4) Mapping Intrinsic Disorder and Binding Capability:
 ### <ins>Using IUPred for analyzing intrinsic disorder and binding capability:</ins>
@@ -97,7 +97,7 @@ Example of how you can visualize the results from US-align as a heatmap for both
 
 3. Download your results from the resulting landing page (Select text file if you want to use the scripts in this repository). Using Python you can the per position scores into an array for analysis or visualization. This is what the results will look like: <img src="img/iupred3.png" alt="Landing page after you select Submit on the IUPred3 input page"> <img src="img/iupred_result.png" alt="screenshot of IUPred result file for IUPred3 scores" style="width:40%; height:auto;">
 
-5. Below is an example of how you can visualize IUPred and ANCHOR2 scores of your proteins. <img src="img/IUPred.png" alt="Example image of SARS-CoV-2 N-protein variants showing lineplots of ANCHOR2 and IUPred scores" style="width:50%; height:auto;">
+5. Below is an example of how you can visualize IUPred and ANCHOR2 scores of your proteins. <img src="img/IUPred.png" alt="Example image of SARS-CoV-2 N-protein variants showing lineplots of ANCHOR2 and IUPred scores" style="width:70%; height:auto;">
 
 ### <ins>Normal Mode Analysis (NMA) using [Bio3D](http://thegrantlab.org/bio3d/) in [R](https://www.r-project.org/):</ins>
 First you must [Install](http://thegrantlab.org/bio3d_v2/tutorials/installing-bio3d) Bio3D.
