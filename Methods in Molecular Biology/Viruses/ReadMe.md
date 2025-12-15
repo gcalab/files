@@ -44,9 +44,9 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
     - To calculate the true Global Distance Test Score (GDT_TS) you will need the data from columns GDT_TS and NUMBER_OF_ATOMS_AA.
     - In this example below, the GDT_TS score is 99.261 and the NUMBER_OF_ATOMS_AA is 203. The total number of atoms for the reference structure used in this example was 222 (which you can find in the output of Run 1 as seen in point 4 above).
     - Input these numbers into the following equation:
-                i) `True GDT_TS = GDT_TS * (NUMBER_OF_ATOMS_AA / Total Atoms of Reference Molecule)`
-                ii) `True GDT_TS = 99.261 * (203/222) = 90.766`<br>
-    - <img src="img/lga9.png" alt="">
+                <br>i) `True GDT_TS = GDT_TS * (NUMBER_OF_ATOMS_AA / Total Atoms of Reference Molecule)`
+                <br>ii) `True GDT_TS = 99.261 * (203/222) = 90.766`<br>
+      <img src="img/lga9.png" alt="">
 
 ## 3.3) Mutant Structure Comparison:
 ### <ins>Using UCSF Chimera:</ins>
