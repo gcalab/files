@@ -82,7 +82,7 @@ USalign -se -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdb
 
 ## 3.4) Mapping Intrinsic Disorder and Binding Capability:
 <ins>Using IUPred for analyzing intrinsic disorder and binding capability:</ins>
-
+<img src="img/IUPred.png" alt="Example image of SARS-CoV-2 N-protein variants showing lineplots of ANCHOR2 and IUPred scores">
 
 <ins>Normal Mode Analysis (NMA) using [Bio3D](http://thegrantlab.org/bio3d/) in [R](https://www.r-project.org/):</ins>
 
