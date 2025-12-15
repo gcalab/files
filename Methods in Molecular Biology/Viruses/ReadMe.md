@@ -26,6 +26,15 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 ## 3.2) Structural Validation:
 
 ## 3.3) Mutant Structure Comparison:
+<ins>Using UCSF Chimera:</ins>
+
+<img src="img/chimera1.png" alt="">
+<img src="img/chimera2.png" alt="">
+<img src="img/chimera3.png" alt="">
+<img src="img/chimera4.png" alt="">
+<img src="img/chimera5.png" alt="">
+<img src="img/chimera6.png" alt="">
+
 
 <ins>Using BioPDB to slice out regions along a protein:</ins>
 
