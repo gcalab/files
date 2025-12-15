@@ -89,6 +89,11 @@ USalign -se -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdb
 
 > -se: Do not perform superposition. Useful for extracting alignment from superposed structure pairs
 
+The ` > ` from the command above (` > output_folder/results_no_se.txt`) will save the result outputted by US-align to the terminal window into a text file at your desired location.
+
+The result will look something like this:
+<img src="img/usalign_result.png" alt="US-align result file/output" style="width:50%; height:auto;">
+
 Example of how you can visualize the results from US-align as a heatmap for both with and without superposition (for any number of proteins you wish to analyze): <img src="img/usalign.png" alt="2 heatmaps with labels a and b, with a being for no superposition and b being superimposed US-align results">
 
 ## 3.4) Mapping Intrinsic Disorder and Binding Capability:
