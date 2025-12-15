@@ -34,6 +34,13 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 5. From the Pairwise Alignment option in *Match Maker* a MultiAlignViewer window will open, where you will see a *'Headers'* option in the top navigation bar. Clicking this will reveal a drop down and you can select *'RMSD:backbone'* to only retain the RMSD values of the backbone atoms (or you can chnage this according to your needs). After this you can save the RMSD headers to a text file by clicking the *'Save...'* option from the *'Headers'* dropdown list. <img src="img/chimera5.png" alt="Opened view of the MultiAlignViewer, the navigation bar is in close view with the Headers dropdown open and the option RMSD:backbone is selected">
 6. A new window will open which will prompt you to type out the name and path for the RMSD header file. <img src="img/chimera6.png" alt="Window open after selecting to save RMSD headers giving option of file name and location">
 
+<ins>You can visualize the RMSD Headers for each of your protein structures as a heatmap:</ins> <img src="img/post_chimera1.png" alt="Heatmap depicting RMSD differences along the length of the Spike protein during the COVID-19 pandemic">
+
+
+<ins>Gather information of regions cross an RMSD threshold of your choice and slice them out into smaller PDB files like this:</ins> <img src="img/post_chimera2.png" alt="Sliced out regions of the Spike protein and its variants">
+
+
+<ins>These regions can then be analyzed separately using US-align:</ins> <img src="img/post_chimera3.png" alt="Spike protein with labelled regions of interest">
 
 ### <ins>Using BioPDB to slice out regions along a protein:</ins>
 
