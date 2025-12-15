@@ -28,6 +28,7 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 #### 3.3) Mutant Structure Comparison:
 
 <ins>Using BioPDB to slice out regions along a protein:</ins>
+
 Code snippet to slice out portions of a PDB file to allow regional analysis of structural deviation. Adapted from an [answer](https://stackoverflow.com/a/22453336) by [Juniper-](https://stackoverflow.com/users/899470/juniper) on [Stack Overflow](https://stackoverflow.com/questions).
 ```
 import Bio.PDB as bpdb
@@ -53,6 +54,7 @@ io.save(out + region + '/' + new_name, ResSelect()) #example output path that sa
 ```
 
 <ins>Using US-align to analyze regional structural deviations:</ins>
+
 After you have your sliced regions you will need to analyse them further using [US-align](https://www.aideepmed.com/US-align/).
 This can be achieved in two ways: 1) With Superposition and 2) Without Superposition. ([US-align Help Page](https://www.aideepmed.com/US-align/help/))
 
