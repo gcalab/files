@@ -26,7 +26,7 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 ## 3.2) Structural Validation:
 
 ## 3.3) Mutant Structure Comparison:
-<ins>Using UCSF Chimera:</ins>
+#### <ins>Using UCSF Chimera:</ins>
 1. After opening your desired PDB/CIF files in the same Chimera session. Select the *'Tools'* option from the top navigation bar. <img src="img/chimera1.png" alt="Close up of upper navigation bar of the tool UCSF Chimera">
 2. The *'Tools'* drop down menu will open and then select *'Structure Comparison'* -> *'Match Maker'* <img src="img/chimera2.png" alt="Navigate to 'Tools' -> 'Structure Comparison' -> 'Match Maker'">
 3. A new window will open where you will choose which structure is your reference and which one will be matched to the reference. Enable *Show pairwise alignments(s)* but keep everything else at default settings. <img src="img/chimera3.png" alt="Opened view of the Match Maker window with everything set to default but enabling pairwise alignments after selecting the reference and to match structure">
@@ -35,7 +35,7 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 6. A new window will open which will prompt you to type out the name and path for the RMSD header file. <img src="img/chimera6.png" alt="Window open after selecting to save RMSD headers giving option of file name and location">
 
 
-<ins>Using BioPDB to slice out regions along a protein:</ins>
+#### <ins>Using BioPDB to slice out regions along a protein:</ins>
 
 Code snippet to slice out portions of a PDB file to allow regional analysis of structural deviation. Adapted from an [answer](https://stackoverflow.com/a/22453336) by [Juniper-](https://stackoverflow.com/users/899470/juniper) on [Stack Overflow](https://stackoverflow.com/questions).
 ```
@@ -61,7 +61,7 @@ new_name = 'your desired name for the sliced region'
 io.save(out + region + '/' + new_name, ResSelect()) #example output path that saves regions (e.g: region1, region2, in a directory) and uses ResSelect to slice out desired region before saving the structure
 ```
 
-<ins>Using US-align to analyze regional structural deviations:</ins>
+#### <ins>Using US-align to analyze regional structural deviations:</ins>
 
 After you have your sliced regions you will need to analyse them further using [US-align](https://www.aideepmed.com/US-align/).
 This can be achieved in two ways: 1) With Superposition and 2) Without Superposition.
@@ -81,7 +81,7 @@ USalign -se -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdb
 
 
 ## 3.4) Mapping Intrinsic Disorder and Binding Capability:
-<ins>Using IUPred for analyzing intrinsic disorder and binding capability:</ins>
+#### <ins>Using IUPred for analyzing intrinsic disorder and binding capability:</ins>
 
 1. Navigate to the [IUPred3 website](https://iupred3.elte.hu/) <img src="img/iupred1.png" alt="IUPred3 Landing Page">
 
@@ -89,7 +89,13 @@ USalign -se -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdb
 
 3.Below is an example of how you can visualize IUPred and ANCHOR2 scores of your proteins. <img src="img/IUPred.png" alt="Example image of SARS-CoV-2 N-protein variants showing lineplots of ANCHOR2 and IUPred scores">
 
-<ins>Normal Mode Analysis (NMA) using [Bio3D](http://thegrantlab.org/bio3d/) in [R](https://www.r-project.org/):</ins>
+#### <ins>Normal Mode Analysis (NMA) using [Bio3D](http://thegrantlab.org/bio3d/) in [R](https://www.r-project.org/):</ins>
+First you must [Install](http://thegrantlab.org/bio3d_v2/tutorials/installing-bio3d) Bio3D.
+> On all platforms (Mac, Linux, and PC) open R (version 3.1.0 or higher) and use the function install.packages() at the R command prompt to install the package from your local CRAN site:
+> `install.packages("bio3d", dependencies=TRUE)`
+> Alternatively, if you prefer to use RStudio, select Tools → Install Packages.., Enter bio3d in the Packages text box (and make sure Install Dependencies is selected). Then click Install.
+
+R code below: 
 
 ```
 library('bio3d') #Import the Bio3D library
