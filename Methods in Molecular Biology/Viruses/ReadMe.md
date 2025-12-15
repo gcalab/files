@@ -91,8 +91,8 @@ USalign -se -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdb
 
 The ` > ` from the command above (` > output_folder/results_no_se.txt`) will save the result outputted by US-align to the terminal window into a text file at your desired location.
 
-The result will look something like this:
-<img src="img/usalign_result.png" alt="US-align result file/output" style="width:50%; height:auto;">
+The final result will have all the outputs for the proteins you are analyzing into one file. You will need to parse this file to get region wise TM scores for further analysis. The resulting file/output will look something like this:
+<br><img src="img/usalign_result.png" alt="US-align result file/output" style="width:70%; height:auto;">
 
 Example of how you can visualize the results from US-align as a heatmap for both with and without superposition (for any number of proteins you wish to analyze): <img src="img/usalign.png" alt="2 heatmaps with labels a and b, with a being for no superposition and b being superimposed US-align results">
 
