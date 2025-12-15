@@ -26,6 +26,8 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 **Even if you do not use local ColabFold please always specify a random seed or keep the log file that reports the random seed for reproducibility. Additionally a higher num recycle value greater than 6 such as 9 or 12 will not show any significant changes, whereas jumps from 3 to 6 may show improvement in quality (https://academic.oup.com/bioinformaticsadvances/article/3/1/vbad078/7197797) This is context dependent and you should tweak these paramters according to your data*
 
 ## 3.2) Structural Validation:
+### <ins>Using [LGA_GDT](http://proteinmodel.org/AS2TS/LGA/lga.html) on the [AS2TS server](http://proteinmodel.org/AS2TS/):</ins>
+
 
 ## 3.3) Mutant Structure Comparison:
 ### <ins>Using UCSF Chimera:</ins>
