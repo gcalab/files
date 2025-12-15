@@ -70,7 +70,7 @@ io.save(out + region + '/' + new_name, ResSelect()) #example output path that sa
 
 ### <ins>Using US-align to analyze regional structural deviations:</ins>
 
-After you have your sliced regions you will need to analyse them further using [US-align](https://www.aideepmed.com/US-align/).
+Please download US-align to incorporate it with the scripts in this repo and for automation. After you have your sliced regions you will need to analyse them further using [US-align](https://www.aideepmed.com/US-align/). 
 This can be achieved in two ways: 1) With Superposition and 2) Without Superposition.
 
 ##### With Superposition (Does not use *'-se'*)
