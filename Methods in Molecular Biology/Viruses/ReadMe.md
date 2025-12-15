@@ -56,7 +56,7 @@ io.save(out + region + '/' + new_name, ResSelect()) #example output path that sa
 <ins>Using US-align to analyze regional structural deviations:</ins>
 
 After you have your sliced regions you will need to analyse them further using [US-align](https://www.aideepmed.com/US-align/).
-This can be achieved in two ways: 1) With Superposition and 2) Without Superposition. ([US-align Help Page](https://www.aideepmed.com/US-align/help/))
+This can be achieved in two ways: 1) With Superposition and 2) Without Superposition.
 
 ##### With Superposition (Does not use *'-se'*)
 ```
@@ -66,6 +66,9 @@ USalign -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdbs/re
 ```
 USalign -se -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdbs/reference.pdb > output_folder/results_no_se.txt
 ```
+[Explanation of Input Flags:](https://www.aideepmed.com/US-align/help/)
++ -dir 1: > Use chain2 to search a list of PDB chains listed by 'chain1_list' under 'chain1_folder'. Note that the slash is necessary. e.g: USalign -dir1 chain1_folder/ chain1_list chain2
+
 #### 3.4) Mapping Intrinsic Disorder and Binding Capability:
 ```
 library('bio3d')
