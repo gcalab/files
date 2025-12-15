@@ -29,7 +29,13 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 ### <ins>Using [LGA_GDT](http://proteinmodel.org/AS2TS/LGA/lga.html) on the [AS2TS server](http://proteinmodel.org/AS2TS/):</ins>
 1. Enter your email and add '-d:4.0' to the end of the default LGA parameters input box. It should look like: `-4 -o2 -gdc -lga_m -stral -d:4.0` <br><img src="img/lga1.png" alt="">
 2. Select your desired pdb files for analysis. Set the `Molecule2 no change` to your reference structure and the `Molecule1 to rotate` as your target structure for comparison to your reference. Then click *'START'*. <br><img src="img/lga2.png" alt="">
-3. Another window will open with the link to where you will get your results. <br><img src="img/lga3.png" alt="">
+3. Another window will open with the link to where you will get your results. Click the link: *'LGA results'* <br><img src="img/lga3.png" alt="">
+4. The results will open in a new tab. Copy everything to the clip board (press `Ctrl + a` then `Ctrl + c`). <br><img src="img/lga4.png" alt="">
+5. Open the AS2TS server ([LGA_GDT](http://proteinmodel.org/AS2TS/LGA/lga.html)) in a new tab and enter your email address agaon followed by some changes to the parameters. > In the parameters slot, change -4 to -3, and add -d:4.0  -al at the end. So the complete parameters for Run 2 should be `-3 -o2 -gdc -lga_m -stral  -d:4.0  -al`  <br><img src="img/lga5.png" alt="">
+6. <br><img src="img/lga6.png" alt="">
+7. <br><img src="img/lga7.png" alt="">
+8. <br><img src="img/lga8.png" alt="">
+9. <br><img src="img/lga9.png" alt="">
 
 ## 3.3) Mutant Structure Comparison:
 ### <ins>Using UCSF Chimera:</ins>
