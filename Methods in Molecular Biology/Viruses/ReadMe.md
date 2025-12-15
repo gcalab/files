@@ -67,22 +67,26 @@ USalign -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdbs/re
 USalign -se -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdbs/reference.pdb > output_folder/results_no_se.txt
 ```
 [Explanation of Input Flags:](https://www.aideepmed.com/US-align/help/)
-> -dir1 Use chain2 to search a list of PDB chains listed by 'chain1_list' under 'chain1_folder'. Note that the slash is necessary. e.g: USalign -dir1 chain1_folder/ chain1_list chain2
+> -dir1: Use chain2 to search a list of PDB chains listed by 'chain1_list' under 'chain1_folder'. Note that the slash is necessary. e.g: USalign -dir1 chain1_folder/ chain1_list chain2
 
-> -se Do not perform superposition. Useful for extracting alignment from superposed structure pairs
+> -se: Do not perform superposition. Useful for extracting alignment from superposed structure pairs
 
 
 #### 3.4) Mapping Intrinsic Disorder and Binding Capability:
 ```
-library('bio3d')
-pdbfiles <- list.files(pattern="*.pdb", full.names=TRUE)
+library('bio3d') #Import the Bio3D library
+
+pdbfiles <- list.files(pattern="*.pdb", full.names=TRUE) #Retrieve list of target PDB files
+
+#Iterate through the PDB files
 for (x in pdbfiles){
-  pdb <- read.pdb(x)
-  modes <- nma(pdb)
-  fluctuations <- modes$fluct
-  name <- gsub("[./pdb]", "", x)
-  n <- paste("out/",name,".csv", sep="")
-  write.csv(fluctuations, file = n, row.names =FALSE)
+  pdb <- read.pdb(x) #Read files into a PDB object
+  modes <- nma(pdb) #retrieve the normal modes for the PDB file into  a variable called modes
+  fluctuations <- modes$fluct #Retrieve the fluctuation values into  a variable called fluctuations
+
+  name <- gsub("[./pdb]", "", x) #get name of pdb file (remove the '.pdb' from file name using gsub)
+  n <- paste("out/",name,".csv", sep="") #concatenate PDB file name into a desired output path location and file type using paste
+  write.csv(fluctuations, file = n, row.names =FALSE) #write the fluctuations into a csv file with the new name
 }
 ```
 #### 3.5) Downstream Analysis:
