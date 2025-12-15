@@ -33,11 +33,11 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 4. The results will open in a new tab. Copy everything to the clip board (press `Ctrl + a` then `Ctrl + c`). <br><img src="img/lga4.png" alt="">
 5. Open the AS2TS server ([LGA_GDT](http://proteinmodel.org/AS2TS/LGA/lga.html)) in a new tab and enter your email address agaon followed by some changes to the parameters.
     > In the parameters slot, change -4 to -3, and add -d:4.0  -al at the end. So the complete parameters for Run 2 should be `-3 -o2 -gdc -lga_m -stral  -d:4.0  -al`
-    <br><img src="img/lga5.png" alt="">
-7. <br><img src="img/lga6.png" alt="">
-8. <br><img src="img/lga7.png" alt="">
-9. <br><img src="img/lga8.png" alt="">
-10. <br><img src="img/lga9.png" alt="">
+<br><img src="img/lga5.png" alt="">
+7. Then go to the bottom of the page to box 4 and make sure there is no data/text in boxes 1 to 3 as that will cause the server to ignore anything in Box 4. Paste (Press `Ctrl + v`) the output from LGA Run 1 that you had copied into the textbox of Box 4 and then click *'START'*. <br><img src="img/lga6.png" alt="">
+8. A new tab will open that will have a link to the Run 2 results. Click *'LGA results'* <br><img src="img/lga7.png" alt="">
+9. You now have the final result output from LGA. You can save this to a text file. <br><img src="img/lga8.png" alt="">
+10. The information that you need is deep within the file noted by lines that start with `# RMSD_GDC results:` and `#CA`. An easy way to find this would be to search the file using `Ctrl + f` and type in '# RMSD_GDC results:' into the look up search bar.  <br><img src="img/lga9.png" alt="">
 
 ## 3.3) Mutant Structure Comparison:
 ### <ins>Using UCSF Chimera:</ins>
