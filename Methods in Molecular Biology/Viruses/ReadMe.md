@@ -93,9 +93,11 @@ Example of how you can visualize the results from US-align as a heatmap for both
 
 1. Navigate to the [IUPred3 website](https://iupred3.elte.hu/) <img src="img/iupred1.png" alt="IUPred3 Landing Page">
 
-2. Paste your proteins amino acid sequence into the text box or upload the fasta file. After inputting your data. Select the paramters that best fit your needs. You will need to run this twice once for obtaining the IUPred3 scores and once for ANCHOR2 scores. To choose between long and short look at this [explanation](https://iupred3.elte.hu/help_new). This study uses hsort disorder to emphasize local/regional differences instead of the overall protein. <img src="img/iupred2.png" alt="Selecting Option for IUPred3">
+2. Paste your proteins amino acid sequence into the text box or upload the fasta file. After inputting your data. Select the paramters that best fit your needs. You will need to run this twice once for obtaining the IUPred3 scores and once for ANCHOR2 scores. Then press the *'Submit'* button to run your sequence. To choose between long and short look at this [explanation](https://iupred3.elte.hu/help_new). This study uses hsort disorder to emphasize local/regional differences instead of the overall protein. <img src="img/iupred2.png" alt="Selecting Option for IUPred3">
 
-3.Below is an example of how you can visualize IUPred and ANCHOR2 scores of your proteins. <img src="img/IUPred.png" alt="Example image of SARS-CoV-2 N-protein variants showing lineplots of ANCHOR2 and IUPred scores">
+3. Download your results from the resulting landing page (Select text file if you want to use the scripts in this repository). Using Python you can the per position scores into an array for analysis or visualization. This is what the results will look like: <img src="img/iupred_result.png" alt="screenshot of IUPred result file for IUPred3 scores">
+
+4. Below is an example of how you can visualize IUPred and ANCHOR2 scores of your proteins. <img src="img/IUPred.png" alt="Example image of SARS-CoV-2 N-protein variants showing lineplots of ANCHOR2 and IUPred scores">
 
 ### <ins>Normal Mode Analysis (NMA) using [Bio3D](http://thegrantlab.org/bio3d/) in [R](https://www.r-project.org/):</ins>
 First you must [Install](http://thegrantlab.org/bio3d_v2/tutorials/installing-bio3d) Bio3D.
