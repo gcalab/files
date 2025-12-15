@@ -22,6 +22,7 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 + --templates: Use templates.
 + --num-recycle: Amount of recycles used for prediction, increasing this may improve quality but reduces speed.
 + --use-gpu-relax: Run on Nvidia GPU instead of CPU (highly recommended).
+**<ins>Even if you do not use local ColabFold please always specify a random seed or keep the log file that reports the random seed for reproducibility. Additionally a higher num recycle value greater 9 or 12 will not show any significant changes, whereas jumps from 3 to 6 may show improvement in quality (https://academic.oup.com/bioinformaticsadvances/article/3/1/vbad078/7197797) This is context dependent and you should tweak these paramters according to your data</ins>*
 
 ## 3.2) Structural Validation:
 
