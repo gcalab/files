@@ -26,11 +26,10 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 #### 3.2) Structural Validation:
 
 #### 3.3) Mutant Structure Comparison:
-Code snippet to slice out portions of a PDB file to allow regional analysis of structural deviation.
+Code snippet to slice out portions of a PDB file to allow regional analysis of structural deviation. Adapted from an [answer](https://stackoverflow.com/a/22453336) by [Juniper-](https://stackoverflow.com/users/899470/juniper) on [Stack Overflow](https://stackoverflow.com/questions).
 ```
 import Bio.PDB as bpdb
 
-s = bpdb.PDBParser().get_structure('temp', og_pdb) #'temp' is just a temporary name, og_pdb refers to the PDB passed to this function
   class ResSelect(bpdb.Select):
     def accept_residue(self, res):
     if res.id[1] >= start_res and res.id[1] <= end_res and res.parent.id == chain_id:
@@ -38,25 +37,28 @@ s = bpdb.PDBParser().get_structure('temp', og_pdb) #'temp' is just a temporary n
     else:
       return False
 
-s = bpdb.PDBParser().get_structure('temp', '1y26.pdb')
+s = bpdb.PDBParser().get_structure('temp', og_pdb) #Retrieve target PDB file; parameters: id, file location
 
+#Selecting residue position 4 to 62 from chain A
 start_res = 4
 end_res = 62
-chain_id = 'A'
+chain_id = 'A' 
 
-io = bpdb.PDBIO()
-io.set_structure(s)
-new_name = name + ".pdb"
-io.save(out + region + '/' + new_name, ResSelect())
+io = bpdb.PDBIO() #Instantiate PDBIO object
+io.set_structure(s) #Give it the PDB we want sliced
+new_name = 'your desired name for the sliced region'
+io.save(out + region + '/' + new_name, ResSelect()) #example output path that saves regions (e.g: region1, region2, in a directory) and uses ResSelect to slice out desired region before saving the structure
 ```
 After you have your sliced regions you will need to analyse them further using [USAlign](https://www.aideepmed.com/US-align/).
-This can be achieved in two ways: 1) With Superposition and 2) Without Superposition.
+This can be achieved in two ways: 1) With Superposition and 2) Without Superposition. ([USalign Help Page](https://www.aideepmed.com/US-align/help/))
 
+##### With Superposition (Does not use *'-se'*)
 ```
-USalign -se -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdbs/reference.pdb > output_folder/results_se.txt
+USalign -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdbs/reference.pdb > output_folder/results_se.txt
 ```
+##### Without Superposition (Uses *'-se'*)
 ```
-USalign -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdbs/reference.pdb > output_folder/results_no_se.txt
+USalign -se -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdbs/reference.pdb > output_folder/results_no_se.txt
 ```
 #### 3.4) Mapping Intrinsic Disorder and Binding Capability:
 ```
