@@ -67,7 +67,8 @@ USalign -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdbs/re
 USalign -se -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdbs/reference.pdb > output_folder/results_no_se.txt
 ```
 [Explanation of Input Flags:](https://www.aideepmed.com/US-align/help/)
-> Use chain2 to search a list of PDB chains listed by 'chain1_list' under 'chain1_folder'. Note that the slash is necessary. e.g: USalign -dir1 chain1_folder/ chain1_list chain2
+> -dir1 Use chain2 to search a list of PDB chains listed by 'chain1_list' under 'chain1_folder'. Note that the slash is necessary. e.g: USalign -dir1 chain1_folder/ chain1_list chain2
+> -se Do not perform superposition. Useful for extracting alignment from superposed structure pairs
 
 
 #### 3.4) Mapping Intrinsic Disorder and Binding Capability:
