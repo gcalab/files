@@ -41,12 +41,12 @@ Code snippet to slice out portions of a PDB file to allow regional analysis of s
 ```
 import Bio.PDB as bpdb
 
-  class ResSelect(bpdb.Select):
+class ResSelect(bpdb.Select):
     def accept_residue(self, res):
-    if res.id[1] >= start_res and res.id[1] <= end_res and res.parent.id == chain_id:
-      return True
-    else:
-      return False
+      if res.id[1] >= start_res and res.id[1] <= end_res and res.parent.id == chain_id:
+        return True
+      else:
+        return False
 
 s = bpdb.PDBParser().get_structure('temp', og_pdb) #Retrieve target PDB file; parameters: id, file location
 
