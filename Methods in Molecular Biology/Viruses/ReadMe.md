@@ -109,3 +109,9 @@ for (x in pdbfiles){
 ```
 ## 3.5) Downstream Analysis:
 
+<ins>Examples of the kinds of analyses you can carry out:</ins>
+
+1. https://f1000research.com/articles/12-267
+2. https://www.mdpi.com/2079-7737/13/3/134
+3. https://www.mdpi.com/1999-4915/16/9/1358
+4. https://www.ideals.illinois.edu/items/131533
