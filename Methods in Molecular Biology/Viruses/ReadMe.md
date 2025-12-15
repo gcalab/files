@@ -1,5 +1,5 @@
 # Proteome-wide *ab initio* Structural Analysis of Viral Evolution
-### This github repository serves as a supplement to Chapter 10 of the book 'Evolutionary Genomics' (Methods Molecular Biology, Vol. 2981; Springer Nature) *(Awaiting Publication)*
+#### This github repository serves as a supplement to Chapter 10 of the book 'Evolutionary Genomics' (Methods Molecular Biology, Vol. 2981; Springer Nature) *(Awaiting Publication)*
 
 Software used:
 1. [Local Colab Fold](https://github.com/YoshitakaMo/localcolabfold) (or latest version of [AlphaFold](https://alphafoldserver.com/welcome))
@@ -11,7 +11,7 @@ Software used:
 
 #### Step-by-step guide of the Methods presented in Section 3 of the chapter: 
 
-#### 3.1) AlphaFold Modeling:
+## 3.1) AlphaFold Modeling:
 LocalColabFold Command:
 ```
 colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-relax $fasta_file output
@@ -23,9 +23,9 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 + --num-recycle: Amount of recycles used for prediction, increasing this may improve quality but reduces speed.
 + --use-gpu-relax: Run on Nvidia GPU instead of CPU (highly recommended).
 
-#### 3.2) Structural Validation:
+## 3.2) Structural Validation:
 
-#### 3.3) Mutant Structure Comparison:
+## 3.3) Mutant Structure Comparison:
 
 <ins>Using BioPDB to slice out regions along a protein:</ins>
 
@@ -72,7 +72,7 @@ USalign -se -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdb
 > -se: Do not perform superposition. Useful for extracting alignment from superposed structure pairs
 
 
-#### 3.4) Mapping Intrinsic Disorder and Binding Capability:
+## 3.4) Mapping Intrinsic Disorder and Binding Capability:
 ```
 library('bio3d') #Import the Bio3D library
 
@@ -89,5 +89,5 @@ for (x in pdbfiles){
   write.csv(fluctuations, file = n, row.names =FALSE) #write the fluctuations into a csv file with the new name
 }
 ```
-#### 3.5) Downstream Analysis:
+## 3.5) Downstream Analysis:
 
