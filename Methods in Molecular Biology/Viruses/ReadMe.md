@@ -1,7 +1,7 @@
 # Proteome-wide *ab initio* Structural Analysis of Viral Evolution
 #### This github repository serves as a supplement to Chapter 10 of the book 'Evolutionary Genomics' (Methods Molecular Biology, Vol. 2981; Springer Nature) *(Awaiting Publication)*
 
-Software used:
+#### Software used:
 1. [Local Colab Fold](https://github.com/YoshitakaMo/localcolabfold) (or latest version of [AlphaFold](https://alphafoldserver.com/welcome))
 2. [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/download.html)
 3. [AS2TS server](http://proteinmodel.org/AS2TS/LGA/lga.html) used in CASP ([Protopedia Manual](https://proteopedia.org/wiki/index.php/Calculating_GDT_TS))
@@ -115,6 +115,8 @@ for (x in pdbfiles){
   write.csv(fluctuations, file = n, row.names =FALSE) #write the fluctuations into a csv file with the new name
 }
 ```
+Example of how how you can visualize the fluctuations and the first non trivial normal mode of different proteins: <img src="img/nma1.png" alt="Showing a line graph of fluctatuations of various spike proteins (variants and haplotypes) along with their first non trivial normal mode">
+
 ## 3.5) Downstream Analysis:
 
 <ins>Examples of the kinds of analyses you can carry out:</ins>
