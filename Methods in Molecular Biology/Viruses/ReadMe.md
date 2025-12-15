@@ -92,7 +92,9 @@ USalign -se -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdb
 #### <ins>Normal Mode Analysis (NMA) using [Bio3D](http://thegrantlab.org/bio3d/) in [R](https://www.r-project.org/):</ins>
 First you must [Install](http://thegrantlab.org/bio3d_v2/tutorials/installing-bio3d) Bio3D.
 > On all platforms (Mac, Linux, and PC) open R (version 3.1.0 or higher) and use the function install.packages() at the R command prompt to install the package from your local CRAN site:
+
 > `install.packages("bio3d", dependencies=TRUE)`
+
 > Alternatively, if you prefer to use RStudio, select Tools → Install Packages.., Enter bio3d in the Packages text box (and make sure Install Dependencies is selected). Then click Install.
 
 R code below: 
