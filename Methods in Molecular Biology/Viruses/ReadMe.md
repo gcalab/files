@@ -28,12 +28,12 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 ## 3.3) Mutant Structure Comparison:
 <ins>Using UCSF Chimera:</ins>
 
-<img src="img/chimera1.png" alt="">
-<img src="img/chimera2.png" alt="">
-<img src="img/chimera3.png" alt="">
-<img src="img/chimera4.png" alt="">
-<img src="img/chimera5.png" alt="">
-<img src="img/chimera6.png" alt="">
+<img src="img/chimera1.png" alt="Close up of upper navigation bar of the tool UCSF Chimera">
+<img src="img/chimera2.png" alt="Navigate to 'Tools' -> 'Structure Comparison' -> 'Match Maker'">
+<img src="img/chimera3.png" alt="Opened view of the Match Maker window with everything set to default but enabling pairwise alignments after selecting the reference and to match structure">
+<img src="img/chimera4.png" alt="Tool bar naviagted to the Match Align option ('Tools' -> 'Structure Comparison' -> 'Match Align')">
+<img src="img/chimera5.png" alt="Opened view of the MultiAlignViewer, the navigation bar is in close view with the Headers dropdown open and the option RMSD:backbone is selected">
+<img src="img/chimera6.png" alt="Window open after selecting to save RMSD headers giving option of file name and location">
 
 
 <ins>Using BioPDB to slice out regions along a protein:</ins>
