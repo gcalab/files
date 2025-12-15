@@ -27,6 +27,9 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 
 ## 3.2) Structural Validation:
 ### <ins>Using [LGA_GDT](http://proteinmodel.org/AS2TS/LGA/lga.html) on the [AS2TS server](http://proteinmodel.org/AS2TS/):</ins>
+> [!IMPORTANT]
+> Before submitting any 3D models of your molecules (PDB or CIF files) you need to superimpose them first to the reference structure which you can do in [Chimera](https://www.cgl.ucsf.edu/chimera/download.html). After superimposing you will need to select each of the molecules one by one and save each selection as a single PDB file.
+
 1. Enter your email and add '-d:4.0' to the end of the default LGA parameters input box. It should look like: `-4 -o2 -gdc -lga_m -stral -d:4.0` <br><img src="img/lga1.png" alt="">
 2. Select your desired pdb files for analysis. Set the `Molecule2 no change` to your reference structure and the `Molecule1 to rotate` as your target structure for comparison to your reference. Then click *'START'*. <br><img src="img/lga2.png" alt="">
 3. Another window will open with the link to where you will get your results. Click the link: *'LGA results'* <br><img src="img/lga3.png" alt="">
