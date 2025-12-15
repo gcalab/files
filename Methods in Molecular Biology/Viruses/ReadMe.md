@@ -28,19 +28,19 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 ## 3.3) Mutant Structure Comparison:
 ### <ins>Using UCSF Chimera:</ins>
 1. After opening your desired PDB/CIF files in the same Chimera session. Select the *'Tools'* option from the top navigation bar. <img src="img/chimera1.png" alt="Close up of upper navigation bar of the tool UCSF Chimera">
-2. The *'Tools'* drop down menu will open and then select *'Structure Comparison'* -> *'Match Maker'* <img src="img/chimera2.png" alt="Navigate to 'Tools' -> 'Structure Comparison' -> 'Match Maker'">
-3. A new window will open where you will choose which structure is your reference and which one will be matched to the reference. Enable *Show pairwise alignments(s)* but keep everything else at default settings. <img src="img/chimera3.png" alt="Opened view of the Match Maker window with everything set to default but enabling pairwise alignments after selecting the reference and to match structure">
-4. After that you can additionally run *Match Align* also found in *'Tools'* -> *'Structure Comparison'*. This will show a Multiple Structure Alignment which is useful to visually see the structural deviations along the length of the protein sequence and can be a quick way to find out regions of interest. <img src="img/chimera4.png" alt="Tool bar naviagted to the Match Align option ('Tools' -> 'Structure Comparison' -> 'Match Align')">
-5. From the Pairwise Alignment option in *Match Maker* a MultiAlignViewer window will open, where you will see a *'Headers'* option in the top navigation bar. Clicking this will reveal a drop down and you can select *'RMSD:backbone'* to only retain the RMSD values of the backbone atoms (or you can chnage this according to your needs). After this you can save the RMSD headers to a text file by clicking the *'Save...'* option from the *'Headers'* dropdown list. <img src="img/chimera5.png" alt="Opened view of the MultiAlignViewer, the navigation bar is in close view with the Headers dropdown open and the option RMSD:backbone is selected">
-6. A new window will open which will prompt you to type out the name and path for the RMSD header file. <img src="img/chimera6.png" alt="Window open after selecting to save RMSD headers giving option of file name and location">
+2. The *'Tools'* drop down menu will open and then select *'Structure Comparison'* -> *'Match Maker'* <img src="img/chimera2.png" alt="Navigate to 'Tools' -> 'Structure Comparison' -> 'Match Maker'" style="width:50%; height:auto;">
+3. A new window will open where you will choose which structure is your reference and which one will be matched to the reference. Enable *Show pairwise alignments(s)* but keep everything else at default settings. <img src="img/chimera3.png" alt="Opened view of the Match Maker window with everything set to default but enabling pairwise alignments after selecting the reference and to match structure" style="width:50%; height:auto;">
+4. After that you can additionally run *Match Align* also found in *'Tools'* -> *'Structure Comparison'*. This will show a Multiple Structure Alignment which is useful to visually see the structural deviations along the length of the protein sequence and can be a quick way to find out regions of interest. <img src="img/chimera4.png" alt="Tool bar naviagted to the Match Align option ('Tools' -> 'Structure Comparison' -> 'Match Align')" style="width:50%; height:auto;">
+5. From the Pairwise Alignment option in *Match Maker* a MultiAlignViewer window will open, where you will see a *'Headers'* option in the top navigation bar. Clicking this will reveal a drop down and you can select *'RMSD:backbone'* to only retain the RMSD values of the backbone atoms (or you can chnage this according to your needs). After this you can save the RMSD headers to a text file by clicking the *'Save...'* option from the *'Headers'* dropdown list. <img src="img/chimera5.png" alt="Opened view of the MultiAlignViewer, the navigation bar is in close view with the Headers dropdown open and the option RMSD:backbone is selected" style="width:50%; height:auto;">
+6. A new window will open which will prompt you to type out the name and path for the RMSD header file. <img src="img/chimera6.png" alt="Window open after selecting to save RMSD headers giving option of file name and location" style="width:50%; height:auto;">
 
 <ins>You can visualize the RMSD Headers for each of your protein structures as a heatmap:</ins> <img src="img/post_chimera1.png" alt="Heatmap depicting RMSD differences along the length of the Spike protein during the COVID-19 pandemic">
 
 
-<ins>Gather information of regions cross an RMSD threshold of your choice and slice them out into smaller PDB files like this:</ins> <img src="img/post_chimera3.png" alt="Sliced out regions of the Spike protein and its variants">
+<ins>Gather information of regions cross an RMSD threshold of your choice and slice them out into smaller PDB files like this:</ins> <img src="img/post_chimera3.png" alt="Sliced out regions of the Spike protein and its variants" style="width:50%; height:auto;">
 
 
-<ins>These regions can then be sliced out of the original PDB file and then analyzed separately using US-align:</ins> <img src="img/post_chimera2.png" alt="Spike protein with labelled regions of interest">
+<ins>These regions can then be sliced out of the original PDB file and then analyzed separately using US-align:</ins> <img src="img/post_chimera2.png" alt="Spike protein with labelled regions of interest" style="width:50%; height:auto;">
 
 ### <ins>Using BioPDB to slice out regions along a protein:</ins>
 
@@ -86,7 +86,7 @@ USalign -se -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdb
 
 > -se: Do not perform superposition. Useful for extracting alignment from superposed structure pairs
 
-Example of how you can visualize the results from US-align as a heatmap for both with and without superposition (for any number of proteins you wish to analyze): <img src="img/usalign.png" alt="2 heatmaps with labels a and b, with a being for no superposition and b being superimposed US-align results">
+Example of how you can visualize the results from US-align as a heatmap for both with and without superposition (for any number of proteins you wish to analyze): <img src="img/usalign.png" alt="2 heatmaps with labels a and b, with a being for no superposition and b being superimposed US-align results" style="width:50%; height:auto;">
 
 ## 3.4) Mapping Intrinsic Disorder and Binding Capability:
 ### <ins>Using IUPred for analyzing intrinsic disorder and binding capability:</ins>
@@ -95,9 +95,9 @@ Example of how you can visualize the results from US-align as a heatmap for both
 
 2. Paste your proteins amino acid sequence into the text box or upload the fasta file. After inputting your data. Select the paramters that best fit your needs. You will need to run this twice once for obtaining the IUPred3 scores and once for ANCHOR2 scores. Then press the *'Submit'* button to run your sequence. To choose between long and short look at this [explanation](https://iupred3.elte.hu/help_new). This study uses hsort disorder to emphasize local/regional differences instead of the overall protein. <img src="img/iupred2.png" alt="Selecting Option for IUPred3">
 
-3. Download your results from the resulting landing page (Select text file if you want to use the scripts in this repository). Using Python you can the per position scores into an array for analysis or visualization. This is what the results will look like: <img src="img/iupred3.png" alt="Landing page after you select Submit on the IUPred3 input page"> <img src="img/iupred_result.png" alt="screenshot of IUPred result file for IUPred3 scores">
+3. Download your results from the resulting landing page (Select text file if you want to use the scripts in this repository). Using Python you can the per position scores into an array for analysis or visualization. This is what the results will look like: <img src="img/iupred3.png" alt="Landing page after you select Submit on the IUPred3 input page"> <img src="img/iupred_result.png" alt="screenshot of IUPred result file for IUPred3 scores" style="width:40%; height:auto;">
 
-5. Below is an example of how you can visualize IUPred and ANCHOR2 scores of your proteins. <img src="img/IUPred.png" alt="Example image of SARS-CoV-2 N-protein variants showing lineplots of ANCHOR2 and IUPred scores">
+5. Below is an example of how you can visualize IUPred and ANCHOR2 scores of your proteins. <img src="img/IUPred.png" alt="Example image of SARS-CoV-2 N-protein variants showing lineplots of ANCHOR2 and IUPred scores" style="width:50%; height:auto;">
 
 ### <ins>Normal Mode Analysis (NMA) using [Bio3D](http://thegrantlab.org/bio3d/) in [R](https://www.r-project.org/):</ins>
 First you must [Install](http://thegrantlab.org/bio3d_v2/tutorials/installing-bio3d) Bio3D.
