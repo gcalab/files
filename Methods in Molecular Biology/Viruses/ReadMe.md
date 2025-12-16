@@ -125,19 +125,19 @@ The ` > ` from the command above (` > output_folder/results_no_se.txt`) will sav
 The final result will have all the outputs for the proteins you are analyzing into one file. You will need to parse this file to get region wise TM scores for further analysis. The resulting file/output will look something like this:
 <br><img src="img/usalign_result.png" alt="US-align result file/output" style="width:70%; height:auto;">
 
-Example of how you can visualize the results from US-align as a heatmap for both with and without superposition (for any number of proteins you wish to analyze): <br><img src="img/usalign.png" alt="2 heatmaps with labels a and b, with a being for no superposition and b being superimposed US-align results">
+Example of how you can visualize the results from US-align as a heatmap for both with and without superposition (for any number of proteins you wish to analyze): <br><img src="img/usalign.png" alt="2 heatmaps with labels a and b, with a being for no superposition and b being superimposed US-align results" style="width:80%; height:auto;">
 >Figure 4. Heatmap of TM scores (ranging from 0 to 1) of regions of structural change. The 21 regions of structural change that we identified were used to slice the corresponding regions from each file and obtain TM scores for each VOC and haplotype with USalign, using the Wuhan reference molecule as the template. The vertical axis is arranged in chronological order, depicting changes across the timeline of the pandemic, and the horizontal axis represents the 21 regions described in Figure 2. All TM scores falling under the TM threshold of 0.5 are colored in white. (a) TM scores using alignments from Chimera superimposition. (b) TM scores using USalign alignments. [Reference](https://www.mdpi.com/2079-7737/13/3/134#biology-13-00134-f004)
 
 ## 3.4) Mapping Intrinsic Disorder and Binding Capability:
 ### <ins>Using IUPred for analyzing intrinsic disorder and binding capability:</ins>
 
-1. Navigate to the [IUPred3 website](https://iupred3.elte.hu/) <br><img src="img/iupred1.png" alt="IUPred3 Landing Page">
+1. Navigate to the [IUPred3 website](https://iupred3.elte.hu/) <br><img src="img/iupred1.png" alt="IUPred3 Landing Page" style="width:70%; height:auto;">
 
 2. Paste your proteins amino acid sequence into the text box or upload the fasta file. After inputting your data. Select the paramters that best fit your needs. You will need to run this twice once for obtaining the IUPred3 scores and once for ANCHOR2 scores. Then press the *'Submit'* button to run your sequence. To choose between long and short look at this [explanation](https://iupred3.elte.hu/help_new). This study uses hsort disorder to emphasize local/regional differences instead of the overall protein. <br><img src="img/iupred2.png" alt="Selecting Option for IUPred3">
 
 3. Download your results from the resulting landing page (Select text file if you want to use the scripts in this repository). Using Python you can the per position scores into an array for analysis or visualization. This is what the results will look like: <br><img src="img/iupred3.png" alt="Landing page after you select Submit on the IUPred3 input page"> <img src="img/iupred_result.png" alt="screenshot of IUPred result file for IUPred3 scores" style="width:40%; height:auto;">
 
-5. Below is an example of how you can visualize IUPred and ANCHOR2 scores of your proteins. <br><img src="img/IUPred.png" alt="Example image of SARS-CoV-2 N-protein variants showing lineplots of ANCHOR2 and IUPred scores" style="width:70%; height:auto;">
+5. Below is an example of how you can visualize IUPred and ANCHOR2 scores of your proteins. <br><img src="img/IUPred.png" alt="Example image of SARS-CoV-2 N-protein variants showing lineplots of ANCHOR2 and IUPred scores" style="width:60%; height:auto;">
 >Figure 5. Intrinsic disorder and binding capability across the pandemic. [Reference](https://www.mdpi.com/1999-4915/16/9/1358#viruses-16-01358-f005)
 
 ### <ins>Normal Mode Analysis (NMA) using [Bio3D](http://thegrantlab.org/bio3d/) in [R](https://www.r-project.org/):</ins>
@@ -166,7 +166,7 @@ for (x in pdbfiles){
   write.csv(fluctuations, file = n, row.names =FALSE) #write the fluctuations into a csv file with the new name
 }
 ```
-Example of how how you can visualize the fluctuations and the first non trivial normal mode of different proteins: <br><img src="img/nma1.png" alt="Showing a line graph of fluctatuations of various spike proteins (variants and haplotypes) along with their first non trivial normal mode" style="width:80%; height:auto;">
+Example of how how you can visualize the fluctuations and the first non trivial normal mode of different proteins: <br><img src="img/nma1.png" alt="Showing a line graph of fluctatuations of various spike proteins (variants and haplotypes) along with their first non trivial normal mode" style="width:70%; height:auto;">
 > Figure 6. Normal mode analysis (NMA) of the N-protein across the pandemic. (a) Atomic fluctuation of residues mapped along the amino acid sequence of the N-protein for haplotypes and VOCs. Regions of structural change (R1, R2, R3, and R4) are shaded in light yellow, and the location of the nucleic acid-binding ‘basic finger’ is identified. (b,c) Details of plots in regions surrounding the R3 and R4 regions. (d) Visualization of the first non-trivial mode (mode 7) of the Wuhan N-protein molecule reflecting optimal energy states using a vector field representation. The most salient motion pattern in the ‘basic finger’ is highlighted and unfolded for all haplotypes and VOCs, showing notable changes in motion directionality. (e) A dynamic cross-correlation heat map for the Wuhan molecule averaged over all modes show correlated (red hues) and anti-correlated (blue hues) regions in the protein structure. Big and small boxes highlight the positively correlated LKR sequence embedding the R1 and R2 regions and the ‘basic finger’, respectively. [Reference](https://www.mdpi.com/1999-4915/16/9/1358#viruses-16-01358-f006)
 
 ## 3.5) Downstream Analysis:
