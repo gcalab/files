@@ -47,6 +47,7 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
                 <br>i) `True GDT_TS = GDT_TS * (NUMBER_OF_ATOMS_AA / Total Atoms of Reference Molecule)`
                 <br>ii) `True GDT_TS = 99.261 * (203/222) = 90.766`<br>
       <img src="img/lga9.png" alt="">
+    - You can report findings either just as a stand alone value or calculate the GDT_TS for multiple states of a protein such as the closed and open state of the SARS-CoV-2 Spike protein or test similarity of AlphaFolded monomer to each monomer chain of an experimentally resolved SARS-CoV-2 Spike trimer. [Reference](https://www.mdpi.com/2079-7737/13/3/134#biology-13-00134-t002)
 
 ## 3.3) Mutant Structure Comparison:
 ### <ins>Using UCSF Chimera:</ins>
