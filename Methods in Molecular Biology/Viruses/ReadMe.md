@@ -1,6 +1,9 @@
 # Proteome-wide *ab initio* Structural Analysis of Viral Evolution
 #### This github repository serves as a supplement to Chapter 10 of the book 'Evolutionary Genomics' (Methods Molecular Biology, Vol. 2981; Springer Nature) *(Awaiting Publication)*
 
+> [!NOTE]
+> If you used this guide to help you in your research please the book chapter in your work.
+
 #### Software used:
 1. [Local Colab Fold](https://github.com/YoshitakaMo/localcolabfold) (or latest version of [AlphaFold](https://alphafoldserver.com/welcome))
 2. [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/download.html)
