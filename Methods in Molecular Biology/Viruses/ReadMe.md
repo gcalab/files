@@ -35,7 +35,7 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 3. Another window will open with the link to where you will get your results. Click the link: *'LGA results'* <br><img src="img/lga3.png" alt="">
 4. The results will open in a new tab. Copy everything to the clip board (press `Ctrl + a` then `Ctrl + c`). <br><img src="img/lga4.png" alt="">
 5. Open the AS2TS server ([LGA_GDT](http://proteinmodel.org/AS2TS/LGA/lga.html)) in a new tab and enter your email address agaon followed by some changes to the parameters.
-    > In the parameters slot, change -4 to -3, and add -d:4.0  -al at the end. So the complete parameters for Run 2 should be `-3 -o2 -gdc -lga_m -stral  -d:4.0  -al`
+    > In the parameters slot, change -4 to -3, and add -d:4.0  -al at the end. So the complete parameters for Run 2 should be `-3 -o2 -gdc -lga_m -stral  -d:4.0  -al`<br>
 <br><img src="img/lga5.png" alt="">
 7. Then go to the bottom of the page to box 4 and make sure there is no data/text in boxes 1 to 3 as that will cause the server to ignore anything in Box 4. Paste (Press `Ctrl + v`) the output from LGA Run 1 that you had copied into the textbox of Box 4 and then click *'START'*. <br><img src="img/lga6.png" alt="">
 8. A new tab will open that will have a link to the Run 2 results. Click *'LGA results'* <br><img src="img/lga7.png" alt="">
