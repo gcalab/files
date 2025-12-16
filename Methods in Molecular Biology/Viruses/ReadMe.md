@@ -34,16 +34,16 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 > [!IMPORTANT]
 > Before submitting any 3D models of your molecules (PDB or CIF files) you need to superimpose them first to the reference structure which you can do in [Chimera](https://www.cgl.ucsf.edu/chimera/download.html). After superimposing you will need to select each of the molecules one by one and save each selection as a single PDB file. To do this go to [Using UCSF Chimera](https://github.com/gcalab/files/blob/master/Methods%20in%20Molecular%20Biology/Viruses/ReadMe.md#using-ucsf-chimera) and follow it until point 3 (MatchMaker). Then after the structures have been aligned click the 'Select' -> 'Chain' -> (select your desired chain), then click 'Actions' -> 'Write PDB...' -> (input desired filename) -> (select a model to save; you will repeat this for both reference and target) -> make sure to set the `Save relative to model:` as the reference structure.
 
-1. Enter your email and add '-d:4.0' to the end of the default LGA parameters input box. It should look like: `-4 -o2 -gdc -lga_m -stral -d:4.0` <br><img src="img/lga1.png" alt="">
-2. Select your desired pdb files for analysis. Set the `Molecule2 no change` to your reference structure and the `Molecule1 to rotate` as your target structure for comparison to your reference. Then click *'START'*. <br><img src="img/lga2.png" alt="">
-3. Another window will open with the link to where you will get your results. Click the link: *'LGA results'* <br><img src="img/lga3.png" alt="">
-4. The results will open in a new tab. Copy everything to the clip board (press `Ctrl + a` then `Ctrl + c`). <br><img src="img/lga4.png" alt="">
+1. Enter your email and add '-d:4.0' to the end of the default LGA parameters input box. It should look like: `-4 -o2 -gdc -lga_m -stral -d:4.0` <br><img src="img/lga1.png" alt="" style="width:80%; height:auto;">
+2. Select your desired pdb files for analysis. Set the `Molecule2 no change` to your reference structure and the `Molecule1 to rotate` as your target structure for comparison to your reference. Then click *'START'*. <br><img src="img/lga2.png" alt="" style="width:70%; height:auto;">
+3. Another window will open with the link to where you will get your results. Click the link: *'LGA results'* <br><img src="img/lga3.png" alt="" style="width:40%; height:auto;">
+4. The results will open in a new tab. Copy everything to the clip board (press `Ctrl + a` then `Ctrl + c`). <br><img src="img/lga4.png" alt="" style="width:40%; height:auto;">
 5. Open the AS2TS server ([LGA_GDT](http://proteinmodel.org/AS2TS/LGA/lga.html)) in a new tab and enter your email address agaon followed by some changes to the parameters.
     > In the parameters slot, change -4 to -3, and add -d:4.0  -al at the end. So the complete parameters for Run 2 should be `-3 -o2 -gdc -lga_m -stral  -d:4.0  -al`
-<img src="img/lga5.png" alt="">
-7. Then go to the bottom of the page to box 4 and make sure there is no data/text in boxes 1 to 3 as that will cause the server to ignore anything in Box 4. Paste (Press `Ctrl + v`) the output from LGA Run 1 that you had copied into the textbox of Box 4 and then click *'START'*. <br><img src="img/lga6.png" alt="">
-8. A new tab will open that will have a link to the Run 2 results. Click *'LGA results'* <br><img src="img/lga7.png" alt="">
-9. You now have the final result output from LGA. You can save this to a text file. <br><img src="img/lga8.png" alt="">
+<img src="img/lga5.png" alt="" style="width:80%; height:auto;">
+7. Then go to the bottom of the page to box 4 and make sure there is no data/text in boxes 1 to 3 as that will cause the server to ignore anything in Box 4. Paste (Press `Ctrl + v`) the output from LGA Run 1 that you had copied into the textbox of Box 4 and then click *'START'*. <br><img src="img/lga6.png" alt="" style="width:80%; height:auto;">
+8. A new tab will open that will have a link to the Run 2 results. Click *'LGA results'* <br><img src="img/lga7.png" alt="" style="width:40%; height:auto;">
+9. You now have the final result output from LGA. You can save this to a text file. <br><img src="img/lga8.png" alt="" style="width:40%; height:auto;">
 10. The information that you need is deep within the file noted by lines that start with `# RMSD_GDC results:` and `#CA`. An easy way to find this would be to search the file using `Ctrl + f` and type in '# RMSD_GDC results:' into the look up search bar.
 To calculate the true Global Distance Test Score (GDT_TS) you will need the data from columns GDT_TS and NUMBER_OF_ATOMS_AA.
 
@@ -52,7 +52,7 @@ To calculate the true Global Distance Test Score (GDT_TS) you will need the data
 <br>Input these numbers into the following equation:<br>
       - `True GDT_TS = GDT_TS * (NUMBER_OF_ATOMS_AA / Total Atoms of Reference Molecule)`<br>
       - `True GDT_TS = 99.261 * (203/222) = 90.766`<br>
-      <img src="img/lga9.png" alt=""><br>
+      <img src="img/lga9.png" alt="" style="width:80%; height:auto;"><br>
 
 You can report findings either just as a stand alone value or calculate the GDT_TS for multiple states of a protein such as the closed and open state of the SARS-CoV-2 Spike protein or test similarity of AlphaFolded monomer to each monomer chain of an experimentally resolved SARS-CoV-2 Spike trimer. [Reference](https://www.mdpi.com/2079-7737/13/3/134#biology-13-00134-t002)
 
