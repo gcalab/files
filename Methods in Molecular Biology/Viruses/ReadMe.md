@@ -52,7 +52,7 @@ To calculate the true Global Distance Test Score (GDT_TS) you will need the data
 <br>Input these numbers into the following equation:<br>
       - `True GDT_TS = GDT_TS * (NUMBER_OF_ATOMS_AA / Total Atoms of Reference Molecule)`<br>
       - `True GDT_TS = 99.261 * (203/222) = 90.766`<br>
-      - <img src="img/lga9.png" alt=""><br>
+      <img src="img/lga9.png" alt=""><br>
 
 You can report findings either just as a stand alone value or calculate the GDT_TS for multiple states of a protein such as the closed and open state of the SARS-CoV-2 Spike protein or test similarity of AlphaFolded monomer to each monomer chain of an experimentally resolved SARS-CoV-2 Spike trimer. [Reference](https://www.mdpi.com/2079-7737/13/3/134#biology-13-00134-t002)
 
