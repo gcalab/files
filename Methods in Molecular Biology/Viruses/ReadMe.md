@@ -45,13 +45,13 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 8. A new tab will open that will have a link to the Run 2 results. Click *'LGA results'* <br><img src="img/lga7.png" alt="">
 9. You now have the final result output from LGA. You can save this to a text file. <br><img src="img/lga8.png" alt="">
 10. The information that you need is deep within the file noted by lines that start with `# RMSD_GDC results:` and `#CA`. An easy way to find this would be to search the file using `Ctrl + f` and type in '# RMSD_GDC results:' into the look up search bar.
-   -To calculate the true Global Distance Test Score (GDT_TS) you will need the data from columns GDT_TS and NUMBER_OF_ATOMS_AA.
-   -In this example below, the GDT_TS score is 99.261 and the NUMBER_OF_ATOMS_AA is 203. The total number of atoms for the reference structure used in this example was 222 (which you can find in the output of Run 1 as seen in point 4 above).
-   -Input these numbers into the following equation:
-    - `True GDT_TS = GDT_TS * (NUMBER_OF_ATOMS_AA / Total Atoms of Reference Molecule)`
-    - `True GDT_TS = 99.261 * (203/222) = 90.766`<br>
-      <img src="img/lga9.png" alt="">
-   -You can report findings either just as a stand alone value or calculate the GDT_TS for multiple states of a protein such as the closed and open state of the SARS-CoV-2 Spike protein or test similarity of AlphaFolded monomer to each monomer chain of an experimentally resolved SARS-CoV-2 Spike trimer. [Reference](https://www.mdpi.com/2079-7737/13/3/134#biology-13-00134-t002)
+To calculate the true Global Distance Test Score (GDT_TS) you will need the data from columns GDT_TS and NUMBER_OF_ATOMS_AA.
+    -In this example below, the GDT_TS score is 99.261 and the NUMBER_OF_ATOMS_AA is 203. The total number of atoms for the reference structure used in this example was 222 (which you can find in the output of Run 1 as seen in point 4 above).
+    -Input these numbers into the following equation:
+    -`True GDT_TS = GDT_TS * (NUMBER_OF_ATOMS_AA / Total Atoms of Reference Molecule)`
+    -`True GDT_TS = 99.261 * (203/222) = 90.766`<br>
+    -<img src="img/lga9.png" alt="">
+    -You can report findings either just as a stand alone value or calculate the GDT_TS for multiple states of a protein such as the closed and open state of the SARS-CoV-2 Spike protein or test similarity of AlphaFolded monomer to each monomer chain of an experimentally resolved SARS-CoV-2 Spike trimer. [Reference](https://www.mdpi.com/2079-7737/13/3/134#biology-13-00134-t002)
 
 ## 3.3) Mutant Structure Comparison:
 ### <ins>Using UCSF Chimera:</ins>
