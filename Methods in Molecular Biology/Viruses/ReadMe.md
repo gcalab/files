@@ -77,6 +77,8 @@ You can report findings either just as a stand alone value or calculate the GDT_
 <ins>Gather information of regions cross an RMSD threshold of your choice and slice them out into smaller PDB files like this:</ins> <br><img src="img/post_chimera3.png" alt="Sliced out regions of the Spike protein and its variants" style="width:50%; height:auto;">
 > Figure 3. Structural models of S-proteins with regions of structural change (region 1 to 21 as identified in Figure 2) mapped onto them and colored according to TM scores from US-align and Chimera alignments. (a) Structural alignment of AlphaFold2-modeled structures of VOCs and Wuhan reference strain. (b) Structural model of VOC Omicron. Numbers indicate regions of structural change. [Reference](https://www.mdpi.com/2079-7737/13/3/134#biology-13-00134-f003)
 
+> [!IMPORTANT]
+> For further analysis you should look at identified regions in Chimera to decided if all of them are informative and remove some or expand to include surrounding residues as downstream analysis using US-align cannot assess regions under 4/5 residues.
 
 <ins>These regions can then be sliced out of the original PDB file and then analyzed separately using US-align:</ins> <br><img src="img/post_chimera2.png" alt="Spike protein with labelled regions of interest" style="width:50%; height:auto;">
 > Figure 2. Three-dimensional (3D) models of molecular change at the atomic level in regions of structural deviation. Using the data from Figure 1, all residues that surpassed the 3 Å threshold were translated into 21 regions of structural deviation. Model snapshots of these regions were taken in Chimera to ensure all of the superimposed structures and their corresponding residues were adequately captured for each region. The location of regions in the amino acid sequence is indicated in red. Each variant and haplotype structure is color-coded according to the bottom-left index. [Reference](https://www.mdpi.com/2079-7737/13/3/134#biology-13-00134-f002)
@@ -84,9 +86,6 @@ You can report findings either just as a stand alone value or calculate the GDT_
 ### <ins>Using BioPDB to slice out regions along a protein:</ins>
 > [!IMPORTANT]
 > Before slicing out the PDB files you need to superimpose them first to the reference structure which you can do in [Chimera](https://www.cgl.ucsf.edu/chimera/download.html). After superimposing you will need to select each of the molecules one by one and save each selection as a single PDB file. Follow [this guide](https://github.com/gcalab/files/tree/master/Methods%20in%20Molecular%20Biology/Viruses/additional_tutorials#superimposing-structures-in-ucsf-chimera). on how to do that.
-
-> [!IMPORTANT]
-> For further analysis you should look at identified regions in Chimera to decided if all of them are informative and remove some or expand to include surrounding residues as downstream analysis using US-align cannot assess regions under 4/5 residues.
 
 Code snippet to slice out portions of a PDB file to allow regional analysis of structural deviation. Adapted from an [answer](https://stackoverflow.com/a/22453336) by [Juniper-](https://stackoverflow.com/users/899470/juniper) on [Stack Overflow](https://stackoverflow.com/questions).
 ```
