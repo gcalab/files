@@ -4,7 +4,7 @@
 ```
 /data
 ├──/fasta
-|  ├── #contains original fasta file and mutated fasta file after running 
+|  ├── #contains original fasta file and mutated fasta file after running get_mut_fasta() from main.py
 ├──/iupred
 |  ├── #contains results from IUPred3
 ├──/mutations
@@ -14,5 +14,5 @@
 ├──/rmsd_hdr
 |  ├── #contains RMSD headers after running MatchMaker in Chimera
 ├──/sliced_pdbs
-   ├── #contains sliced up regions of the pdb files in the pdbs/ folder using RMSD header data
+   ├── #contains sliced up regions of the pdb files in the pdbs/ folder using RMSD header dataafter get_slices() from main.py
 ```
