@@ -64,14 +64,16 @@ def get_mut_fasta(fasta_path, mut_path, out_path):
     #Convert fasta string to char array for easy mutating
     og_fasta = list(read_file(fasta_path)[0][0]) #Common structure list of lists as used by most other functions so access fasta string through [0][0]
     labels, mutations = get_files(mut_path) #[label array, [array of mutation arrays]] = [['label1','label2','label3'],[[list1 of mutations],[list2 of mutations],[list3 of mutations]]]
-    new_fasta = {} #dict to store new mutated sequences labelled with their original mutant file name
-
+    
     for i in range(len(labels)):
         mutated_fasta = og_fasta.copy()
         mutations[i] = list(set([x[0] for x in mutations[i]])) #Rectify formating for easy mutation and removing duplicates using set then converting back to list
-        new_fasta[labels[i]] = mutate(mutated_fasta, mutations[i])
-
-    return new_fasta
+        name = labels[i].split('.')[0]
+        new_seq = mutate(mutated_fasta, mutations[i])
+        new_file = open(out_path + name + '.fasta','w')
+        new_file.write(new_seq)
+        new_file.close()
+    return
 
 #Function to process the RMSD headers from the Chimera MultiAlignViewer
 def get_rmsd_hdr(folder):
