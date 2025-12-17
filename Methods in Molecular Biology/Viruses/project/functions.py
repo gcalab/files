@@ -3,6 +3,15 @@ import os
 import pandas as pd
 import Bio.PDB as bpdb
 import itertools
+import re
+
+#Function to read individual file
+def read_file(file_path):
+    f = open(file_path, 'r')
+    temp = [x.rstrip().split() for x in f.readlines()]
+    f.close()
+
+    return temp
 
 #General function to retrieve data from files into a string object
 def get_files(folder):
@@ -10,12 +19,29 @@ def get_files(folder):
     data = []
 
     for i in files:
-        f = open(folder + i, 'r')
-        temp = [x.rstrip().split() for x in f.readlines()]
+        temp = read_file(folder + i)
         data.append(temp)
-        f.close()
     
-    return i, data
+    return files, data
+
+#Function to add mutations to original fasta sequence
+def mutate(seq,subs):
+    return
+
+#Function to mutate original FASTA file and save new FASTA sequences
+def get_mut_fasta(fasta_path, mut_path, out_path):
+    #Convert fasta string to char array for easy mutating
+    og_fasta = list(read_file(fasta_path)[0][0]) #Common structure list of lists as used by most other functions so access fasta string through [0][0]
+    labels, mutations = get_files(mut_path) #[label array, [array of mutation arrays]] = [['label1','label2','label3'],[[list1 of mutations],[list2 of mutations],[list3 of mutations]]]
+    new_fasta = {}
+    
+    for i in range(len(labels)):
+        pos_adjuster = -1 #Accounting for deletions or insertions the mutation position needs to be adjusted; we start at -1 due to how python counts arrays (start at 0)
+        mutated_fasta = og_fasta.copy()
+        mutations[i] = [x[0] for x in mutations[i]] #Rectify formating for easy mutation
+        new_fasta[labels[i]] = mutate(mutated_fasta, mutations)
+
+    return
 
 #Function to process the RMSD headers from the Chimera MultiAlignViewer
 def get_rmsd_hdr(folder):
