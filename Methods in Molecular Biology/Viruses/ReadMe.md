@@ -82,6 +82,8 @@ You can report findings either just as a stand alone value or calculate the GDT_
 > Figure 2. Three-dimensional (3D) models of molecular change at the atomic level in regions of structural deviation. Using the data from Figure 1, all residues that surpassed the 3 Å threshold were translated into 21 regions of structural deviation. Model snapshots of these regions were taken in Chimera to ensure all of the superimposed structures and their corresponding residues were adequately captured for each region. The location of regions in the amino acid sequence is indicated in red. Each variant and haplotype structure is color-coded according to the bottom-left index. [Reference](https://www.mdpi.com/2079-7737/13/3/134#biology-13-00134-f002)
 
 ### <ins>Using BioPDB to slice out regions along a protein:</ins>
+> [!IMPORTANT]
+> Before slicing out the PDB files you need to superimpose them first to the reference structure which you can do in [Chimera](https://www.cgl.ucsf.edu/chimera/download.html). After superimposing you will need to select each of the molecules one by one and save each selection as a single PDB file. Follow [this guide](https://github.com/gcalab/files/tree/master/Methods%20in%20Molecular%20Biology/Viruses/additional_tutorials#superimposing-structures-in-ucsf-chimera). on how to do that.
 
 Code snippet to slice out portions of a PDB file to allow regional analysis of structural deviation. Adapted from an [answer](https://stackoverflow.com/a/22453336) by [Juniper-](https://stackoverflow.com/users/899470/juniper) on [Stack Overflow](https://stackoverflow.com/questions).
 ```
