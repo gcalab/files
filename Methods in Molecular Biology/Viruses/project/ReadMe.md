@@ -17,4 +17,8 @@
    ├── #contains directory of directories with internal dirs named 0,1,... representing identified regions of structural deviation; sliced up regions of the pdb files in the pdbs/ folder using RMSD header data after running get_slices() from main.py
 ```
 ### Scripts
-#### main.py
+#### Callable functions of main.py:
+
+1.   Hola
+2.   Hola 2
+3.   Hehe
