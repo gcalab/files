@@ -4,6 +4,6 @@
 
 1. <img src="img/save_pdb_1.png" alt="" style="width:70%; height:auto;">
 2. <img src="img/save_pdb_2.png" alt="" style="width:60%; height:auto;">
-3. <img src="img/save_pdb_3.png" alt="" style="width:40%; height:auto;">
+3. <img src="img/save_pdb_3.png" alt="" style="width:60%; height:auto;">
 4. <img src="img/save_pdb_4.png" alt="" style="width:70%; height:auto;">
 5. <img src="img/save_pdb_5.png" alt="" style="width:40%; height:auto;">
