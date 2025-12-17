@@ -19,6 +19,8 @@
 ### Scripts
 #### Callable functions of main.py:
 
-1.   Hola
-2.   Hola 2
-3.   Hehe
+1.   get_mut_fasta(fasta_path, mut_path, out_path)
+2.   get_rmsd_hdr(folder)
+3.   get_regions(rmsd_vals, threshold)
+4.   get_slices(regions,pdb_folder, chain, output)
+5.   get_iupred(folder)
