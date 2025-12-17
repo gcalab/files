@@ -22,15 +22,15 @@
 1.   get_mut_fasta(fasta_path, mut_path, out_path)
      - This will generate fasta files incorporating mutations provided in csv (look at example for formatting mutation file)
      - Needs: location to fasta file, mutation file, and a path to the output folder
-3.   get_rmsd_hdr(folder)
+2.   get_rmsd_hdr(folder)
      - This will process the RMSD headers for visualization (reads file data into array)
      - Needs: path to folder
-5.   get_regions(rmsd_vals, threshold)
+3.   get_regions(rmsd_vals, threshold)
      - This will get regions of structural deviation using RMSD header data based on a threshold
      - Needs output from get_rmsd_hdr() and user defined threshold (reccomended value: 3.0)
-7.   get_slices(regions,pdb_folder, chain, output)
+4.   get_slices(regions,pdb_folder, chain, output)
      - This will slice of regions identified from get_regions() into the sliced_pdbs/ folder
      - Needs: output from get_regions(), path to slice_pdb folder, what chain you want sliced (check chain id in Chimera), path to output folder
-9.   get_iupred(folder)
+5.   get_iupred(folder)
      - This will process the IUPred3 output files for visualization
      - Needs: path to folder with IUPred3 files
