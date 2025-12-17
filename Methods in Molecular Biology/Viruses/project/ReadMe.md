@@ -14,5 +14,5 @@
 ├──/rmsd_hdr
 |  ├── #contains RMSD headers after running MatchMaker in Chimera
 ├──/sliced_pdbs
-|  ├── #contains sliced up regions of the pdb files in the pdbs/ folder using RMSD header data
+   ├── #contains sliced up regions of the pdb files in the pdbs/ folder using RMSD header data
 ```
