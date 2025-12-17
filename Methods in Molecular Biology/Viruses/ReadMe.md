@@ -85,6 +85,9 @@ You can report findings either just as a stand alone value or calculate the GDT_
 > [!IMPORTANT]
 > Before slicing out the PDB files you need to superimpose them first to the reference structure which you can do in [Chimera](https://www.cgl.ucsf.edu/chimera/download.html). After superimposing you will need to select each of the molecules one by one and save each selection as a single PDB file. Follow [this guide](https://github.com/gcalab/files/tree/master/Methods%20in%20Molecular%20Biology/Viruses/additional_tutorials#superimposing-structures-in-ucsf-chimera). on how to do that.
 
+> [!IMPORTANT]
+> For further analysis you should look at identified regions in Chimera to decided if all of them are informative and remove some or expand to include surrounding residues as downstream analysis using US-align cannot assess regions under 4/5 residues.
+
 Code snippet to slice out portions of a PDB file to allow regional analysis of structural deviation. Adapted from an [answer](https://stackoverflow.com/a/22453336) by [Juniper-](https://stackoverflow.com/users/899470/juniper) on [Stack Overflow](https://stackoverflow.com/questions).
 ```
 import Bio.PDB as bpdb
