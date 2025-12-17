@@ -29,4 +29,8 @@
      - This will get regions of structural deviation using RMSD header data based on a threshold
      - Needs output from get_rmsd_hdr() and user defined threshold (reccomended value: 3.0)
 7.   get_slices(regions,pdb_folder, chain, output)
-8.   get_iupred(folder)
+     - This will slice of regions identified from get_regions() into the sliced_pdbs/ folder
+     - Needs: output from get_regions(), path to slice_pdb folder, what chain you want sliced (check chain id in Chimera), path to output folder
+9.   get_iupred(folder)
+     - This will process the IUPred3 output files for visualization
+     - Needs: path to folder with IUPred3 files
