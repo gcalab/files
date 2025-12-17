@@ -20,7 +20,10 @@
 #### Callable functions of main.py:
 
 1.   get_mut_fasta(fasta_path, mut_path, out_path)
-2.   get_rmsd_hdr(folder)
-3.   get_regions(rmsd_vals, threshold)
-4.   get_slices(regions,pdb_folder, chain, output)
-5.   get_iupred(folder)
+     - This will generate fasta files incorporating mutations provided in csv (look at example for formatting mutation file)
+     - Needs: location to fasta file, mutation file, and a path to the output folder
+3.   get_rmsd_hdr(folder)
+     - h
+5.   get_regions(rmsd_vals, threshold)
+6.   get_slices(regions,pdb_folder, chain, output)
+7.   get_iupred(folder)
