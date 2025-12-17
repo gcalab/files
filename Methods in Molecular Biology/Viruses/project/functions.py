@@ -24,24 +24,54 @@ def get_files(folder):
     
     return files, data
 
+#Function to get positions from mutation string: D614G
+def get_pos(subs):
+    for i in range(len(subs)):
+        subs[i] = int(''.join(re.findall(r'\d', subs[i]))) #extract digits only from string text
+    return subs
+
 #Function to add mutations to original fasta sequence
 def mutate(seq,subs):
-    return
+    og_subs = subs.copy()
+    positions = get_pos(subs)
+    sorted_subs = [val for _, val in sorted(zip(positions, og_subs))]
+    sorted_pos = sorted(positions)
+
+    pos_adjuster = -1 #Accounting for deletions or insertions the mutation position needs to be adjusted; we start at -1 due to how python counts arrays (start at 0)
+    
+    for i in range(len(sorted_pos)):
+        if '-' in sorted_subs[i]:
+            if seq[sorted_pos[i] + pos_adjuster] == sorted_subs[i][0]:
+                seq.pop(sorted_pos[i] + pos_adjuster)
+                pos_adjuster -= 1
+            else:
+                print('Original Residue Mismatch AA DEL', sorted_subs[i][0], ' -X- ', seq[sorted_pos[i]])
+
+        elif '+' in sorted_subs[i]:
+            seq.insert(sorted_pos[i] + pos_adjuster, ''.join(char for char in sorted_subs[i] if char.isalpha())) #Add only alphabets back into char array [A,B,C,D] -> +2EPE [A,EPE,BCD]
+            pos_adjuster += 1
+
+        else:
+            if seq[sorted_pos[i] + pos_adjuster] == sorted_subs[i][0]:
+                seq[sorted_pos[i] + pos_adjuster] = sorted_subs[i][-1]
+            else:
+                print('Original Residue Mismatch AA SUB Position: ', str(sorted_pos[i]), ', ',  sorted_subs[i][0], ' -X- ', seq[sorted_pos[i]])
+
+    return ''.join(seq)
 
 #Function to mutate original FASTA file and save new FASTA sequences
 def get_mut_fasta(fasta_path, mut_path, out_path):
     #Convert fasta string to char array for easy mutating
     og_fasta = list(read_file(fasta_path)[0][0]) #Common structure list of lists as used by most other functions so access fasta string through [0][0]
     labels, mutations = get_files(mut_path) #[label array, [array of mutation arrays]] = [['label1','label2','label3'],[[list1 of mutations],[list2 of mutations],[list3 of mutations]]]
-    new_fasta = {}
-    
-    for i in range(len(labels)):
-        pos_adjuster = -1 #Accounting for deletions or insertions the mutation position needs to be adjusted; we start at -1 due to how python counts arrays (start at 0)
-        mutated_fasta = og_fasta.copy()
-        mutations[i] = [x[0] for x in mutations[i]] #Rectify formating for easy mutation
-        new_fasta[labels[i]] = mutate(mutated_fasta, mutations)
+    new_fasta = {} #dict to store new mutated sequences labelled with their original mutant file name
 
-    return
+    for i in range(len(labels)):
+        mutated_fasta = og_fasta.copy()
+        mutations[i] = list(set([x[0] for x in mutations[i]])) #Rectify formating for easy mutation and removing duplicates using set then converting back to list
+        new_fasta[labels[i]] = mutate(mutated_fasta, mutations[i])
+
+    return new_fasta
 
 #Function to process the RMSD headers from the Chimera MultiAlignViewer
 def get_rmsd_hdr(folder):
