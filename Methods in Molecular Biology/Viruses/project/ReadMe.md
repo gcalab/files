@@ -31,8 +31,8 @@
 4.   get_slices(regions,pdb_folder, chain, output)
      - This will slice of regions identified from get_regions() into the sliced_pdbs/ folder
      - Needs: output from get_regions(), path to slice_pdb folder, what chain you want sliced (check chain id in Chimera), path to output folder
-     > [!IMPORTANT]
-     > For further analysis you should look at identified regions in Chimera to decided if all of them are informative and remove some or expand to include surrounding residues as downstream analysis using US-align cannot assess regions under 4/5 residues.
+> [!IMPORTANT]
+> For further analysis you should look at identified regions in Chimera to decided if all of them are informative and remove some or expand to include surrounding residues as downstream analysis using US-align cannot assess regions under 4/5 residues.
 5.   get_iupred(folder)
      - This will process the IUPred3 output files for visualization
      - Needs: path to folder with IUPred3 files
