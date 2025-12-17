@@ -1,5 +1,6 @@
 # Project Structure & Files
 
+```
 /data
 ├──/fasta
 ├──/iupred
@@ -7,3 +8,4 @@
 ├──/pdbs
 ├──/rmsd_hdr
 ├──/sliced_pdbs
+```
