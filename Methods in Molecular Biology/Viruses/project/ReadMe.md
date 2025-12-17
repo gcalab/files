@@ -17,7 +17,7 @@
    ├── #contains directory of directories with internal dirs named 0,1,... representing identified regions of structural deviation; sliced up regions of the pdb files in the pdbs/ folder using RMSD header data after running get_slices() from main.py
 ```
 ### Scripts
-#### Callable functions of main.py:
+#### Callable functions of functions.py:
 
 1.   get_mut_fasta(fasta_path, mut_path, out_path)
      - This will generate fasta files incorporating mutations provided in csv (look at example for formatting mutation file)
@@ -36,3 +36,6 @@
 5.   get_iupred(folder)
      - This will process the IUPred3 output files for visualization
      - Needs: path to folder with IUPred3 files
+
+> [!TIP]
+> You should call functions according to your requirements in main.py and customize your workflow to where you are in the process when following the guide for [Proteome-wide ab initio Structural Analysis of Viral Evolution](https://github.com/gcalab/files/blob/master/Methods%20in%20Molecular%20Biology/Viruses/ReadMe.md)
