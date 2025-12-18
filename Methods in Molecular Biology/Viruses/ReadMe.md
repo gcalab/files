@@ -161,11 +161,12 @@ Example of how you can visualize the results from US-align as a heatmap for both
 
 3. Download your results from the resulting landing page (Select text file if you want to use the scripts in this repository). Using Python you can the per position scores into an array for analysis or visualization. This is what the results will look like: <br><img src="img/iupred3.png" alt="Landing page after you select Submit on the IUPred3 input page" style="width:85%; height:auto;"> <img src="img/iupred_result.png" alt="screenshot of IUPred result file for IUPred3 scores" style="width:35%; height:auto;">
 
-5. Below is an example of how you can visualize IUPred and ANCHOR2 scores of your proteins. <br><img src="img/IUPred.png" alt="Example image of SARS-CoV-2 N-protein variants showing lineplots of ANCHOR2 and IUPred scores" style="width:60%; height:auto;">
->Figure 5. Intrinsic disorder and binding capability across the pandemic. [Reference](https://www.mdpi.com/1999-4915/16/9/1358#viruses-16-01358-f005)
-
 > [!TIP]
 > You can use the function `get_iupred(path_to_folder)` from functions.py script in the [project/](https://github.com/gcalab/files/tree/master/Methods%20in%20Molecular%20Biology/Viruses/project) folder to extract IUPred3 (disorder) and ANCOR2 (binding capability) for visualization.
+
+4. Below is an example of how you can visualize IUPred and ANCHOR2 scores of your proteins. <br><img src="img/IUPred.png" alt="Example image of SARS-CoV-2 N-protein variants showing lineplots of ANCHOR2 and IUPred scores" style="width:60%; height:auto;">
+>Figure 5. Intrinsic disorder and binding capability across the pandemic. [Reference](https://www.mdpi.com/1999-4915/16/9/1358#viruses-16-01358-f005)
+
 
 ### <ins>Normal Mode Analysis (NMA) using [Bio3D](http://thegrantlab.org/bio3d/) in [R](https://www.r-project.org/):</ins>
 First you must [Install](http://thegrantlab.org/bio3d_v2/tutorials/installing-bio3d) Bio3D.
