@@ -23,8 +23,8 @@
 ### Scripts
 
 > [!NOTE]
-> The `get_nma.R` script is an R file that you can run in Rstudio. You can adjust in input and output folder paths in file.
-> The `run_colab.sh` script allows you loop through an input directory of fasta files and outputs the result of Local ColabFold into a user defined directory. Example command: `./run_colab.sh "data/fasta/*" "output/"`
+> 1.   The `get_nma.R` script is an R file that you can run in Rstudio. You can adjust in input and output folder paths in file.
+> 2.   The `run_colab.sh` script allows you loop through an input directory of fasta files and outputs the result of Local ColabFold into a user defined directory. Example command: `./run_colab.sh "data/fasta/*" "output/"`
 
 #### Callable functions of functions.py:
 
