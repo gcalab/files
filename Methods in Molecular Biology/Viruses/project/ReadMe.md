@@ -19,6 +19,10 @@
    └── #contains directory of directories with internal dirs named 0,1,... representing identified regions of structural deviation; sliced up regions of the pdb files in the pdbs/ folder using RMSD header data after running get_slices() from main.py
 ```
 ### Scripts
+
+> [!NOTE]
+> The `get_nma.R` script is an R file that you can run in Rstudio and is the only non python script for analysis. You can adjust in input and output folder paths in file.
+
 #### Callable functions of functions.py:
 
 1.   get_mut_fasta(fasta_path, mut_path, out_path)
