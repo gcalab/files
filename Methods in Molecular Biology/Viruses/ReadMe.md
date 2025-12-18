@@ -5,6 +5,9 @@
 > [!NOTE]
 > If you used this guide to help you in your research please cite the book chapter in your work.
 
+> [!IMPORTANT]
+> The Tips in this guide link each process of this workflow to scripts and functions in the [project/](https://github.com/gcalab/files/tree/master/Methods%20in%20Molecular%20Biology/Viruses/project) folder that hosts all the code and data for this workflow.
+
 #### Software used:
 1. [Local Colab Fold](https://github.com/YoshitakaMo/localcolabfold) (or latest version of [AlphaFold](https://alphafoldserver.com/welcome))
 2. [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/download.html)
