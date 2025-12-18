@@ -27,6 +27,9 @@
 ```
 colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-relax $fasta_file output
 ```
+> [!TIP]
+> You can run LocalColabFold using the helper script `run_colab.sh` with the command: `./run_colab.sh "data/fasta/*" "output/"` to iterate over fasta files in a user defined input folder and output it to your desired path
+
 [Explanation of input flags](https://github.com/YoshitakaMo/localcolabfold?tab=readme-ov-file#flags):
 + --amber: Refine structure through energy minimization.
 + --random-seed: Set random number so that others can reproduce the exact same structure when given the same parameters.
