@@ -27,8 +27,8 @@
      - Needs: path to folder
      - This will process the RMSD headers for visualization (reads file data into array)
      - Returns list of labels and list of headers like this:
-       - `['alpha.hdr', 'delta.hdr', 'omicron.hdr']`
-       - `[array([16.4208 , 16.1124 , 13.7371 , ...,  9.11682,  9.89912, 10.2027 ],shape=(1270,)),
+       - labels: `['alpha.hdr', 'delta.hdr', 'omicron.hdr']`
+       - headers: `[array([16.4208 , 16.1124 , 13.7371 , ...,  9.11682,  9.89912, 10.2027 ],shape=(1270,)),
            array([12.9343 , 12.0993 , 11.3014 , ...,  6.1363 ,  6.26319,  6.21893],shape=(1271,)),
            array([ 3.8281 ,  3.97543,  4.18576, ..., 61.346  , 66.0447 , 66.6376 ],shape=(1265,))]`
          
@@ -43,7 +43,16 @@
 6.   get_iupred(folder)
      - Needs: path to folder with IUPred3 files
      - This will process the IUPred3 output files for visualization
-
+       - labels: `['Alpha.txt', 'Delta.txt', 'Omicron.txt', 'Spike_Wuhan.txt']`
+       - disorder: `[array([0.0031, 0.0008, 0.0021, ..., 0.073 , 0.0386, 0.0222], shape=(1270,)),
+                     array([0.0023, 0.0011, 0.0022, ..., 0.073 , 0.0386, 0.0222], shape=(1271,)),
+                     array([ 0.0038, -0.0005,  0.    , ...,  0.073 ,  0.0386,  0.0222], shape=(1267,)),
+                     array([0.0028, 0.001 , 0.0023, ..., 0.073 , 0.0386, 0.0222], shape=(1273,))]`
+       - bindings: `[array([0.1316, 0.1302, 0.13  , ..., 0.0231, 0.022 , 0.0198], shape=(1270,)),
+                     array([0.1173, 0.1156, 0.1154, ..., 0.0231, 0.022 , 0.0198], shape=(1271,)),
+                     array([0.028 , 0.0276, 0.0278, ..., 0.0231, 0.022 , 0.0198], shape=(1267,)),
+                     array([0.133 , 0.1316, 0.1314, ..., 0.0231, 0.022 , 0.0198], shape=(1273,))]`
+         
 7.   get_tm_scores(tm_path)
      - Needs: path to tm score folder
      - This will process the output files from USalign and return a dictionary holding lists of tuples with regional TM scores like this:
