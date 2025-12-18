@@ -5,7 +5,13 @@ import Bio.PDB as bpdb
 import itertools
 import re
 
-#Function to read individual file
+def simple_read(file_path):
+    f = open(file_path, 'r')
+    data = f.readlines()
+    f.close()
+    return data
+
+#Function to read individual file and format for pandas df preparation
 def read_file(file_path):
     f = open(file_path, 'r')
     temp = [x.rstrip().split() for x in f.readlines()]
@@ -14,12 +20,16 @@ def read_file(file_path):
     return temp
 
 #General function to retrieve data from files into a string object
-def get_files(folder):
+def get_files(folder, simple):
     files = os.listdir(folder)
     data = []
 
     for i in files:
-        temp = read_file(folder + i)
+        temp = ''
+        if simple:
+            temp = simple_read(folder + i)
+        else:
+            temp = read_file(folder + i)
         data.append(temp)
     
     return files, data
@@ -62,8 +72,8 @@ def mutate(seq,subs):
 #Function to mutate original FASTA file and save new FASTA sequences
 def get_mut_fasta(fasta_path, mut_path, out_path):
     #Convert fasta string to char array for easy mutating
-    og_fasta = list(read_file(fasta_path)[0][0]) #Common structure list of lists as used by most other functions so access fasta string through [0][0]
-    labels, mutations = get_files(mut_path) #[label array, [array of mutation arrays]] = [['label1','label2','label3'],[[list1 of mutations],[list2 of mutations],[list3 of mutations]]]
+    og_fasta = list(simple_read(fasta_path)) #Common structure list of lists as used by most other functions so access fasta string through [0][0]
+    labels, mutations = get_files(mut_path, False) #[label array, [array of mutation arrays]] = [['label1','label2','label3'],[[list1 of mutations],[list2 of mutations],[list3 of mutations]]]
     
     for i in range(len(labels)):
         mutated_fasta = og_fasta.copy()
@@ -78,7 +88,7 @@ def get_mut_fasta(fasta_path, mut_path, out_path):
 #Function to process the RMSD headers from the Chimera MultiAlignViewer
 def get_rmsd_hdr(folder):
     rmsd_vals = []
-    labels, hdr_data = get_files(folder)
+    labels, hdr_data = get_files(folder, False)
     hdr_data = [x[1:-1] for x in hdr_data] #Remove the header and footnote tag in the file
 
     for hdr in hdr_data:
@@ -141,13 +151,12 @@ def get_slices(regions,pdb_folder, chain, output):
         for pdb in pdb_files:
             slice_pdb(pdb_folder + pdb, regions[i][0], regions[i][1], chain, str(i), output)
 
-    
     return
 
 #Function to process the output generated from the ANCOR2 selection output on IUPred3
 def get_iupred(folder):
     iupred, anchor = [], []
-    labels, iupred_data = get_files(folder)
+    labels, iupred_data = get_files(folder, False)
     iupred_data = [x[8:-1] for x in iupred_data] #Remove header and empty lists
     
     for scores in iupred_data:
@@ -161,3 +170,31 @@ def get_iupred(folder):
         
     return labels, iupred, anchor
 
+#Function to process regional TM scores from US-align ran on sliced pdbs
+def get_tm_scores(tm_path):
+    labels, data = get_files(tm_path, True)
+    n_line, s_line = 'Name of Structure_', 'TM-score='
+    for i in range(len(data)):
+        #ignore lines that dont have the data we need from the USalign result output
+        data[i] = [x.lstrip().rstrip() for x in data[i] if (x.startswith(n_line) or x.startswith(s_line))]
+
+    for i in range(len(data)):
+        for j in range(len(data[i])):
+            #extract only necessary information from the lines we do need such as structure names and TM scores
+            if data[i][j].startswith(n_line):
+                data[i][j] = data[i][j].split('.')[0].split(':')[-1].split('/')[-1].lstrip().rstrip()
+
+            if data[i][j].startswith(s_line):
+                data[i][j] = float(data[i][j].split('TM-score=')[-1].split()[0])
+
+    dict_grps = {}
+
+    for i in range(len(labels)):
+        #convert list into list of lists to group related data together
+        temp = [data[i][x:x + 4] for x in range(0,len(data[i]), 4)] 
+        #then combine reference and other model names into one label and retain the lower TM score
+        temp = [(x[0] + '_' + x[1], min(x[2],x[3])) for x in temp]
+        #add it to the dictionary for storage and further accessing
+        dict_grps[labels[i]] = temp
+
+    return dict_grps
