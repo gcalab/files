@@ -18,7 +18,7 @@
 ## 3.1) AlphaFold Modeling:
 
 ### Generating Mutant Sequences
-1. Gather information on mutation data for the variants that you are studying and prepare a csv file with the mutation data in this format: <br><img src="project/img/mutations.png" alt="" style="width:10%; height:auto;">
+1. Gather information on mutation data for the variants that you are studying and prepare a csv file (mutations separated by new lines `\n`) with the mutation data in this format: <br><img src="project/img/mutations.png" alt="" style="width:10%; height:auto;">
 2. Use the `get_mut_fasta()` function from the functions.py script in the [project/](https://github.com/gcalab/files/tree/master/Methods%20in%20Molecular%20Biology/Viruses/project) folder to generate mutant sequences by introducing the mutations to your reference FASTA sequence.
 3. Use these sequences for generating 3D models using AlphaFold.
 
@@ -39,7 +39,10 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 ## 3.2) Structural Validation:
 ### <ins>Using [LGA_GDT](http://proteinmodel.org/AS2TS/LGA/lga.html) on the [AS2TS server](http://proteinmodel.org/AS2TS/):</ins>
 > [!IMPORTANT]
-> Before submitting any 3D models of your molecules (PDB or CIF files) you need to superimpose them first to the reference structure which you can do in [Chimera](https://www.cgl.ucsf.edu/chimera/download.html). After superimposing you will need to select each of the molecules one by one and save each selection as a single PDB file. Follow [this guide](https://github.com/gcalab/files/tree/master/Methods%20in%20Molecular%20Biology/Viruses/additional_tutorials#superimposing-structures-in-ucsf-chimera). on how to do that.
+> Before submitting any 3D models of your molecules (PDB files) you need to superimpose them first to the reference structure which you can do in [Chimera](https://www.cgl.ucsf.edu/chimera/download.html). After superimposing you will need to select each of the molecules one by one and save each selection as a single PDB file. Follow [this guide](https://github.com/gcalab/files/tree/master/Methods%20in%20Molecular%20Biology/Viruses/additional_tutorials#superimposing-structures-in-ucsf-chimera). on how to do that.
+
+> [!NOTE]
+> You only need to do this for the reference structure you modelled using AlphaFold and a NMR/X-ray crystallography 3D structure for your reference (also PDB file). The goal is to assess accuracy of the AlphaFold model compared to the experimental one.
 
 1. Enter your email and add '-d:4.0' to the end of the default LGA parameters input box. It should look like: `-4 -o2 -gdc -lga_m -stral -d:4.0` <br><img src="img/lga1.png" alt="" style="width:80%; height:auto;">
 2. Select your desired pdb files for analysis. Set the `Molecule2 no change` to your reference structure and the `Molecule1 to rotate` as your target structure for comparison to your reference. Then click *'START'*. <br><img src="img/lga2.png" alt="" style="width:70%; height:auto;">
@@ -73,8 +76,11 @@ You can report findings either just as a stand alone value or calculate the GDT_
 6. A new window will open which will prompt you to type out the name and path for the RMSD header file. <br><img src="img/chimera6.png" alt="Window open after selecting to save RMSD headers giving option of file name and location" style="width:50%; height:auto;">
 7. This is how the RMSD header file looks like, you will need to parse it line by line or use one of the scripts in this repo to extract position wise RMSD values. <br><img src="img/chimera_hdr.png" alt="Window open after selecting to save RMSD headers giving option of file name and location" style="width:30%; height:auto;">
 
+> [!TIP]
+> You can use the function `get_rmsd_hdr(path_to_folder)` from functions.py script in the [project/](https://github.com/gcalab/files/tree/master/Methods%20in%20Molecular%20Biology/Viruses/project) folder to extract header data for visualization.
+
 > [!IMPORTANT]
-> Save the current session in Chimera for future reference. Go to `File` then click `Save Session As...` or simply press `Ctrl + s`. Additionally you should save each aligned structure/model separately with coordinates relative to the reference structure. This is important for using US-align ahead in this workflow.
+> Save the current session in Chimera for future reference. Go to `File` then click `Save Session As...` or simply press `Ctrl + s`. Additionally you should save each aligned structure/model separately with coordinates relative to the reference structure. This is important for using US-align ahead in this workflow. 
 
 <ins>You can visualize the RMSD Headers for each of your protein structures as a heatmap:</ins> <br><img src="img/post_chimera1.png" alt="Heatmap depicting RMSD differences along the length of the Spike protein during the COVID-19 pandemic" style="width:80%; height:auto;">
 > Figure 1. Regions of structural deviation (measured in RMSD). The vertical axis represents each of the haplotypes and variants discussed in this paper arranged in chronological order from earliest to latest, up until the appearance of VOC Omicron. The horizontal axis represents the amino acid positions along the length of each of the S-protein molecules. The horizontal bars representing the haplotypes and VOC constellations are colored in hues of light coral and sandy brown in an alternating fashion, whereas VOCs Alpha, Delta, and Omicron are colored yellow, green, and purple, respectively. When a residue along the length of any of these protein molecules crosses the 1 Å, 2 Å, 3 Å, and 5 Å RMSD, then that position is colored in dark blue, light blue, orange, and red, respectively. The horizontal bar labeled ‘S-protein regions’ indicates all positions of important regions/domains along the S-protein. The horizontal bar labeled SS indicates the position of alpha helices (brown), beta sheets (dark red), and coils (beige). The horizontal bar labeled plDDT represents the confidence level of AlphaFold2 for each residue along the S-protein. On top of the graph are the individual mutations that make up each of the haplotypes and variants. Note that free-standing mutations are not modeled independently but are included and marked in the variant on this graph. Table S1 lists VOCs and haplotypes and their associated mutations. [Reference](https://www.mdpi.com/2079-7737/13/3/134#biology-13-00134-f001)
@@ -90,8 +96,8 @@ You can report findings either just as a stand alone value or calculate the GDT_
 > [!IMPORTANT]
 > Before slicing out the PDB files you need to superimpose them first to the reference structure which you can do in [Chimera](https://www.cgl.ucsf.edu/chimera/download.html). After superimposing you will need to select each of the molecules one by one and save each selection as a single PDB file. Follow [this guide](https://github.com/gcalab/files/tree/master/Methods%20in%20Molecular%20Biology/Viruses/additional_tutorials#superimposing-structures-in-ucsf-chimera). on how to do that.
 
-> [!IMPORTANT]
-> For further analysis you should look at identified regions in Chimera to decided if all of them are informative and remove some or expand to include surrounding residues as downstream analysis using US-align cannot assess regions under 4/5 residues.
+> [!TIP]
+> For further analysis you should look at identified regions in Chimera to decided if all of them are informative and remove some or expand to include surrounding residues as downstream analysis using US-align cannot assess regions under 4/5 residues. You can use the function `get_regions(rmsd_headers_variable)` from functions.py script in the [project/](https://github.com/gcalab/files/tree/master/Methods%20in%20Molecular%20Biology/Viruses/project) folder to extract regional differences and regions that cross the user defined threshold. 
 
 
 Code snippet to slice out portions of a PDB file to allow regional analysis of structural deviation. Adapted from an [answer](https://stackoverflow.com/a/22453336) by [Juniper-](https://stackoverflow.com/users/899470/juniper) on [Stack Overflow](https://stackoverflow.com/questions).
@@ -137,8 +143,11 @@ USalign -se -dir1 path/to/pdbs/mutant.pdb path/to/pdbs/file/list.txt path/to/pdb
 
 The ` > ` from the command above (` > output_folder/results_no_se.txt`) will save the result outputted by US-align to the terminal window into a text file at your desired location.
 
-The final result will have all the outputs for the proteins you are analyzing into one file. You will need to parse this file to get region wise TM scores for further analysis. The resulting file/output will look something like this:
+The final result will have all the outputs for the proteins you are analyzing into one file. You will need to parse this file to get region wise TM scores for further analysis. You can use the function `get_tm_scores(path_to_folder)` from functions.py script in the [project/](https://github.com/gcalab/files/tree/master/Methods%20in%20Molecular%20Biology/Viruses/project) folder to extract TM scores for visualization. The resulting file/output will look something like this:
 <br><img src="img/usalign_result.png" alt="US-align result file/output" style="width:60%; height:auto;">
+
+> [!TIP]
+> You can use the function `get_tm_scores(path_to_folder)` from functions.py script in the [project/](https://github.com/gcalab/files/tree/master/Methods%20in%20Molecular%20Biology/Viruses/project) folder to extract TM scores for visualization.
 
 Example of how you can visualize the results from US-align as a heatmap for both with and without superposition (for any number of proteins you wish to analyze): <br><img src="img/usalign.png" alt="2 heatmaps with labels a and b, with a being for no superposition and b being superimposed US-align results" style="width:80%; height:auto;">
 >Figure 4. Heatmap of TM scores (ranging from 0 to 1) of regions of structural change. The 21 regions of structural change that we identified were used to slice the corresponding regions from each file and obtain TM scores for each VOC and haplotype with USalign, using the Wuhan reference molecule as the template. The vertical axis is arranged in chronological order, depicting changes across the timeline of the pandemic, and the horizontal axis represents the 21 regions described in Figure 2. All TM scores falling under the TM threshold of 0.5 are colored in white. (a) TM scores using alignments from Chimera superimposition. (b) TM scores using USalign alignments. [Reference](https://www.mdpi.com/2079-7737/13/3/134#biology-13-00134-f004)
@@ -154,6 +163,9 @@ Example of how you can visualize the results from US-align as a heatmap for both
 
 5. Below is an example of how you can visualize IUPred and ANCHOR2 scores of your proteins. <br><img src="img/IUPred.png" alt="Example image of SARS-CoV-2 N-protein variants showing lineplots of ANCHOR2 and IUPred scores" style="width:60%; height:auto;">
 >Figure 5. Intrinsic disorder and binding capability across the pandemic. [Reference](https://www.mdpi.com/1999-4915/16/9/1358#viruses-16-01358-f005)
+
+> [!TIP]
+> You can use the function `get_iupred(path_to_folder)` from functions.py script in the [project/](https://github.com/gcalab/files/tree/master/Methods%20in%20Molecular%20Biology/Viruses/project) folder to extract IUPred3 (disorder) and ANCOR2 (binding capability) for visualization.
 
 ### <ins>Normal Mode Analysis (NMA) using [Bio3D](http://thegrantlab.org/bio3d/) in [R](https://www.r-project.org/):</ins>
 First you must [Install](http://thegrantlab.org/bio3d_v2/tutorials/installing-bio3d) Bio3D.
