@@ -41,7 +41,7 @@ colabfold_batch --amber --random-seed 42 --templates --num-recycle 3 --use-gpu-r
 + --use-gpu-relax: Run on Nvidia GPU instead of CPU (highly recommended).
 
 > [!NOTE]
-> Even if you do not use local ColabFold please always specify a random seed or keep the log file that reports the random seed for reproducibility. Additionally a higher num recycle value greater than 6 such as 9 or 12 will not show any significant changes, whereas jumps from 3 to 6 may show improvement in quality (https://academic.oup.com/bioinformaticsadvances/article/3/1/vbad078/7197797) This is context dependent and you should tweak these paramters according to your data
+> Even if you do not use local ColabFold please always specify a random seed or keep the log file that reports the random seed for reproducibility. Additionally a higher num recycle value greater than 6 such as 9 or 12 will not show any significant changes, whereas jumps from 3 to 6 may show improvement in quality (https://academic.oup.com/bioinformaticsadvances/article/3/1/vbad078/7197797) This is context dependent and you should tweak these paramters according to your data. For proteins that are largely disordered or have large intrinsically disordered regions or have many low confidence regions, the higher number of recycles may actually benefit you in that case. Run it through AlphaFold multiple times with num-recycle set at 3,6,9, and 12 to see at which level model quality does not improve. Since this takes time, it is best to test it out only on one reference structure.
 
 ## 3.2) Structural Validation:
 ### <ins>Using [LGA_GDT](http://proteinmodel.org/AS2TS/LGA/lga.html) on the [AS2TS server](http://proteinmodel.org/AS2TS/):</ins>
