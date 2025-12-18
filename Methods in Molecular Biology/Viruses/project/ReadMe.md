@@ -44,8 +44,8 @@
 5.   get_slices(regions,pdb_folder, chain, output)
      - Needs: output from get_regions(), path to slice_pdb folder, what chain you want sliced (check chain id in Chimera), path to output folder
      - This will slice of regions identified from get_regions() into the sliced_pdbs/ folder and the out looks like this:
-       - <img src="img/slices.png" alt="" style="width:40%; height:auto;">
-       - <img src="img/sliced.png" alt="" style="width:40%; height:auto;">
+       - The output folder the directories for each region: <br><img src="img/slices.png" alt="" style="width:50%; height:auto;">
+       - An individual region folder with sliced pdbs: <br><img src="img/sliced.png" alt="" style="width:60%; height:auto;">
 
 6.   get_iupred(folder)
      - Needs: path to folder with IUPred3 files
