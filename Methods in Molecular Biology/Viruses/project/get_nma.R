@@ -12,5 +12,7 @@ for (x in pdbfiles){
   name <- gsub("[./pdb]", "", x) #get name of pdb file (remove the '.pdb' from file name using gsub)
   n <- paste(output, name,".csv", sep="") #concatenate PDB file name into a desired output path location and file type using paste
   write.csv(fluctuations, file = n, row.names =FALSE) #write the fluctuations into a csv file with the new name
+  traj_file <- paste(output,name,'.pdb', sep="")
+  mktrj(modes, mode=7, pdb=pdb, file=traj_file) #The 7th mode is the first non trivial mode
 }
 
