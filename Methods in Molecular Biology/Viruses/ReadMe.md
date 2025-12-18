@@ -129,6 +129,8 @@ io.set_structure(s) #Give it the PDB we want sliced
 new_name = 'your desired name for the sliced region'
 io.save(out + region + '/' + new_name, ResSelect()) #example output path that saves regions (e.g: region1, region2, in a directory) and uses ResSelect to slice out desired region before saving the structure
 ```
+> [!TIP]
+> You can use the `get_slices(regions,pdb_folder, chain, output)` function from the functions.py script in the [project/](https://github.com/gcalab/files/tree/master/Methods%20in%20Molecular%20Biology/Viruses/project) folder to slice out regions from the original pdb files using information from the output of `get_regions(rmsd_vals, threshold)` and a user defined RMSD threshold (recommended: 3.0 Angstrom).
 
 ### <ins>Using US-align to analyze regional structural deviations:</ins>
 
