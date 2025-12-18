@@ -206,6 +206,10 @@ for (x in pdbfiles){
   mktrj(modes, mode=7, pdb=pdb, file=traj_file) #Saves the 7th normal mode as a pdb for visualizing
 }
 ```
+
+> [!TIP]
+> Use the `get_nma.R` script in the [project/](https://github.com/gcalab/files/tree/master/Methods%20in%20Molecular%20Biology/Viruses/project) folder to get the fluctuation data and the first non trivial mode (usually the 7th normal mode) from the normal mode analysis. This file will out csv files containing fluctuation data and PDB files for the normal mode (also called trajectory file in this context). To use the script you might need to change the input and output folders if you want to call/save data somewhere else.
+
 > The first six modes are so-called trivial modes with zero frequency and correspond to rigid-body rotation and translation. See:[Bio3D NMA Guide](http://www.thegrantlab.org/bio3d/articles/online/nma_vignette/Bio3D_nma.html)
 
 > [!IMPORTANT]
