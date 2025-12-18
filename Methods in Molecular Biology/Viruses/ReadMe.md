@@ -177,6 +177,9 @@ First you must [Install](http://thegrantlab.org/bio3d_v2/tutorials/installing-bi
 
 > Alternatively, if you prefer to use RStudio, select Tools → Install Packages.., Enter bio3d in the Packages text box (and make sure Install Dependencies is selected). Then click Install.
 
+> [!NOTE]
+> Use this helpful [guide](http://www.thegrantlab.org/bio3d/articles/online/nma_vignette/Bio3D_nma.html) by the developers of Bio3D if you wish to test more aspects of protein structural flexibility.
+
 R code below: 
 
 ```
