@@ -193,14 +193,19 @@ for (x in pdbfiles){
   pdb <- read.pdb(x) #Read files into a PDB object
   modes <- nma(pdb) #retrieve the normal modes for the PDB file into  a variable called modes
   fluctuations <- modes$fluct #Retrieve the fluctuation values into  a variable called fluctuations
-  traj <- mktrj(modes, mode=7) #The 7th mode is the first non trivial mode
   
   name <- gsub("[./pdb]", "", x) #get name of pdb file (remove the '.pdb' from file name using gsub)
   n <- paste(output, name,".csv", sep="") #concatenate PDB file name into a desired output path location and file type using paste
   write.csv(fluctuations, file = n, row.names =FALSE) #write the fluctuations into a csv file with the new name
+  traj_file <- paste(output,name,'.pdb', sep="")
+  mktrj(modes, mode=7, pdb=pdb, file=traj_file) #The 7th mode is the first non trivial mode
 }
 ```
 > The first six modes are so-called trivial modes with zero frequency and correspond to rigid-body rotation and translation. See:[Bio3D NMA Guide](http://www.thegrantlab.org/bio3d/articles/online/nma_vignette/Bio3D_nma.html)
+
+> [!IMPORTANT]
+> You should ideally slice out the C and N termini as they are very flexible and will show up as a lot of noise in trajectory files.
+> Additionally pymol is a good viewing software for normal modes.
 
 Example of how how you can visualize the fluctuations and the first non trivial normal mode of different proteins: <br><img src="img/nma1.png" alt="Showing a line graph of fluctatuations of various spike proteins (variants and haplotypes) along with their first non trivial normal mode" style="width:70%; height:auto;">
 > Figure 6. Normal mode analysis (NMA) of the N-protein across the pandemic. (a) Atomic fluctuation of residues mapped along the amino acid sequence of the N-protein for haplotypes and VOCs. Regions of structural change (R1, R2, R3, and R4) are shaded in light yellow, and the location of the nucleic acid-binding ‘basic finger’ is identified. (b,c) Details of plots in regions surrounding the R3 and R4 regions. (d) Visualization of the first non-trivial mode (mode 7) of the Wuhan N-protein molecule reflecting optimal energy states using a vector field representation. The most salient motion pattern in the ‘basic finger’ is highlighted and unfolded for all haplotypes and VOCs, showing notable changes in motion directionality. (e) A dynamic cross-correlation heat map for the Wuhan molecule averaged over all modes show correlated (red hues) and anti-correlated (blue hues) regions in the protein structure. Big and small boxes highlight the positively correlated LKR sequence embedding the R1 and R2 regions and the ‘basic finger’, respectively. [Reference](https://www.mdpi.com/1999-4915/16/9/1358#viruses-16-01358-f006)
