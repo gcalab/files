@@ -39,7 +39,7 @@
 4.   get_regions(rmsd_vals, threshold)
      - Needs output from get_rmsd_hdr() and user defined threshold (reccomended value: 3.0)
      - This will get regions of structural deviation using RMSD header data based on a threshold, it will return a list of tuples containing the start and end position of regions that have RMSD greater than defined threshold like this:
-     - `[(0, 12), (18, 22), (65, 71), (107, 107), (117, 118), (139, 145), (149, 155), (163, 174), (202, 205), (307, 582), (614, 615), (617, 618), (631, 631), (648, 649), (668, 680), (748, 748), (823, 823), (833, 837), (972, 973), (975, 976), (1135, 1270)]`
+       - `[(0, 12), (18, 22), (65, 71), (107, 107), (117, 118), (139, 145), (149, 155), (163, 174), (202, 205), (307, 582), (614, 615), (617, 618), (631, 631), (648, 649), (668, 680), (748, 748), (823, 823), (833, 837), (972, 973), (975, 976), (1135, 1270)]`
 
 5.   get_slices(regions,pdb_folder, chain, output)
      - Needs: output from get_regions(), path to slice_pdb folder, what chain you want sliced (check chain id in Chimera), path to output folder
@@ -61,7 +61,7 @@
 7.   get_tm_scores(tm_path)
      - Needs: path to tm score folder
      - This will process the output files from USalign and return a dictionary holding lists of tuples with regional TM scores like this:
-     - `se_region_1_OUTPUT.txt:
+       - `se_region_1_OUTPUT.txt:
 [('Wuhan_Alpha', 0.77419), ('Wuhan_Delta', 0.72706), ('Wuhan_H1', 0.88681), ('Wuhan_H12', 0.87898), ('Wuhan_H13', 0.79785), ('Wuhan_H14', 0.92601), ('Wuhan_H15', 0.7618), ('Wuhan_H16', 0.0562), ('Wuhan_H17', 0.85074), ('Wuhan_H19', 0.30694), ('Wuhan_H3', 0.16518), ('Wuhan_H4', 0.33909), ('Wuhan_H5', 0.33604), ('Wuhan_H7', 0.27892), ('Wuhan_H8', 0.19799), ('Wuhan_Omicron_S371F', 0.11269), ('Wuhan_Omicron_S371L', 0.10173)]`
 
 > [!TIP]
