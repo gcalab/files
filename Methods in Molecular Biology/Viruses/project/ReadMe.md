@@ -1,5 +1,7 @@
 # Project Structure & Files
-
+> [!NOTE]
+> You should install the requirements using the following command: `pip install -r requirements.txt`
+> requirements.txt file generated using: `pipreqs project` (folder containing only py scripts)
 ### Data Folder
 ```
 /data
