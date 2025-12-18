@@ -42,7 +42,7 @@
 
 6.   get_iupred(folder)
      - Needs: path to folder with IUPred3 files
-     - This will process the IUPred3 output files for visualization
+     - This will process the IUPred3 output files for visualization and returns, labels, disorder scores, and binding scores
        - labels: `['Alpha.txt', 'Delta.txt', 'Omicron.txt', 'Spike_Wuhan.txt']`
        - disorder: `[array([0.0031, 0.0008, 0.0021, ..., 0.073 , 0.0386, 0.0222], shape=(1270,)),
                      array([0.0023, 0.0011, 0.0022, ..., 0.073 , 0.0386, 0.0222], shape=(1271,)),
