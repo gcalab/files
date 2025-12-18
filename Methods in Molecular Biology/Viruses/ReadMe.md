@@ -18,7 +18,7 @@
 ## 3.1) AlphaFold Modeling:
 
 ### Generating Mutant Sequences
-1. Gather information on mutation data for the variants that you are studying and prepare a csv file with the mutation data in this format: <br><img src="data/img/mutations.png" alt="" style="width:50%; height:auto;">
+1. Gather information on mutation data for the variants that you are studying and prepare a csv file with the mutation data in this format: <br><img src="project/data/img/mutations.png" alt="" style="width:10%; height:auto;">
 
 ### LocalColabFold Command:
 ```
