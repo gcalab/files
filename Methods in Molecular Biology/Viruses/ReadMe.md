@@ -18,7 +18,9 @@
 ## 3.1) AlphaFold Modeling:
 
 ### Generating Mutant Sequences
-1. Gather information on mutation data for the variants that you are studying and prepare a csv file with the mutation data in this format: <br><img src="project/data/img/mutations.png" alt="" style="width:10%; height:auto;">
+1. Gather information on mutation data for the variants that you are studying and prepare a csv file with the mutation data in this format: <br><img src="project/img/mutations.png" alt="" style="width:10%; height:auto;">
+2. Use the get_mut_fasta() function from the functions.py script in the project folder to generate mutant sequences by introducing the mutations to your reference FASAT sequence.
+3. Use these sequences for generating 3D models using AlphaFold.
 
 ### LocalColabFold Command:
 ```
