@@ -23,8 +23,9 @@
 
 1.   get_mut_fasta(fasta_path, mut_path, out_path)
      - Needs: location to fasta file, mutation file, and a path to the output folder
-     - The input mutations file should look like:
-       - 
+     - The input mutations folder and file should look like:
+       - <img src="img/mut_files.png" alt="" style="width:50%; height:auto;">
+       - <img src="img/mutations.png" alt="" style="width:70%; height:auto;">
      - This will generate fasta files incorporating mutations provided in csv (look at example for formatting mutation file)
      - example of fasta file content:
        - `MFVFLVLLPLVSSQCVNLTTR...SCGSCCKFDEDDSEPVLKGVKLHYT`
