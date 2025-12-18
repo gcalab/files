@@ -34,6 +34,11 @@
 5.   get_iupred(folder)
      - This will process the IUPred3 output files for visualization
      - Needs: path to folder with IUPred3 files
+6.   get_tm_scores(tm_path)
+     - This will process the output files from USalign and return a dictionary holding lists of tuples with regional TM scores like this:
+     - se_region_1_OUTPUT.txt
+[('Wuhan_Alpha', 0.77419), ('Wuhan_Delta', 0.72706), ('Wuhan_H1', 0.88681), ('Wuhan_H12', 0.87898), ('Wuhan_H13', 0.79785), ('Wuhan_H14', 0.92601), ('Wuhan_H15', 0.7618), ('Wuhan_H16', 0.0562), ('Wuhan_H17', 0.85074), ('Wuhan_H19', 0.30694), ('Wuhan_H3', 0.16518), ('Wuhan_H4', 0.33909), ('Wuhan_H5', 0.33604), ('Wuhan_H7', 0.27892), ('Wuhan_H8', 0.19799), ('Wuhan_Omicron_S371F', 0.11269), ('Wuhan_Omicron_S371L', 0.10173)]
+     - Needs: path to tm score folder
 
 > [!TIP]
 > You should call functions according to your requirements in main.py and customize your workflow to where you are in the process when following the guide for [Proteome-wide ab initio Structural Analysis of Viral Evolution](https://github.com/gcalab/files/blob/master/Methods%20in%20Molecular%20Biology/Viruses/ReadMe.md)
