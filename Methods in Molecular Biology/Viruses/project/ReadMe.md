@@ -34,7 +34,8 @@
          
 4.   get_regions(rmsd_vals, threshold)
      - Needs output from get_rmsd_hdr() and user defined threshold (reccomended value: 3.0)
-     - This will get regions of structural deviation using RMSD header data based on a threshold
+     - This will get regions of structural deviation using RMSD header data based on a threshold, it will return a list of tuples containing the start and end position of regions that have RMSD greater than defined threshold like this:
+     - `[(0, 12), (18, 22), (65, 71), (107, 107), (117, 118), (139, 145), (149, 155), (163, 174), (202, 205), (307, 582), (614, 615), (617, 618), (631, 631), (648, 649), (668, 680), (748, 748), (823, 823), (833, 837), (972, 973), (975, 976), (1135, 1270)]`
 
 5.   get_slices(regions,pdb_folder, chain, output)
      - Needs: output from get_regions(), path to slice_pdb folder, what chain you want sliced (check chain id in Chimera), path to output folder
