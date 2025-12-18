@@ -5,6 +5,8 @@
 ### Data Folder
 ```
 /data
+├──/bio3d
+|  └── #contains output from get_nma.R script (currently only storing fluctuation data)
 ├──/fasta
 |  └── #contains original fasta file and mutated fasta file after running get_mut_fasta() from main.py
 ├──/iupred
