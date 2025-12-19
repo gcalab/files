@@ -19,8 +19,10 @@
 |  └── #contains csv files of outputs from multiple callable functions from functions.py (useful for visualization)
 ├──/rmsd_hdr
 |  └── #contains RMSD headers after running MatchMaker in Chimera
-└──/sliced_pdbs
-   └── #contains directory of directories with internal dirs named 0,1,... representing identified regions of structural deviation; sliced up regions of the pdb files in the pdbs/ folder using RMSD header data after running get_slices() from main.py
+├──/sliced_pdbs
+|    └── #contains directory of directories with internal dirs named 0,1,... representing identified regions of structural deviation; sliced up regions of the pdb files in the pdbs/ folder using RMSD header data after running get_slices() from main.py
+└──/us_align
+   └── #contains output from running us_align (tm score data)
 ```
 ### Scripts
 
