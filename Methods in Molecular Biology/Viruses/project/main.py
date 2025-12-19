@@ -1,6 +1,5 @@
 #This file will serve as the base for the project calling important functions from other scripts
 from functions import get_rmsd_hdr, get_iupred, get_regions, get_slices, get_mut_fasta, get_tm_scores
-import pandas as pd
 
 def main():
     '''
@@ -19,3 +18,4 @@ def main():
     
 if __name__=="__main__":
     main()
+
