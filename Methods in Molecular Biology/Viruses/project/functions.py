@@ -1,6 +1,7 @@
 #This file contains the main functions for the project: https://github.com/gcalab/files/tree/master/Methods%20in%20Molecular%20Biology/Viruses#proteome-wide-ab-initio-structural-analysis-of-viral-evolution
 import os
 import pandas as pd
+import numpy as np
 import Bio.PDB as bpdb
 import itertools
 import re
@@ -60,6 +61,7 @@ def mutate(seq,subs):
         elif '+' in sorted_subs[i]:
             seq.insert(sorted_pos[i] + pos_adjuster, ''.join(char for char in sorted_subs[i] if char.isalpha())) #Add only alphabets back into char array [A,B,C,D] -> +2EPE [A,EPE,BCD]
             pos_adjuster += 1
+            #There are no mismatch instances for insertions so there is no error message here
 
         else:
             if seq[sorted_pos[i] + pos_adjuster] == sorted_subs[i][0]:
@@ -86,7 +88,7 @@ def get_mut_fasta(fasta_path, mut_path, out_path):
     return
 
 #Function to process the RMSD headers from the Chimera MultiAlignViewer
-def get_rmsd_hdr(folder):
+def get_rmsd_hdr(folder,out_path=None):
     rmsd_vals = []
     labels, hdr_data = get_files(folder, False)
     hdr_data = [x[1:-1] for x in hdr_data] #Remove the header and footnote tag in the file
@@ -96,17 +98,23 @@ def get_rmsd_hdr(folder):
         
         df[1] = pd.to_numeric(df[1], downcast='integer', errors='coerce') #1st index has RMSD values
         rmsd_vals.append(df[1].values)
+    
+    if out_path:
+         df = pd.DataFrame(rmsd_vals)
+         df.index = labels
+         df.to_csv(out_path + 'rmsd_headers.csv', header=False)
         
     return labels, rmsd_vals
 
 #Helper function for get_regions(rmsd_vals, threshold)
 def ranges(i):
+    #Code adapted from: https://stackoverflow.com/a/4629241 (by bossylobster(user:1068170)) 
     for a, b in itertools.groupby(enumerate(i), lambda pair: pair[1] - pair[0]):
         b = list(b)
         yield b[0][1], b[-1][1]
 
 #Function to assess regions of structural deviation from a reference structure using a RMSD threshold (usually 3Angstrom)
-def get_regions(rmsd_vals, threshold):
+def get_regions(rmsd_vals, threshold,out_path=None):
     regions = [] #TO DO: Remove regions smaller than 4 or expand based on RMSD and account for indels
     for vals in rmsd_vals:
         for i in range(len(vals)):
@@ -115,6 +123,12 @@ def get_regions(rmsd_vals, threshold):
     
     regions = list(ranges(sorted(list(set(regions)))))
     #You may need to assess the regions visually some may be uninformative or may need to be expanded as US-align needs a minimum of 4 amino acids
+    if out_path:
+        df = pd.DataFrame(regions)
+        df.index.name = 'regions'
+        df.columns = ['start', 'end']
+        df.to_csv(out_path + 'regions.csv')
+
     return regions
 
 #Function to slice out regions depending on regions identified by function: get_regions(rmsd_vals, threshold)
@@ -154,7 +168,7 @@ def get_slices(regions,pdb_folder, chain, output):
     return
 
 #Function to process the output generated from the ANCOR2 selection output on IUPred3
-def get_iupred(folder):
+def get_iupred(folder,out_path=None):
     iupred, anchor = [], []
     labels, iupred_data = get_files(folder, False)
     iupred_data = [x[8:-1] for x in iupred_data] #Remove header and empty lists
@@ -167,11 +181,22 @@ def get_iupred(folder):
 
         df[3] = pd.to_numeric(df[3], downcast='integer', errors='coerce') #3rd index has ANCOR2 scores
         anchor.append(df[3].values)
-        
+    
+    if out_path:
+        f1 = open(out_path + 'iupred3_scores.csv', 'w')
+        f2 = open(out_path + 'anchor2_scores.csv', 'w')
+
+        for i in range(len(labels)):
+             f1.write(','.join([labels[i]] + list([str(x) for x in iupred[i]])) + '\n')
+             f2.write(','.join([labels[i]] + list([str(x) for x in anchor[i]])) + '\n')
+
+        f1.close()
+        f2.close()
+         
     return labels, iupred, anchor
 
 #Function to process regional TM scores from US-align ran on sliced pdbs
-def get_tm_scores(tm_path):
+def get_tm_scores(tm_path,out_path=None):
     labels, data = get_files(tm_path, True)
     n_line, s_line = 'Name of Structure_', 'TM-score='
     for i in range(len(data)):
@@ -196,5 +221,17 @@ def get_tm_scores(tm_path):
         temp = [(x[0] + '_' + x[1], min(x[2],x[3])) for x in temp]
         #add it to the dictionary for storage and further accessing
         dict_grps[labels[i]] = temp
+
+    if out_path:
+        labels = list(dict_grps.keys())
+        df1 = pd.DataFrame(dict_grps[labels[0]])
+        df1.columns = ['label', labels[0]]
+
+        for i in labels[1:]:
+            df2 = pd.DataFrame(dict_grps[i])
+            df2.columns = ['label', i]
+            df1 = df1.merge(df2, on='label')
+
+        df1.to_csv(out_path + 'tm_scores.csv', index=False)
 
     return dict_grps
