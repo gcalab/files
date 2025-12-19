@@ -1,0 +1,392 @@
+
+ ********************************************************************
+ * US-align (Version 20220924)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to yangzhanglab@umich.edu  *
+ ********************************************************************
+
+Name of Structure_1: slice_pdb/13/Wuhan.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: Alpha.pdb:A
+Length of Structure_1: 4 residues
+Length of Structure_2: 4 residues
+
+Aligned length= 4, RMSD=   0.29, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.77216 (normalized by length of Structure_1: L=4, d0=0.50)
+TM-score= 0.77216 (normalized by length of Structure_2: L=4, d0=0.50)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+SFGG
+::::
+SFGG
+
+
+ ********************************************************************
+ * US-align (Version 20220924)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to yangzhanglab@umich.edu  *
+ ********************************************************************
+
+Name of Structure_1: slice_pdb/13/Wuhan.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: Delta.pdb:A
+Length of Structure_1: 4 residues
+Length of Structure_2: 4 residues
+
+Aligned length= 4, RMSD=   0.24, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.80993 (normalized by length of Structure_1: L=4, d0=0.50)
+TM-score= 0.80993 (normalized by length of Structure_2: L=4, d0=0.50)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+SFGG
+::::
+SFGG
+
+
+ ********************************************************************
+ * US-align (Version 20220924)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to yangzhanglab@umich.edu  *
+ ********************************************************************
+
+Name of Structure_1: slice_pdb/13/Wuhan.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: H1.pdb:A
+Length of Structure_1: 4 residues
+Length of Structure_2: 5 residues
+
+Aligned length= 4, RMSD=   0.20, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.86551 (normalized by length of Structure_1: L=4, d0=0.50)
+TM-score= 0.69241 (normalized by length of Structure_2: L=5, d0=0.50)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+-SFGG
+ ::::
+CSFGG
+
+
+ ********************************************************************
+ * US-align (Version 20220924)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to yangzhanglab@umich.edu  *
+ ********************************************************************
+
+Name of Structure_1: slice_pdb/13/Wuhan.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: H12.pdb:A
+Length of Structure_1: 4 residues
+Length of Structure_2: 4 residues
+
+Aligned length= 4, RMSD=   0.21, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.85162 (normalized by length of Structure_1: L=4, d0=0.50)
+TM-score= 0.85162 (normalized by length of Structure_2: L=4, d0=0.50)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+SFGG
+::::
+SFGG
+
+
+ ********************************************************************
+ * US-align (Version 20220924)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to yangzhanglab@umich.edu  *
+ ********************************************************************
+
+Name of Structure_1: slice_pdb/13/Wuhan.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: H13.pdb:A
+Length of Structure_1: 4 residues
+Length of Structure_2: 4 residues
+
+Aligned length= 4, RMSD=   0.28, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.76586 (normalized by length of Structure_1: L=4, d0=0.50)
+TM-score= 0.76586 (normalized by length of Structure_2: L=4, d0=0.50)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+SFGG
+::::
+SFGG
+
+
+ ********************************************************************
+ * US-align (Version 20220924)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to yangzhanglab@umich.edu  *
+ ********************************************************************
+
+Name of Structure_1: slice_pdb/13/Wuhan.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: H14.pdb:A
+Length of Structure_1: 4 residues
+Length of Structure_2: 4 residues
+
+Aligned length= 4, RMSD=   0.10, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.96338 (normalized by length of Structure_1: L=4, d0=0.50)
+TM-score= 0.96338 (normalized by length of Structure_2: L=4, d0=0.50)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+SFGG
+::::
+SFGG
+
+
+ ********************************************************************
+ * US-align (Version 20220924)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to yangzhanglab@umich.edu  *
+ ********************************************************************
+
+Name of Structure_1: slice_pdb/13/Wuhan.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: H15.pdb:A
+Length of Structure_1: 4 residues
+Length of Structure_2: 4 residues
+
+Aligned length= 4, RMSD=   0.34, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.69794 (normalized by length of Structure_1: L=4, d0=0.50)
+TM-score= 0.69794 (normalized by length of Structure_2: L=4, d0=0.50)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+SFGG
+::::
+SFGG
+
+
+ ********************************************************************
+ * US-align (Version 20220924)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to yangzhanglab@umich.edu  *
+ ********************************************************************
+
+Name of Structure_1: slice_pdb/13/Wuhan.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: H16.pdb:A
+Length of Structure_1: 4 residues
+Length of Structure_2: 4 residues
+
+Aligned length= 4, RMSD=   0.19, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.87280 (normalized by length of Structure_1: L=4, d0=0.50)
+TM-score= 0.87280 (normalized by length of Structure_2: L=4, d0=0.50)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+SFGG
+::::
+SFGG
+
+
+ ********************************************************************
+ * US-align (Version 20220924)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to yangzhanglab@umich.edu  *
+ ********************************************************************
+
+Name of Structure_1: slice_pdb/13/Wuhan.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: H17.pdb:A
+Length of Structure_1: 4 residues
+Length of Structure_2: 4 residues
+
+Aligned length= 4, RMSD=   0.20, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.86830 (normalized by length of Structure_1: L=4, d0=0.50)
+TM-score= 0.86830 (normalized by length of Structure_2: L=4, d0=0.50)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+SFGG
+::::
+SFGG
+
+
+ ********************************************************************
+ * US-align (Version 20220924)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to yangzhanglab@umich.edu  *
+ ********************************************************************
+
+Name of Structure_1: slice_pdb/13/Wuhan.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: H19.pdb:A
+Length of Structure_1: 4 residues
+Length of Structure_2: 4 residues
+
+Aligned length= 3, RMSD=   2.95, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.05128 (normalized by length of Structure_1: L=4, d0=0.50)
+TM-score= 0.05128 (normalized by length of Structure_2: L=4, d0=0.50)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+SFG-G
+::  :
+SF-GG
+
+
+ ********************************************************************
+ * US-align (Version 20220924)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to yangzhanglab@umich.edu  *
+ ********************************************************************
+
+Name of Structure_1: slice_pdb/13/Wuhan.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: H3.pdb:A
+Length of Structure_1: 4 residues
+Length of Structure_2: 4 residues
+
+Aligned length= 4, RMSD=   1.04, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.26819 (normalized by length of Structure_1: L=4, d0=0.50)
+TM-score= 0.26819 (normalized by length of Structure_2: L=4, d0=0.50)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+SFGG
+::::
+SFGG
+
+
+ ********************************************************************
+ * US-align (Version 20220924)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to yangzhanglab@umich.edu  *
+ ********************************************************************
+
+Name of Structure_1: slice_pdb/13/Wuhan.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: H4.pdb:A
+Length of Structure_1: 4 residues
+Length of Structure_2: 4 residues
+
+Aligned length= 3, RMSD=   2.96, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.04802 (normalized by length of Structure_1: L=4, d0=0.50)
+TM-score= 0.04802 (normalized by length of Structure_2: L=4, d0=0.50)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+SFG-G
+::  :
+SF-GG
+
+
+ ********************************************************************
+ * US-align (Version 20220924)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to yangzhanglab@umich.edu  *
+ ********************************************************************
+
+Name of Structure_1: slice_pdb/13/Wuhan.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: H5.pdb:A
+Length of Structure_1: 4 residues
+Length of Structure_2: 4 residues
+
+Aligned length= 3, RMSD=   2.99, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.04509 (normalized by length of Structure_1: L=4, d0=0.50)
+TM-score= 0.04509 (normalized by length of Structure_2: L=4, d0=0.50)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+SFG-G
+::  :
+SF-GG
+
+
+ ********************************************************************
+ * US-align (Version 20220924)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to yangzhanglab@umich.edu  *
+ ********************************************************************
+
+Name of Structure_1: slice_pdb/13/Wuhan.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: H7.pdb:A
+Length of Structure_1: 4 residues
+Length of Structure_2: 4 residues
+
+Aligned length= 3, RMSD=   2.97, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.04760 (normalized by length of Structure_1: L=4, d0=0.50)
+TM-score= 0.04760 (normalized by length of Structure_2: L=4, d0=0.50)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+SFG-G
+::  :
+SF-GG
+
+
+ ********************************************************************
+ * US-align (Version 20220924)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to yangzhanglab@umich.edu  *
+ ********************************************************************
+
+Name of Structure_1: slice_pdb/13/Wuhan.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: H8.pdb:A
+Length of Structure_1: 4 residues
+Length of Structure_2: 4 residues
+
+Aligned length= 3, RMSD=   2.87, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.04152 (normalized by length of Structure_1: L=4, d0=0.50)
+TM-score= 0.04152 (normalized by length of Structure_2: L=4, d0=0.50)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+SFG-G
+::  :
+SF-GG
+
+
+ ********************************************************************
+ * US-align (Version 20220924)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to yangzhanglab@umich.edu  *
+ ********************************************************************
+
+Name of Structure_1: slice_pdb/13/Wuhan.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: Omicron_S371F.pdb:A
+Length of Structure_1: 4 residues
+Length of Structure_2: 4 residues
+
+Aligned length= 3, RMSD=   1.40, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.08947 (normalized by length of Structure_1: L=4, d0=0.50)
+TM-score= 0.08947 (normalized by length of Structure_2: L=4, d0=0.50)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+S-FGG
+  :::
+-SFGG
+
+
+ ********************************************************************
+ * US-align (Version 20220924)                                      *
+ * Universal Structure Alignment of Proteins and Nucleic Acids      *
+ * Reference: C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*
+ * Please email comments and suggestions to yangzhanglab@umich.edu  *
+ ********************************************************************
+
+Name of Structure_1: slice_pdb/13/Wuhan.pdb:A (to be superimposed onto Structure_2)
+Name of Structure_2: Omicron_S371L.pdb:A
+Length of Structure_1: 4 residues
+Length of Structure_2: 4 residues
+
+Aligned length= 3, RMSD=   1.37, Seq_ID=n_identical/n_aligned= 1.000
+TM-score= 0.09374 (normalized by length of Structure_1: L=4, d0=0.50)
+TM-score= 0.09374 (normalized by length of Structure_2: L=4, d0=0.50)
+(You should use TM-score normalized by length of the reference structure)
+
+(":" denotes residue pairs of d < 5.0 Angstrom, "." denotes other aligned residues)
+S-FGG
+  :::
+-SFGG
+
+#Total CPU time is  0.02 seconds
