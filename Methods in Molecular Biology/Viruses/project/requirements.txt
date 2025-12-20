@@ -1,2 +1,5 @@
 Bio==1.8.1
+matplotlib==3.10.8
+numpy==2.4.0
 pandas==2.3.3
+seaborn==0.13.2
