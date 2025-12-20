@@ -29,9 +29,10 @@
 > [!NOTE]
 > 1.   The `get_nma.R` script is an R file that you can run in Rstudio. You can adjust in input and output folder paths in file.
 > 2.   The `run_colab.sh` script allows you loop through an input directory of fasta files and outputs the result of Local ColabFold into a user defined directory. Example command: `./run_colab.sh "data/fasta/*" "output/"`
-> 3.   `main.py` serves as scratch space for the user to call important functions from `functions.py`. List of callable functions provided below:
+> 3.   `main.py` serves as scratch space for the user to call important functions from `functions.py`. List of callable functions provided below
+> 4.   `visualize.py` allows you to generate visuals (heatmaps) for quick inspection and analysis (not publication ready, you will need to change the code or write your own for customization)
 
-#### Callable functions of functions.py:
+### Callable functions of functions.py:
 
 1.   get_mut_fasta(fasta_path, mut_path, out_path)
      - Needs: location to fasta file, mutation file, and a path to the output folder
@@ -84,6 +85,17 @@
        - `se_region_1_OUTPUT.txt:
 [('Wuhan_Alpha', 0.77419), ('Wuhan_Delta', 0.72706), ('Wuhan_H1', 0.88681), ('Wuhan_H12', 0.87898), ('Wuhan_H13', 0.79785), ('Wuhan_H14', 0.92601), ('Wuhan_H15', 0.7618), ('Wuhan_H16', 0.0562), ('Wuhan_H17', 0.85074), ('Wuhan_H19', 0.30694), ('Wuhan_H3', 0.16518), ('Wuhan_H4', 0.33909), ('Wuhan_H5', 0.33604), ('Wuhan_H7', 0.27892), ('Wuhan_H8', 0.19799), ('Wuhan_Omicron_S371F', 0.11269), ('Wuhan_Omicron_S371L', 0.10173)]`
        - Can also return a csv file containing above information if an out path is provided
+
+### Callable functions of visualize.py:
+1.   get_tm_fig(file_path, fig_path, dpi=None)
+     - Needs: path to score file, path for output figure, optional dpi value (dots per inch/png quality)
+     - Returns a heatmap with regions as columns and variants on the y axis.
+2.   get_rmsdhdr_fig(file_path, fig_path, dpi=None)
+     - Needs: path to score file, path for output figure, optional dpi value (dots per inch/png quality)
+     - Returns a heatmap showing regions of RMSD differences in ranges 0-1, 1-3, 3-5, 5+ (see colorbar)
+3.   get_iupred_anchor_fig(file_path, fig_path, dpi=None)
+     - Needs: path to score file, path for output figure, optional dpi value (dots per inch/png quality)
+     - Same function for both iupred and anchor scores will generate a monochrome heatmap ranging from 0 (white) to 1 (black)
 
 > [!TIP]
 > You should call functions according to your requirements in main.py and customize your workflow to where you are in the process when following the guide for [Proteome-wide ab initio Structural Analysis of Viral Evolution](https://github.com/gcalab/files/blob/master/Methods%20in%20Molecular%20Biology/Viruses/ReadMe.md)
