@@ -1,0 +1,4 @@
+(base) bushraminhas@Bushras-MacBook-Pro-2 Genome_counts % cat *_SUPERFAMILY_domains_averages.txt > global_SUPERFAMILY_domains_averages.txt
+(base) bushraminhas@Bushras-MacBook-Pro-2 Genome_counts % cat *_SUPERFAMILY_domains_counts.txt > global_SUPERFAMILY_domains_counts.txt
+
+
